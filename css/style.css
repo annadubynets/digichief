@@ -66,7 +66,7 @@ nav {
 .alert {
     position: fixed;
     background: #FF4401;
-    padding: 9px 0;
+    padding: 9px 24px;
     width: 100%;
     z-index: 1000;
 }
@@ -74,7 +74,7 @@ nav {
 .alert-flex-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .alert-descr {
