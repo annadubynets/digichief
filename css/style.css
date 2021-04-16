@@ -63,7 +63,7 @@ nav {
     width: 100%;
 }
 
-.promo {
+.alert {
     position: fixed;
     background: #FF4401;
     padding: 9px 0;
@@ -71,13 +71,13 @@ nav {
     z-index: 1000;
 }
 
-.promo-flex-container {
+.alert-flex-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.promo-descr {
+.alert-descr {
     font-weight: 500;
     font-size: 16px;
     color: #000000;
