@@ -28,6 +28,7 @@ nav {
     height: 80px;
     background-color: #000000;
     z-index: 1000;
+    padding: 0 48px;
 }
 
 .menu {
@@ -208,6 +209,7 @@ nav {
     bottom: 0;
     z-index: 1000;
     padding-top: 9px;
+    padding: 9px 48px 37px 48px;
 }
 
 .footer-flex-container {
