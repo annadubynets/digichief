@@ -31,6 +31,10 @@ nav {
     padding: 0 48px;
 }
 
+.hamburger {
+    display: none;
+}
+
 .menu {
     display: flex;
 }
@@ -83,7 +87,7 @@ nav {
     color: #000000;
 }
 
-.sidenav {
+.sidebar {
     height: 100%;
     width: 402px;
     position: fixed;
@@ -96,7 +100,7 @@ nav {
     padding-bottom: 767px;
 }
 
-.sidenav a {
+.sidebar a {
     padding: 7px 24px;
     text-decoration: none;
     font-weight: normal;
@@ -105,8 +109,60 @@ nav {
     display: block;
 }
 
-.sidenav a:hover {
+.sidebar a:hover {
     color: #000000;
+}
+
+.level-1 span {
+    position: relative;
+}
+
+.level-1 span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #FF4401;
+    transition: width 0.3s ease-out;
+}
+
+.level-1 span:hover::after,
+.level-1.active span::after {
+    width: 100%;
+}
+
+.level-2 {
+    background: #000000B3;
+    color: #FFFFFF!important;
+    padding: 9px 40px!important;
+}
+
+.level-2:hover,
+.level-2.active {
+    color: #FF4401!important;
+}
+
+.level-3 {
+    background: #000000;
+    color: #FFFFFF!important;
+    padding: 9px 60px!important;
+}
+
+.level-3:hover,
+.level-3.active {
+    color: #FF4401!important;
+}
+
+.level-4 {
+    background: #000000;
+    color: #FFFFFF!important;
+    padding: 9px 90px!important;
+}
+
+.level-4:hover,
+.level-4.active {
+    color: #FF4401!important;
 }
 
 .search-box {
