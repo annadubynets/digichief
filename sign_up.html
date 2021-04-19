@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="header-flex-container">
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="icons/digichief_logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <ul class="menu">
+                    <li class="menu-item"><a href="index.html" class="menu-link">API Documentation</a></li>
+                    <li class="menu-item"><a href="sign_up.html" class="menu-link">Sign Up</a></li>
+                    <li class="menu-item"><a href="contact.html" class="menu-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="base">
+        <div class="container">
+            <h1>Sign Up for an Account</h1>
+            <div class="subtitle">Please provide the information below and we will setup an account for your and provide a Trial API Key for your the content you select below.</div>
+
+            <form class="main-form" action="#">
+                <label for="email" class="mb-0">Email *</label>
+                <div class="small-label">Your email will also become your Username. We will provide you with your initial password that you can change in your account settings.</div>
+                <input type="email" id="email" name="email">
+
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName">
+
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName">
+
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title">
+
+                <label for="phone">Phone *</label>
+                <input type="number" id="phone" name="phone">
+
+                <label for="company">Company *</label>
+                <input type="text" id="company" name="company">
+
+                <label for="companyWebsite">Company Website *</label>
+                <input type="text" id="companyWebsite" name="companyWebsite">
+
+                <label for="industry">Industry *</label>
+                <select id="industry" name="industry">
+                    <option selected disabled>Please choose an industry ...</option>
+                    <option value="advertising">Advertising</option>
+                    <option value="agency">Agency</option>
+                    <option value="usa">Corporate Internal Network</option>
+                    <option value="network">Digital Signage | Other</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="eSports">eSports</option>
+                    <option value="fantasySports">Fantasy Sports</option>
+                    <option value="integrator">Integrator</option>
+                    <option value="mobile">Mobile</option>
+                    <option value="personalUse">Personal Use</option>
+                    <option value="office">Office</option>
+                    <option value="restaurant">Restaurant</option>
+                    <option value="areas">Sports | Areas - Stadiums</option>
+                    <option value="betting">Sports | Betting - Gaming</option>
+                    <option value="leagues">Sports | Leagues - Teams</option>
+                    <option value="transportation">Transportation | Airports - Bus - Subway - Other</option>
+                </select>
+
+                <label for="findUs">How did you find us? *</label>
+                <select id="findUs" name="findUs">
+                    <option selected disabled>Please choose one ...</option>
+                    <option value="media">Social Media</option>
+                    <option value="publication ">Advertising | Trade Publication</option>
+                    <option value="article">News Article</option>
+                    <option value="search">Search Engine</option>
+                    <option value="friend">Friend or colleague</option>
+                    <option value="developer">Developer | Integrator</option>
+                    <option value="conference">Trade Show | Conference</option>
+                </select>
+
+                <div class="categories-flex-container">
+                    <div class="categories-left-block">
+                        <label class="mt-60 text-decoration">Content Categories of Interest</label>
+                        <p class="small-descr">(Check all that apply)</p>
+                        <div class="check-list">
+                            <label class="checkbox-other">Weather
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+                            <label class="checkbox-other">Sports
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+                            <label class="checkbox-other">News
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+                            <label class="checkbox-other">Financial
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+                            <label class="checkbox-other">Traffic
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+                            <label class="checkbox-other">Lottery
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+                            <label class="checkbox-other">Flights
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+                            <label class="checkbox-other">Videos
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+
+                            <label class="checkbox-other">Betting Odds
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+                            <label class="checkbox-other">Fantasy Stats
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+                            <label class="checkbox-other">Infotainment
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+                            <label class="checkbox-other">Transit
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+                            <label class="checkbox-other">Health
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+                            <label class="checkbox-other">Images
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+                            <br>
+                            <input type="text" name="name" class="base-input">
+                        </div>
+                    </div>
+                    <div class="categories-right-block">
+                        <label class="mt-60 text-decoration">Delivery Format of Interest</label>
+                        <p class="small-descr">(Check all that apply)</p>
+                        <div class="check-list">
+                            <label class="checkbox-other">JSON
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+                            <label class="checkbox-other">XML
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+                            <label class="checkbox-other">MRSS
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+
+
+                            <label class="checkbox-other">HTML (on graphic template)
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+                            <label class="checkbox-other">RSS
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+                            <input type="text" name="name" class="base-input" placeholder="Other">
+                        </div>
+
+                        <div class="categories-title text-decoration">Player/Display Unit Info</div>
+                        <div class="input-row">
+                            <label for="currentCount">Current Player Count</label>
+                            <input type="text" id="currentCount" name="currentCount" class="base-input input-field" placeholder="# of Players *">
+                        </div>
+
+                        <div class="input-row">
+                            <label for="forecastCount">Forecast Player Count</label>
+                            <input type="text" id="forecastCount" name="forecastCount" class="base-input input-field" placeholder="# of Players *">
+                        </div>
+
+                        <div class="categories-label">Each Player Gets Data From?</div>
+                        <div class="check-list">
+                            <label class="checkbox-other">Our Servers
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+                            <label class="checkbox-other">Our Servers
+                                <input type="checkbox">
+                                <span class="check-style"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="small-descr mt-60">Please check the box and follow any instructions from reCAPTCHA</p>
+                <div class="g-recaptcha" data-sitekey="sitekey"></div>
+
+                <label class="checkbox-other mt-60">I agree to the Digichief <a href="#" class="categories-link">Terms and Conditions</a> | <a href="#" class="categories-link">Restrictions</a> | <a href="#" class="categories-link">Privacy Policy</a> |
+                    <input type="checkbox">
+                    <span class="check-style"></span>
+                </label>
+
+                <button type="submit" class="sign-up-button">Sign Up</button>
+
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-flex-container">
+            <ul class="footer-menu">
+                <li class="footer-item">
+                    <a href="need_help.html" class="footer-link">Need Help?</a>
+                </li>
+                <li class="footer-item">
+                    <a href="terms.html" class="footer-link">Terms and Conditions</a>
+                </li>
+                <li class="footer-item">
+                    <a href="restrictions.html" class="footer-link">Restrictions</a>
+                </li>
+            </ul>
+
+            <div class="footer-items">
+                <div class="footer-copyright">
+                    © 2021 Digichief LLC<br> All Rights Reserved
+                </div>
+                <a href="privacy_policy.html" class="footer-link">Privacy Policy</a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="#" class="footer-social-item">
+                    <span class="icon-facebook"></span>
+                </a>
+                <a href="#" class="footer-social-item">
+                    <span class="icon-linkedin2"></span>
+                </a>
+                <a href="#" class="footer-social-item">
+                    <span class="icon-vimeo"></span>
+                </a>
+                <a href="#" class="footer-social-item">
+                    <span class="icon-twitter"></span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src='https://www.google.com/recaptcha/api.js?hl=en'></script>
+</body>
+
+</html>

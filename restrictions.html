@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digichief</title>
+    <title>Restrictions</title>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -35,53 +35,56 @@
         </nav>
     </header>
 
-    <section class="alert">
-        <div class="alert-flex-container">
-            <div class="alert-descr">A field here so that we can put in messages if needed, usually this will not be here, width=800</div>
-            <div class="alert-descr">Area for future sub-menus if needed, program them</div>
+    <section class="base">
+        <div class="container">
+            <h1 class="mb-45">Restrictions | Terms of Use</h1>
+            <p>Subscriber acknowledges that certain restrictions or terms of use are imposed by Digichief’s content sources. Subscriber agrees to abide by all such restrictions and terms of use found at the links below and not to use the content in conjunction
+                with any product or service advertising that falls within one or more prohibited categories of advertising. Digichief reserves the right to change/update the terms of service as they become available. Please find content specific terms
+                of use below:</p>
+            <h3>SPORTS</h3>
+            <ul class="restrictions-list">
+                <li><a href="">General Terms of Use (10.25.19)</a></li>
+                <li><a href="">NFL (09.02.20)</a></li>
+                <li><a href="">MLB (09.02.20)</a></li>
+                <li><a href="">NBA (09.02.20)</a></li>
+                <li><a href="">NHL (09.02.20)</a></li>
+                <li><a href="">Player Profile Images (01.01.17)</a></li>
+                <li><a href="">Olympic Medal Counts (02.01.18)</a></li>
+                <li><a href="">NCAA Logo Images (02.26.18)</a></li>
+            </ul>
+
+            <h3 class="mt-25">NEWS</h3>
+            <ul class="restrictions-list">
+                <li><a href="">Headlines (01.01.17)</a></li>
+                <li><a href="">Soft News (01.01.17)</a></li>
+            </ul>
+
+            <h3 class="mt-25">FINANCIALS</h3>
+            <ul class="restrictions-list">
+                <li><a href="">Stocks and Indices (01.01.17)</a></li>
+            </ul>
+
+            <h3 class="mt-25">FLIGHTS</h3>
+            <ul class="restrictions-list">
+                <li><a href="">Arrivals and Departures (01.01.17)</a></li>
+            </ul>
+
+            <h3 class="mt-25">TRAFFIC</h3>
+            <ul class="restrictions-list">
+                <li><a href="">Maps, travel times, incidents (12.01.18)</a></li>
+            </ul>
+
+            <h3 class="mt-25">TRANSIT</h3>
+            <ul class="restrictions-list">
+                <li><a href="">Buses, subway, scooters (01.01.20)</a></li>
+            </ul>
+
+            <h3 class="mt-25">ALLERGY | FLU</h3>
+            <ul class="restrictions-list">
+                <li><a href="">Pollen, cold, cough, flu (10.01.19)</a></li>
+            </ul>
         </div>
     </section>
-
-    <div class="sidebar">
-        <div class="search-box">
-            <input class="search-input" type="text" placeholder="Search......">
-            <button class="search-btn">
-                <span class="icon-search"></span>
-            </button>
-        </div>
-
-        <a href="index.html" class="level-1"><span>Getting Started</span></a>
-        <a href="news.html" class="level-1"><span>News</span></a>
-        <a href="headlines_v1.html" class="level-2"><span>Headlines v1</span></a>
-        <a href="json_xml.html" class="level-3 active"><span>JSON | XML</span></a>
-        <a href="#" class="level-4"><span>Query Structure</span></a>
-        <a href="#" class="level-4"><span>Parameters</span></a>
-        <a href="#" class="level-4"><span>Data Points Returned</span></a>
-        <a href="#" class="level-3"><span>MRSS</span></a>
-        <a href="#" class="level-1">Weather</a>
-        <a href="#" class="level-1">Sports</a>
-        <a href="#" class="level-1">Odds</a>
-        <a href="#" class="level-1">Stats</a>
-        <a href="#" class="level-1">Lottery</a>
-        <a href="#" class="level-1">Financial</a>
-        <a href="#" class="level-1">Flights</a>
-        <a href="#" class="level-1">Traffic</a>
-        <a href="#" class="level-1">Transit</a>
-        <a href="#" class="level-1">Health</a>
-        <a href="#" class="level-1">Infotainment</a>
-        <a href="#" class="level-1">Images</a>
-        <a href="#" class="level-1">Video</a>
-    </div>
-
-    <div class="main-content">
-        <h1 class="main-title">Headlines v1</h1>
-        <h2 class="main-subtitle">JSON | XML</h2>
-        <div class="main-item fw-500">Query Structure</div>
-        <div class="main-descr">API Structure:</div>
-        <div class="main-format">https://api.digichief.com/news/getnews<span>{format}</span>/<span>{category}</span>/<span>{customer}</span>/<span>{customer_api_key}</span></div>
-
-        <div class="main-item fw-500">Parameters</div>
-    </div>
 
     <footer class="footer">
         <div class="footer-flex-container">
@@ -120,8 +123,7 @@
             </div>
         </div>
     </footer>
-
-    <script src="js/script.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js?hl=en'></script>
 </body>
 
 </html>
