@@ -77,12 +77,9 @@
     </div>
 
     <div class="main-content">
-        <h1 class="main-title">Headlines v1</h1>
-        <h2 class="main-subtitle">JSON | XML</h2>
         <div class="main-item fw-500">Query Structure</div>
-        <div class="main-descr">API Structure: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Update Frequency: 15 minutes</div>
-        <div class="main-format">https://api.digichief.com/news/getnews<span>{format}</span>/<span>{category}</span>/<span>{customer}</span>/<span>{customer_api_key}</span></div>
-
+        <div class="main-descr">API Structure: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Update Frequency: 15 minutes</div>
+        <div class="main-format">https://api.digichief.com/news/getnewsMRSS<span>{orientation}</span>/<span>{category}</span>/<span>{customer}</span>/<span>{customer_api_key}</span></div>
         <div class="main-item fw-500">Parameters</div>
         <table>
             <thead>
@@ -94,11 +91,11 @@
             <tbody>
                 <tr class="border-bottom">
                     <td>
-                        <p>format</p>
+                        <p>orientation</p>
                     </td>
                     <td>
-                        <p style="white-space: pre;">JSON &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="text-dark">Must be capitalized</span></p>
-                        <p>JSON &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="text-dark">Must be capitalized</span></p>
+                        <p>Landscape &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark">Must be capitalized</span></p>
+                        <p>Portrait &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark">Must be capitalized</span></p>
                     </td>
                 </tr>
                 <tr class="border-bottom">
@@ -107,8 +104,8 @@
                     </td>
                     <td>
                         <p>All</p>
-                        <p>Top2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="text-dark ">Most recent 2 headlines in each category</span></p>
-                        <p>Top1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="text-dark ">Most recent headline in each category</span></p>
+                        <p>Top2 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark ">Most recent 2 headlines in each category</span></p>
+                        <p>Top1 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark ">Most recent headline in each category</span></p>
                         <p>Business</p>
                         <p>Entertainment</p>
                         <p>General</p>
@@ -151,52 +148,52 @@
             <tbody>
                 <tr>
                     <td>
-                        <p class="text-dark ">advisorydata</p>
-                        <p class="text-dark ml-16 ">datetime</p>
-                        <p class="text-dark ml-16 ">datasource</p>
-                        <p class="text-dark ml-16 ">News [Array]</p>
-                        <p class="text-dark ml-30 ">category</p>
+                        <p class="text-dark ">?xml version</p>
+                        <p class="text-dark">rss xmlns</p>
+                        <p class="text-dark">Channel</p>
+                        <p class="text-dark ml-16 ">title</p>
+                        <p class="text-dark ml-16 ">atom link</p>
+                        <p class="text-dark ml-16 ">description</p>
+                        <p class="text-dark ml-16 ">link</p>
+                        <p class="text-dark ml-16 ">docs</p>
+                        <p class="text-dark ml-16 ">generator</p>
+                        <p class="text-dark ml-16 ">language</p>
+                        <p class="text-dark ml-16 ">pubDate</p>
+                        <p class="text-dark ml-16 ">lastBuildDate</p>
+                        <p class="text-dark ml-16 ">Item [Array]</p>
                         <p class="text-dark ml-30 ">title</p>
                         <p class="text-dark ml-30 ">description</p>
-                        <p class="text-dark ml-30 ">subcategory</p>
-                        <p class="text-dark ml-30 ">abstract</p>
-                        <p class="text-dark ml-30 ">story</p>
-                        <p class="text-dark ml-30 ">image_800x600</p>
-                        <p class="text-dark ml-30 ">image_1280x720</p>
-                        <p class="text-dark ml-30 ">image_1920x1080</p>
-                        <p class="text-dark ml-30 ">image_1080x1920</p>
-                        <p class="text-dark ml-30 ">image_720x1080</p>
-                        <p class="text-dark ml-30 ">image_600x800</p>
-                        <p class="text-dark ml-30 ">image_800x600_caption</p>
-                        <p class="text-dark ml-30 ">image_1280x720_caption</p>
-                        <p class="text-dark ml-30 ">image_1920x1080_caption</p>
-                        <p class="text-dark ml-30 ">image_1080x1920_caption</p>
-                        <p class="text-dark ml-30 ">image_720x1080_caption</p>
-                        <p class="text-dark ml-30 ">image_600x800_caption</p>
+                        <p class="text-dark ml-30 ">pubDate</p>
+                        <p class="text-dark ml-30 ">link</p>
+                        <p class="text-dark ml-30 ">guid</p>
+                        <p class="text-dark ml-30 ">category</p>
+                        <p class="text-dark ml-30 ">enclosure url</p>
+                        <p class="text-dark ml-30 ">media:content</p>
+                        <p class="text-dark ml-30 ">media:description</p>
                     </td>
                     <td>
-                        <p class="text-dark ">Top Level</p>
-                        <p class="text-dark ">Date/time file was updated</p>
-                        <p class="text-dark ">Digichief Data Source</p>
+                        <p class="text-dark ">XML version and encoding</p>
+                        <p class="text-dark ">Mandatory field for MRSS validation</p>
+                        <p class="text-dark ">Mandatory field for MRSS validation</p>
+                        <p class="text-dark ">Mandatory field for MRSS validation</p>
+                        <p class="text-dark ">Mandatory field for MRSS validation</p>
+                        <p class="text-dark ">Mandatory field for MRSS validation</p>
+                        <p class="text-dark ">Mandatory field for MRSS validation</p>
+                        <p class="text-dark ">Mandatory field for MRSS validation</p>
+                        <p class="text-dark ">Mandatory field for MRSS validation</p>
+                        <p class="text-dark ">en=English</p>
+                        <p class="text-dark ">Item array publish date</p>
+                        <p class="text-dark ">Mandatory field for MRSS validation</p>
                         <br>
-                        <p class="text-dark ">Category of news from parameters</p>
                         <p class="text-dark ">Title of headline</p>
                         <p class="text-dark ">Shortened headline for compact display</p>
-                        <p class="text-dark ">Indicates geographic location of the headline, i.e., US, EU, etc.</p>
-                        <p class="text-dark ">Longer version of headline that is more indepth</p>
-                        <p class="text-dark ">Link to the entire story that is even longer than the abstract</p>
-                        <p class="text-dark ">Story image in 800x600 pixel format with no caption</p>
-                        <p class="text-dark ">Story image in 1280x720 pixel format with no caption</p>
-                        <p class="text-dark ">Story image in 1920x1080 pixel format with no caption</p>
-                        <p class="text-dark ">Story image in 1080x1920 pixel format with no caption</p>
-                        <p class="text-dark ">Story image in 720x1080 pixel format with no caption</p>
-                        <p class="text-dark ">Story image in 600x800 pixel format with no caption</p>
-                        <p class="text-dark ">Story image in 800x600 pixel format with caption</p>
-                        <p class="text-dark ">Story image in 1280x720 pixel format with caption</p>
-                        <p class="text-dark ">Story image in 1920x1080 pixel format with caption</p>
-                        <p class="text-dark ">Story image in 1080x1920 pixel format with caption</p>
-                        <p class="text-dark ">Story image in 720x1080 pixel format with caption</p>
-                        <p class="text-dark ">Story image in 600x800 pixel format with caption</p>
+                        <p class="text-dark ">Individual item publish date</p>
+                        <p class="text-dark ">Link to the entire story</p>
+                        <p class="text-dark ">Mandatory field for MRSS validation</p>
+                        <p class="text-dark ">Category of news from parameters</p>
+                        <p class="text-dark ">URL for media</p>
+                        <p class="text-dark ">URL for media</p>
+                        <p class="text-dark ">Media description</p>
                     </td>
                 </tr>
             </tbody>
