@@ -41,29 +41,43 @@
             <div class="subtitle">Please provide the information below and we will setup an account for your and provide a Trial API Key for your the content you select below.</div>
 
             <form class="main-form" action="#">
-                <label for="email" class="mb-0">Email *</label>
+                <label for="email" class="mb-0">Email
+                    <span class="required" aria-hidden="true">*</span>
+                </label>
                 <div class="small-label">Your email will also become your Username. We will provide you with your initial password that you can change in your account settings.</div>
                 <input type="email" id="email" name="email">
 
-                <label for="firstName">First Name *</label>
+                <label for="firstName">First Name
+                    <span class="required" aria-hidden="true">*</span>
+                </label>
                 <input type="text" id="firstName" name="firstName">
 
-                <label for="lastName">Last Name *</label>
+                <label for="lastName">Last Name
+                    <span class="required" aria-hidden="true">*</span>
+                </label>
                 <input type="text" id="lastName" name="lastName">
 
                 <label for="title">Title</label>
                 <input type="text" id="title" name="title">
 
-                <label for="phone">Phone *</label>
+                <label for="phone">Phone
+                    <span class="required" aria-hidden="true">*</span>
+                </label>
                 <input type="number" id="phone" name="phone">
 
-                <label for="company">Company *</label>
+                <label for="company">Company
+                    <span class="required" aria-hidden="true">*</span>
+                </label>
                 <input type="text" id="company" name="company">
 
-                <label for="companyWebsite">Company Website *</label>
+                <label for="companyWebsite">Company Website
+                    <span class="required" aria-hidden="true">*</span>
+                </label>
                 <input type="text" id="companyWebsite" name="companyWebsite">
 
-                <label for="industry">Industry *</label>
+                <label for="industry">Industry
+                    <span class="required" aria-hidden="true">*</span>
+                </label>
                 <select id="industry" name="industry">
                     <option selected disabled>Please choose an industry ...</option>
                     <option value="advertising">Advertising</option>
@@ -84,7 +98,9 @@
                     <option value="transportation">Transportation | Airports - Bus - Subway - Other</option>
                 </select>
 
-                <label for="findUs">How did you find us? *</label>
+                <label for="findUs">How did you find us?
+                    <span class="required" aria-hidden="true">*</span>
+                </label>
                 <select id="findUs" name="findUs">
                     <option selected disabled>Please choose one ...</option>
                     <option value="media">Social Media</option>
