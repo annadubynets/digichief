@@ -54,6 +54,10 @@
     margin-left: 30px;
 }
 
+.ml-45 {
+    margin-left: 45px;
+}
+
 .text-decoration {
     text-decoration: underline;
 }
@@ -751,4 +755,46 @@ option {
     font-size: 14px;
     color: #000;
     text-decoration: none;
+}
+
+table {
+    width: 832px;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th {
+    background: #000;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 20px;
+    padding: 5px 30px;
+    text-align: start;
+}
+
+td {
+    background: #D1CDCD;
+    padding: 10px;
+    text-align: start;
+    border-right: 10px solid white;
+    vertical-align: top;
+}
+
+td p {
+    color: #FF4401;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 6px 0;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #FF4401;
+}
+
+.text-dark {
+    color: #000;
+}
+
+td:nth-child(2) {
+    border-right: none;
 }
