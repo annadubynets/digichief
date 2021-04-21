@@ -14,23 +14,25 @@
 <body>
     <header class="header">
         <nav>
-            <div class="header-flex-container">
-                <div class="header-logo">
-                    <a href="index.html">
-                        <img src="icons/digichief_logo.png" alt="logo">
-                    </a>
-                </div>
+            <div class="container">
+                <div class="header-flex-container">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="icons/digichief_logo.png" alt="logo">
+                        </a>
+                    </div>
 
-                <ul class="menu">
-                    <li class="menu-item"><a href="index.html" class="menu-link">API Documentation</a></li>
-                    <li class="menu-item"><a href="sign_up.html" class="menu-link">Sign Up</a></li>
-                    <li class="menu-item"><a href="contact.html" class="menu-link">Contact</a></li>
-                </ul>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="index.html" class="menu-link">API Documentation</a></li>
+                        <li class="menu-item"><a href="sign_up.html" class="menu-link">Sign Up</a></li>
+                        <li class="menu-item"><a href="contact.html" class="menu-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </nav>
     </header>
@@ -38,7 +40,7 @@
     <section class="base">
         <div class="container">
             <h1>Sign Up for an Account</h1>
-            <div class="subtitle">Please provide the information below and we will setup an account for your and provide a Trial API Key for your the content you select below.</div>
+            <div class="subtitle">Please provide the information below and we will setup an account for you and provide a Trial API Key for the content you selected.</div>
 
             <form class="main-form" action="#">
                 <label for="email" class="mb-0">Email
@@ -210,12 +212,12 @@
                         <div class="categories-title text-decoration">Player/Display Unit Info</div>
                         <div class="input-row">
                             <label for="currentCount">Current Player Count</label>
-                            <input type="text" id="currentCount" name="currentCount" class="base-input input-field" placeholder="# of Players *">
+                            <input type="text" id="currentCount" name="currentCount" class="base-input input-field mb-0" placeholder="# of Players *">
                         </div>
 
                         <div class="input-row">
                             <label for="forecastCount">Forecast Player Count</label>
-                            <input type="text" id="forecastCount" name="forecastCount" class="base-input input-field" placeholder="# of Players *">
+                            <input type="text" id="forecastCount" name="forecastCount" class="base-input input-field mb-0" placeholder="# of Players *">
                         </div>
 
                         <div class="categories-label">Each Player Gets Data From?</div>
@@ -241,49 +243,49 @@
                 </label>
 
                 <button type="submit" class="sign-up-button">Sign Up</button>
-
             </form>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="footer-flex-container">
-            <ul class="footer-menu">
-                <li class="footer-item">
-                    <a href="need_help.html" class="footer-link">Need Help?</a>
-                </li>
-                <li class="footer-item">
-                    <a href="terms.html" class="footer-link">Terms and Conditions</a>
-                </li>
-                <li class="footer-item">
-                    <a href="restrictions.html" class="footer-link">Restrictions</a>
-                </li>
-            </ul>
+        <div class="container">
+            <div class="footer-flex-container">
+                <ul class="footer-menu">
+                    <li class="footer-item">
+                        <a href="need_help.html" class="footer-link">Need Help?</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="terms.html" class="footer-link">Terms and Conditions</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="restrictions.html" class="footer-link">Restrictions</a>
+                    </li>
+                </ul>
 
-            <div class="footer-items">
-                <div class="footer-copyright">
-                    © 2021 Digichief LLC<br> All Rights Reserved
+                <div class="footer-items">
+                    <div class="footer-copyright">
+                        © 2021 Digichief LLC<br> All Rights Reserved
+                    </div>
+                    <a href="privacy_policy.html" class="footer-link">Privacy Policy</a>
                 </div>
-                <a href="privacy_policy.html" class="footer-link">Privacy Policy</a>
-            </div>
 
-            <div class="footer-socials">
-                <a href="#" class="footer-social-item">
-                    <span class="icon-facebook"></span>
-                </a>
-                <a href="#" class="footer-social-item">
-                    <span class="icon-linkedin2"></span>
-                </a>
-                <a href="#" class="footer-social-item">
-                    <span class="icon-vimeo"></span>
-                </a>
-                <a href="#" class="footer-social-item">
-                    <span class="icon-twitter"></span>
-                </a>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/digichief?ref=hl" target="_blank" class="footer-social-item">
+                        <span class="icon-facebook"></span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/digichief-content-feed" target="_blank" class="footer-social-item">
+                        <span class="icon-linkedin2"></span>
+                    </a>
+                    <a href="http://vimeo.com/digichief" target="_blank" class="footer-social-item">
+                        <span class="icon-vimeo"></span>
+                    </a>
+                    <a href="https://twitter.com/DIGI_TWEETS" target="_blank" class="footer-social-item">
+                        <span class="icon-twitter"></span>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
-
 
     <script src='https://www.google.com/recaptcha/api.js?hl=en'></script>
 </body>
