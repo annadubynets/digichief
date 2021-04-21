@@ -46,7 +46,7 @@
                 <label for="name">Name
                     <span class="required" aria-hidden="true">*</span>
                 </label>
-                <input required type="text" id="name" name="name">
+                <input type="text" id="name" name="name">
 
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username">
@@ -54,21 +54,22 @@
                 <label for="email">Email
                     <span class="required" aria-hidden="true">*</span>
                 </label>
-                <input required type="email" id="email" name="email">
+                <input type="email" id="email" name="email">
 
                 <label for="company">Company
                     <span class="required" aria-hidden="true">*</span>
                 </label>
-                <input required type="text" id="company" name="company">
+                <input type="text" id="company" name="company">
 
                 <label for="category">Content Category
                     <span class="required" aria-hidden="true">*</span>
                 </label>
-                <input required type="text" id="category" name="category">
+                <input type="text" id="category" name="category">
 
                 <label class="mt-60 mb-30">What do you need assistance with?
                     <span class="required" aria-hidden="true">*</span>
                 </label>
+
                 <label for="keys" class="form-radio">API Keys
                     <input type="radio" name="radio" id="keys">
                     <span class="checkmark"></span>
@@ -78,14 +79,18 @@
                     <input type="radio" name="radio" id="assistance">
                     <span class="checkmark"></span>
                 </label>
+
                 <label for="sales" class="form-radio">Sales
                     <input type="radio" name="radio" id="sales">
                     <span class="checkmark"></span>
                 </label>
+
                 <label for="other" class="form-radio">Other
                     <input type="radio" name="radio" id="other">
                     <span class="checkmark"></span>
                 </label>
+
+                <span class="assistance-error"></span>
 
                 <label class="mt-60">Message: Describe what you need assistance with.</label>
                 <textarea></textarea>
