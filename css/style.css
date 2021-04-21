@@ -162,6 +162,11 @@ nav {
     padding: 9px 24px;
     width: 100%;
     z-index: 1000;
+    display: none;
+}
+
+.alert.show {
+    display: block;
 }
 
 .alert-flex-container {
@@ -752,22 +757,6 @@ option {
     text-decoration: none;
 }
 
-.restrictions-list {
-    list-style-type: none;
-    margin-left: 30px;
-}
-
-.restrictions-list li {
-    margin-bottom: 10px;
-}
-
-.restrictions-list li a {
-    font-weight: 500;
-    font-size: 14px;
-    color: #000;
-    text-decoration: none;
-}
-
 table {
     width: 832px;
     border-collapse: collapse;
@@ -808,4 +797,45 @@ td p {
 
 td:nth-child(2) {
     border-right: none;
+}
+
+.accordion {
+    max-width: 1366px;
+    margin: 10px auto 0;
+}
+
+.accordion-item {
+    margin-bottom: 5px;
+}
+
+.accordion-title {
+    padding-left: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+}
+
+.accordion::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    width: 1em;
+    height: 1em;
+    transition: transform 0.3s ease-in;
+}
+
+.accordion-body {
+    border-radius: 5px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+.accordion-content {
+    padding-left: 60px;
+    margin-top: 15px;
 }
