@@ -829,13 +829,28 @@ td:nth-child(2) {
 }
 
 .accordion-body {
-    border-radius: 5px;
     height: 0;
     overflow: hidden;
     transition: height 0.3s ease-in-out;
 }
 
 .accordion-content {
-    padding-left: 60px;
-    margin-top: 15px;
+    padding: 10px 16px;
+    margin: 15px 0 25px 30px;
+    border: 1px solid #000000;
+}
+
+.accordion-content p {
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+}
+
+.text-indent-10 {
+    text-indent: 10px;
+}
+
+.text-indent-30 {
+    text-indent: 30px;
 }
