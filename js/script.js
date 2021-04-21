@@ -1,0 +1,2 @@
+$("#needHelpForm").validate();
+$("#signUpForm").validate();

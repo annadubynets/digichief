@@ -144,7 +144,7 @@ nav {
     width: 0;
     height: 2px;
     background-color: #FF4401;
-    transition: width 0.3s ease-out;
+    transition: 0.3s ease-out;
 }
 
 .menu-link:hover::after,
@@ -209,7 +209,7 @@ nav {
     width: 0;
     height: 2px;
     background-color: #FF4401;
-    transition: width 0.3s ease-out;
+    transition: 0.3s ease-out;
 }
 
 .level-1 span:hover::after,

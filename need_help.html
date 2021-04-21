@@ -42,11 +42,11 @@
             <h1>Need Help?</h1>
             <div class="subtitle">Contact us using the form below:</div>
 
-            <form class="main-form" action="#">
+            <form id="needHelpForm" class="main-form" action="#">
                 <label for="name">Name
                     <span class="required" aria-hidden="true">*</span>
                 </label>
-                <input type="text" id="name" name="name">
+                <input required type="text" id="name" name="name">
 
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username">
@@ -54,17 +54,17 @@
                 <label for="email">Email
                     <span class="required" aria-hidden="true">*</span>
                 </label>
-                <input type="email" id="email" name="email">
+                <input required type="email" id="email" name="email">
 
                 <label for="company">Company
                     <span class="required" aria-hidden="true">*</span>
                 </label>
-                <input type="text" id="company" name="company">
+                <input required type="text" id="company" name="company">
 
                 <label for="category">Content Category
                     <span class="required" aria-hidden="true">*</span>
                 </label>
-                <input type="text" id="category" name="category">
+                <input required type="text" id="category" name="category">
 
                 <label class="mt-60 mb-30">What do you need assistance with?
                     <span class="required" aria-hidden="true">*</span>
@@ -90,7 +90,7 @@
                 <label class="mt-60">Message: Describe what you need assistance with.</label>
                 <textarea></textarea>
 
-                <button type="submit" class="sign-up-button">Submit</button>
+                <button class="button sign-up-button">Submit</button>
             </form>
         </div>
     </section>
@@ -134,6 +134,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
