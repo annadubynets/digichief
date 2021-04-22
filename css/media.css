@@ -2,6 +2,9 @@
     .categories-flex-container {
         flex-direction: column;
     }
+    .main-content {
+        width: 62%;
+    }
 }
 
 @media (max-width: 992px) {
@@ -70,7 +73,7 @@
     .sidebar a {
         float: left;
     }
-    div.main-content {
+    .main-content {
         margin-left: 0;
         width: 100%;
     }
@@ -97,5 +100,14 @@
     }
     .xs-visible {
         display: block;
+    }
+    dl {
+        font-size: 16px;
+    }
+    dl::after {
+        display: none;
+    }
+    dd {
+        margin: 10px 0 10px 140px;
     }
 }

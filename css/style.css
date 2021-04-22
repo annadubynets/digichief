@@ -711,19 +711,14 @@ option {
     min-height: 1400px;
 }
 
-.contact-flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+dl {
+    font-weight: 500;
+    font-size: 24px;
+    color: #000;
     position: relative;
 }
 
-.contact-float-left,
-.contact-float-right {
-    margin-right: 87px;
-}
-
-.contact-float-left::after {
+dl::after {
     content: "";
     display: block;
     height: 224px;
@@ -734,30 +729,16 @@ option {
     left: 206px;
 }
 
-.contact-item {
-    display: flex;
-    flex-direction: column;
-    margin-right: 70px;
-    margin-bottom: 60px;
+dt {
+    float: left;
 }
 
-.contact-list {
-    list-style-type: none;
+dd {
+    margin: 10px 0 10px 256px;
 }
 
-.contact-list li {
-    font-weight: 500;
-    font-size: 24px;
+dd a {
     color: #000;
-    margin-bottom: 10px;
-}
-
-.contact-list li a {
-    font-weight: 500;
-    font-size: 24px;
-    color: #000;
-    margin-bottom: 10px;
-    text-decoration: none;
 }
 
 table {
