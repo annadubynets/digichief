@@ -194,6 +194,12 @@ nav {
     padding-bottom: 767px;
 }
 
+.main-content {
+    margin-left: 450px;
+    padding: 76px 0 227px;
+    width: 60%;
+}
+
 .sidebar a {
     padding: 7px 24px;
     text-decoration: none;
@@ -322,12 +328,6 @@ nav {
 .search-btn:focus {
     outline: none;
     color: black;
-}
-
-.main-content {
-    margin-left: 450px;
-    margin-right: 130px;
-    padding: 76px 0 227px;
 }
 
 .main-title {
@@ -822,6 +822,23 @@ td:nth-child(2) {
     font-weight: 500;
     font-size: 14px;
     color: #000000;
+    position: relative;
+    display: inline-block;
+}
+
+.accordion-title:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #FF4401;
+    transition: 0.5s ease-out;
+}
+
+.accordion-title:hover::after,
+.accordion-title.active::after {
+    width: 85%;
 }
 
 .accordion::after {
