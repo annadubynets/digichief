@@ -763,6 +763,10 @@ table {
     margin: 20px 0;
 }
 
+tr {
+    border-bottom: 1px solid #D1CDCD;
+}
+
 th {
     background: #000;
     color: #FFFFFF;
@@ -774,9 +778,9 @@ th {
 
 td {
     background: #D1CDCD;
-    padding: 10px;
+    padding: 8px;
     text-align: start;
-    border-right: 10px solid white;
+    border-right: 20px solid white;
     vertical-align: top;
 }
 
@@ -785,6 +789,10 @@ td p {
     font-weight: normal;
     font-size: 16px;
     padding: 6px 0;
+}
+
+.p-0 {
+    padding: 0;
 }
 
 .border-bottom {
