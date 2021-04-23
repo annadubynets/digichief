@@ -100,7 +100,7 @@
     .main-content {
         margin-left: 60px;
         width: calc(100% - 60px);
-        padding: 90px 16px 227px;
+        padding: 10px 16px 120px;
     }
     .alert-flex-container {
         flex-direction: column;

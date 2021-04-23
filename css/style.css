@@ -198,7 +198,7 @@ nav {
     left: 0;
     background-color: #D1CDCD;
     overflow-x: hidden;
-    padding-top: 140px;
+    padding-top: 80px;
     padding-bottom: 767px;
 }
 
@@ -211,7 +211,7 @@ nav {
 
 .main-content {
     margin-left: 430px;
-    padding: 80px 16px 227px;
+    padding: 30px 16px 227px;
     width: 65%;
     height: 100%;
     box-sizing: border-box;
