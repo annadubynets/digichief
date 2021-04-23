@@ -191,7 +191,7 @@ nav {
 
 .sidebar {
     height: 100%;
-    width: 402px;
+    width: auto;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -202,10 +202,26 @@ nav {
     padding-bottom: 767px;
 }
 
+.sidebar-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 35px 10px;
+}
+
 .main-content {
-    margin-left: 450px;
-    padding: 76px 16px 227px;
-    width: 60%;
+    margin-left: 430px;
+    padding: 80px 16px 227px;
+    width: 65%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.main-content .content {
+    box-sizing: border-box;
+    padding-left: 60px;
+    width: 100%;
 }
 
 .sidebar a {
@@ -291,12 +307,10 @@ nav {
     bottom: 0;
     left: 0;
     right: 0;
-    margin-left: 24px;
-    margin-bottom: 35px;
 }
 
 .search-input {
-    width: 100%;
+    width: auto;
     font-weight: normal;
     font-size: 22px;
     padding: 7px 45px 7px 10px;
