@@ -407,11 +407,26 @@ nav {
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
+    text-decoration: none;
+    position: relative;
+}
+
+.footer-link:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    left: 0;
+    height: 1px;
+    background-color: #FF4401;
+    transition: 0.3s ease-out;
+}
+
+.footer-link:hover:after {
+    width: 100%;
 }
 
 .footer-items {
-    display: flex;
-    flex-direction: column;
     text-align: center;
 }
 
@@ -554,8 +569,8 @@ textarea {
 .form-radio .checkmark:after {
     top: 9px;
     left: 9px;
-    width: 8px;
-    height: 8px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background: white;
 }
@@ -751,7 +766,7 @@ dd {
     display: block;
     position: absolute;
     width: 0;
-    height: 2px;
+    height: 1px;
     background-color: #FF4401;
     transition: 0.3s ease-out;
 }
@@ -820,13 +835,13 @@ td:nth-child(2) {
 }
 
 .accordion-title {
-    padding-left: 30px;
     cursor: pointer;
     font-weight: 500;
     font-size: 14px;
     color: #000000;
     position: relative;
     display: inline-block;
+    padding: 0;
 }
 
 .accordion-title:after {
@@ -837,11 +852,11 @@ td:nth-child(2) {
     height: 1px;
     background-color: #FF4401;
     transition: 0.5s ease-out;
+    padding: 0;
 }
 
-.accordion-title:hover::after,
-.accordion-title.active::after {
-    width: 85%;
+.accordion-title:hover::after {
+    width: 100%;
 }
 
 .accordion::after {
