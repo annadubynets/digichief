@@ -608,11 +608,28 @@ option {
 }
 
 .categories-left-block {
+    display: flex;
+    flex-direction: column;
     padding-right: 60px;
+    width: 360px;
 }
 
-.check-list {
-    column-count: 2;
+.categories-right-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.categories-left-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 360px;
+}
+
+.categories-right-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .checkbox-other {
