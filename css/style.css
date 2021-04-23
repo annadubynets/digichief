@@ -739,8 +739,25 @@ dd {
     margin: 10px 0 10px 256px;
 }
 
-dd a {
+.contact-link {
     color: #000;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.contact-link span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #FF4401;
+    transition: 0.3s ease-out;
+}
+
+.contact-link span:hover:after {
+    width: 100%;
 }
 
 table {
