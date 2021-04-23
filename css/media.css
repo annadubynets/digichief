@@ -82,14 +82,15 @@
         border-radius: 3px;
         display: block;
         position: relative;
-        padding: 10px 7px;
-        float: right;
+        padding: 10px;
+        height: 34px;
+        align-self: center;
     }
     #sidebar-toggle .bar {
         display: block;
         width: 18px;
         margin-bottom: 3px;
-        height: 2px;
+        height: 3px;
         background-color: #fff;
         border-radius: 1px;
     }
