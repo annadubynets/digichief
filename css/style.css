@@ -884,7 +884,7 @@ td:nth-child(2) {
 }
 
 .accordion-content p {
-    font-weight: 100;
+    font-weight: normal;
     font-size: 12px;
     line-height: 14px;
     color: #000;
