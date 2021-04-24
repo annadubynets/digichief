@@ -191,7 +191,7 @@ nav {
 
 .sidebar {
     height: 100%;
-    width: auto;
+    width: 340px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -214,18 +214,12 @@ nav {
 }
 
 .main-content {
-    margin-left: 430px;
+    margin-left: 380px;
     padding: 30px 16px 227px;
     width: 65%;
     height: 100%;
     box-sizing: border-box;
     position: relative;
-}
-
-.main-content .content {
-    box-sizing: border-box;
-    padding-left: 60px;
-    width: 100%;
 }
 
 .sidebar a {
@@ -305,9 +299,8 @@ nav {
 }
 
 .search-box {
-    width: 330px;
+    width: auto;
     position: relative;
-    display: flex;
     bottom: 0;
     left: 0;
     right: 0;
