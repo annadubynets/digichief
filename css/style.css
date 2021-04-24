@@ -390,9 +390,28 @@ nav {
     color: #FF4401;
 }
 
-.main-descr a {
+.main-link {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
     color: #FF4401;
-    text-decoration: underline;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.main-link:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #FF4401;
+    transition: 0.3s ease-out;
+}
+
+.main-link:hover::after {
+    width: 100%;
 }
 
 .footer {

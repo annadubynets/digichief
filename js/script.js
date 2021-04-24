@@ -114,35 +114,6 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 })
 
-// var showMenu = (function() {
-
-//     var init = function() {
-//         _setUpListners();
-//     };
-
-//     var _setUpListners = function() {
-//         document.getElementById("sidebar-toggle").addEventListener("click", toogleMenu);
-
-//         function toogleMenu() {
-//             document.querySelector(".wrapper").classList.toggle("open-sidebar");
-//         };
-//     }
-
-//     return {
-//         init: init
-//     }
-// })();
-
-// function ready(fn) {
-//     if (document.readyState != 'loading') {
-//         fn();
-//     } else {
-//         document.addEventListener('DOMContentLoaded', fn);
-//     }
-// }
-
-// ready(showMenu.init);
-
 $(function() {
     $('#sidebar-toggle').on('click', function() {
         $('.sidebar').toggleClass('show');
