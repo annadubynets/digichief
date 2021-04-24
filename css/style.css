@@ -483,6 +483,10 @@ nav {
     padding-right: 10px;
 }
 
+.footer-social-item:hover {
+    color: #FF4401;
+}
+
 .news-link {
     font-weight: normal;
     font-size: 28px;
