@@ -206,7 +206,11 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 35px 10px;
+    margin: 35px 5px;
+}
+
+#sidebar-toggle {
+    display: none;
 }
 
 .main-content {
@@ -310,7 +314,7 @@ nav {
 }
 
 .search-input {
-    width: auto;
+    width: auto!important;
     font-weight: normal;
     font-size: 22px;
     padding: 7px 45px 7px 10px;
@@ -351,6 +355,11 @@ nav {
     color: black;
 }
 
+.sidebar-icon {
+    font-size: 30px;
+    color: #FF4401;
+}
+
 .main-title {
     font-weight: 500;
     font-size: 34px;
@@ -384,6 +393,8 @@ nav {
     font-size: 18px;
     color: #000000;
     margin-top: 12px;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 .main-format span {
