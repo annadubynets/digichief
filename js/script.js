@@ -118,4 +118,29 @@ $(function() {
     $('#sidebar-toggle').on('click', function() {
         $('.sidebar').toggleClass('show');
     })
-})
+});
+
+/* ----------------- */
+/* Adaptive alert logic */
+/* ----------------- */
+
+$(function() {
+    var alert = $('.alert.show');
+    if (alert.length > 0) {
+        $( window ).resize(function() {
+            addContentPadding(alert.height());
+        });
+
+        addContentPadding(alert.height());
+    }
+
+    function addContentPadding(value) {
+        value = value || 0;
+        $(".sidebar").css("padding-top", (80 + value) + 'px');
+        $(".main-content").css("padding-top", (30 + value) + 'px');
+    }
+});
+
+
+
+/* ----------------- */
