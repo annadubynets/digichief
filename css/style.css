@@ -164,6 +164,11 @@ nav {
     width: 100%;
 }
 
+.menu .footer-item,
+.menu .footer-socials {
+    display: none;
+}
+
 .alert {
     position: fixed;
     background: #FF4401;
