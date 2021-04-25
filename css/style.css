@@ -50,6 +50,10 @@
     margin-top: 0!important;
 }
 
+.mt-8 {
+    margin-top: 8px;
+}
+
 .mb-0 {
     margin-bottom: 0!important;
 }
@@ -64,6 +68,10 @@
 
 .ml-45 {
     margin-left: 45px;
+}
+
+.pl-30 {
+    padding-left: 30px;
 }
 
 .text-decoration {
