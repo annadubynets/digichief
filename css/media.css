@@ -35,10 +35,13 @@
     .menu-link {
         font-size: 18px;
     }
+    nav {
+        padding: 0 16px;
+    }
     .hamburger {
         display: block;
         position: absolute;
-        right: 48px;
+        right: 16px;
         top: 50%;
         transform: translateY(-50%);
         width: 30px;
@@ -136,7 +139,7 @@
         line-height: 14px;
     }
     .footer {
-        padding: 0;
+        display: none;
     }
     .main-content {
         margin-right: 0;
