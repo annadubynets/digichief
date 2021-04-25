@@ -2,6 +2,8 @@
     .categories-flex-container {
         flex-direction: column;
     }
+
+    
 }
 
 @media (max-width: 992px) {
@@ -97,7 +99,11 @@
         display: block;
         position: relative;
         padding: 0 10px;
+        padding-top: 7px;
         align-self: center;
+    }
+    .sidebar.show #sidebar-toggle {
+        padding-top: 0px;
     }
     .main-content {
         margin-left: 60px;
@@ -152,5 +158,21 @@
     }
     dd {
         margin: 10px 0 10px 140px;
+    }
+
+    .search-input {
+        padding: 7px 30px 7px 10px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+    .main-content {
+        max-width: calc(1200px + 1vw);
+    }
+}
+
+@media (min-width: 1800px) {
+    .main-content {
+        max-width: calc(1200px + 10vw);
     }
 }
