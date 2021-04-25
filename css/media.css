@@ -212,7 +212,7 @@
         min-height: 30px;
     }
     td p {
-        padding: 0;
+        padding: 0 0 6px 0;
     }
     td .text-indent-30,
     td .text-indent-10 {
