@@ -2,8 +2,6 @@
     .categories-flex-container {
         flex-direction: column;
     }
-
-    
 }
 
 @media (max-width: 992px) {
@@ -138,7 +136,7 @@
         line-height: 14px;
     }
     .footer {
-        display: none;
+        padding: 0;
     }
     .main-content {
         margin-right: 0;
@@ -159,9 +157,63 @@
     dd {
         margin: 10px 0 10px 140px;
     }
-
     .search-input {
         padding: 7px 30px 7px 10px;
+    }
+    table.responsive-table thead {
+        display: none;
+    }
+    table.display th,
+    table.display td {
+        padding: .5em;
+    }
+    table.responsive-table td:nth-child(1):before {
+        content: 'Query Parameter';
+    }
+    table.responsive-table td:nth-child(2):before {
+        content: 'Parameter Options';
+    }
+    table.responsive-table td:nth-child(1),
+    table.responsive-table td:nth-child(2) {
+        padding-left: 50%;
+    }
+    table.responsive-table td:nth-child(1):before,
+    table.responsive-table td:nth-child(2):before {
+        position: absolute;
+        left: 4px;
+        font-weight: 500;
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+    table.responsive-table tr,
+    table.responsive-table td {
+        display: block;
+    }
+    table.responsive-table tr {
+        position: relative;
+        margin-bottom: 1em;
+        border-bottom: none!important;
+    }
+    table.responsive-table td {
+        border-top: none;
+    }
+    table.responsive-table td.actions {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background: none;
+    }
+    td {
+        border-right: none!important;
+        min-height: 30px;
+    }
+    td p {
+        padding: 0;
+    }
+    td .text-indent-30,
+    td .text-indent-10 {
+        text-indent: 0;
     }
 }
 

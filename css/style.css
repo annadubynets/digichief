@@ -387,6 +387,7 @@ nav {
     margin-top: 12px;
     flex-wrap: wrap;
     display: flex;
+    overflow-wrap: anywhere;
 }
 
 .main-format span {
@@ -849,6 +850,7 @@ td p {
     font-weight: normal;
     font-size: 16px;
     padding: 6px 0;
+    overflow-wrap: break-word;
 }
 
 .p-0 {
