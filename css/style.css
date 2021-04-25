@@ -463,7 +463,8 @@ nav {
     transition: 0.3s ease-out;
 }
 
-.footer-link:hover:after {
+.footer-link:hover:after,
+.footer-link.active::after {
     width: 100%;
 }
 
