@@ -228,6 +228,10 @@
     td .text-indent-10 {
         text-indent: 0;
     }
+    .menu-link:hover::after,
+    .footer-link:hover:after {
+        display: none;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1799px) {
