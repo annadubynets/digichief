@@ -204,7 +204,7 @@ nav {
 
 .sidebar {
     height: 100%;
-    min-width: auto;
+    min-width: 340px;
     position: fixed;
     z-index: 1;
     top: 0;

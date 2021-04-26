@@ -77,7 +77,7 @@
         transform: rotate(45deg);
     }
     .sidebar {
-        width: auto;
+        min-width: auto;
     }
     .sidebar .search-box,
     .sidebar a {
