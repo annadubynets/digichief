@@ -1,16 +1,16 @@
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
+    .menu-link {
+        font-size: 18px;
+    }
     .categories-flex-container {
         flex-direction: column;
     }
 }
 
-@media (max-width: 992px) {
-    .menu-link {
-        font-size: 18px;
-    }
-}
-
 @media screen and (max-width: 768px) {
+    .mt-16-responsive {
+        margin-top: 16px;
+    }
     .menu {
         position: fixed;
         flex-direction: column;
