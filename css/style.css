@@ -204,7 +204,7 @@ nav {
 
 .sidebar {
     height: 100%;
-    width: 340px;
+    width: auto;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -290,7 +290,7 @@ nav {
 .level-4 {
     background: #000000;
     color: #FFFFFF!important;
-    padding: 9px 0 9px 90px!important;
+    padding: 9px 30px 9px 90px!important;
 }
 
 .level-4:hover,
