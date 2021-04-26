@@ -290,7 +290,7 @@ nav {
 .level-4 {
     background: #000000;
     color: #FFFFFF!important;
-    padding: 9px 90px!important;
+    padding: 9px 0 9px 90px!important;
 }
 
 .level-4:hover,
