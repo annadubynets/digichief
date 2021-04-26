@@ -184,7 +184,7 @@
         content: 'Query Parameter';
     }
     table.responsive-table td:nth-child(2):before {
-        content: 'Parameter Options';
+        content: 'Description | Options';
     }
     table.responsive-table td:nth-child(1),
     table.responsive-table td:nth-child(2) {
