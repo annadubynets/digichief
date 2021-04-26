@@ -839,6 +839,7 @@ table {
 
 tr {
     border-bottom: 1px solid #D1CDCD;
+    min-width: calc(100vw - 100px);
 }
 
 th {
