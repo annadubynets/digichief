@@ -43,6 +43,7 @@ if ($("#signUpForm").length > 0) {
             companyWebsite: "required",
             industry: "required",
             findUs: "required",
+            termsAndConditions: "required",
         },
         messages: {
             email: {
@@ -56,6 +57,7 @@ if ($("#signUpForm").length > 0) {
             companyWebsite: "Company Website is required.",
             industry: "Please select an item in the list",
             findUs: "Please select an item in the list",
+            termsAndConditions: "Please indicate you agree with Terms and Conditions",
         }
     });
 }
@@ -120,9 +122,9 @@ $(function() {
     })
 });
 
-/* ----------------- */
+/* -------------------- */
 /* Adaptive alert logic */
-/* ----------------- */
+/* -------------------- */
 
 $(function() {
     var alert = $('.alert.show');
@@ -140,7 +142,5 @@ $(function() {
         $(".main-content").css("padding-top", (30 + value) + 'px');
     }
 });
-
-
 
 /* ----------------- */

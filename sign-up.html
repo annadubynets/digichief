@@ -76,7 +76,7 @@
             <h1>Sign Up for an Account</h1>
             <div class="subtitle">Please provide the information below and we will setup an account for you and provide a Trial API Key for the content you selected.</div>
 
-            <form id="signUpForm" class="main-form" action="#">
+            <form id="signUpForm" class="main-form" action="#" method="POST">
                 <label for="email" class="mb-0">Email
                     <span class="required" aria-hidden="true">*</span>
                 </label>
@@ -149,127 +149,127 @@
                 </select>
 
                 <div class="categories-flex-container">
-                    <div class="categories-left-block">
+                    <div class="categories-left-block categories-of-interest">
                         <label class="mt-60 text-decoration">Content Categories of Interest</label>
                         <p class="small-descr">(Check all that apply)</p>
                         <div class="categories-flex-wrapper">
                             <div class="categories-left-item">
                                 <label class="checkbox-other">Weather
-                                <input type="checkbox">
-                                <span class="check-style"></span>
+                                    <input name="interestWeather" type="checkbox">
+                                    <span class="check-style"></span>
                                 </label>
                                 <label class="checkbox-other">Sports
-                                    <input type="checkbox">
+                                    <input name="interestSports" type="checkbox">
                                     <span class="check-style"></span>
                                 </label>
                                 <label class="checkbox-other">News
-                                    <input type="checkbox">
+                                    <input name="interestNews" type="checkbox">
                                     <span class="check-style"></span>
                                 </label>
                                 <label class="checkbox-other">Financial
-                                    <input type="checkbox">
+                                    <input name="interestFinancial" type="checkbox">
                                     <span class="check-style"></span>
                                 </label>
                                 <label class="checkbox-other">Traffic
-                                    <input type="checkbox">
+                                    <input name="interestTraffic" type="checkbox">
                                     <span class="check-style"></span>
                                 </label>
                                 <label class="checkbox-other">Lottery
-                                    <input type="checkbox">
+                                    <input name="interestLottery" type="checkbox">
                                     <span class="check-style"></span>
                                 </label>
                                 <label class="checkbox-other">Flights
-                                    <input type="checkbox">
+                                    <input name="interestFlights" type="checkbox">
                                     <span class="check-style"></span>
                                 </label>
                                 <label class="checkbox-other">Videos
-                                    <input type="checkbox">
+                                    <input name="interestVideos" type="checkbox">
                                     <span class="check-style"></span>
                                 </label>
                             </div>
                             <div class="categories-left-item">
                                 <label class="checkbox-other">Betting Odds
-                                <input type="checkbox">
-                                <span class="check-style"></span>
+                                    <input name="interestBettingOdds" type="checkbox">
+                                    <span class="check-style"></span>
                                 </label>
                                 <label class="checkbox-other">Fantasy Stats
-                                    <input type="checkbox">
+                                    <input name="interestFantasyStars" type="checkbox">
                                     <span class="check-style"></span>
                                 </label>
                                 <label class="checkbox-other">Infotainment
-                                    <input type="checkbox">
+                                    <input name="interestInfotainment" type="checkbox">
                                     <span class="check-style"></span>
                                 </label>
                                 <label class="checkbox-other">Transit
-                                    <input type="checkbox">
+                                    <input name="interestTransit" type="checkbox">
                                     <span class="check-style"></span>
                                 </label>
                                 <label class="checkbox-other">Health
-                                    <input type="checkbox">
+                                    <input name="interestHealth" type="checkbox">
                                     <span class="check-style"></span>
                                 </label>
                                 <label class="checkbox-other">Images
-                                    <input type="checkbox">
+                                    <input name="interestImages" type="checkbox">
                                     <span class="check-style"></span>
                                 </label>
                                 <br>
-                                <input type="text" name="name" class="base-input mt-8" placeholder="Other">
+                                <input type="text" name="interestOther" class="base-input mt-8" placeholder="Other">
                             </div>
                         </div>
                     </div>
-                    <div class="categories-right-block mt-16-responsive">
+                    <div class="categories-right-block mt-16-responsive delivery-format">
                         <label class="mt-60 text-decoration mt-10-responsive">Delivery Format of Interest</label>
                         <p class="small-descr">(Check all that apply)</p>
                         <div class="categories-flex-wrapper">
                             <div class="categories-left-item">
                                 <label class="checkbox-other">JSON
-                                <input type="checkbox">
-                                <span class="check-style"></span>
-                            </label>
+                                    <input name='deliveryFormatJson' type="checkbox">
+                                    <span class="check-style"></span>
+                                </label>
                                 <label class="checkbox-other">XML
-                                <input type="checkbox">
-                                <span class="check-style"></span>
-                            </label>
+                                    <input name='deliveryFormatXml' type="checkbox">
+                                    <span class="check-style"></span>
+                                </label>
                                 <label class="checkbox-other">MRSS
-                                <input type="checkbox">
-                                <span class="check-style"></span>
-                            </label>
+                                    <input name='deliveryFormatMrss' type="checkbox">
+                                    <span class="check-style"></span>
+                                </label>
                             </div>
                             <div class="categories-left-itemk">
                                 <label class="checkbox-other">HTML (on graphic template)
-                                <input type="checkbox">
-                                <span class="check-style"></span>
-                            </label>
+                                    <input name='deliveryFormatHtml' type="checkbox">
+                                    <span class="check-style"></span>
+                                </label>
                                 <label class="checkbox-other">RSS
-                                <input type="checkbox">
-                                <span class="check-style"></span>
-                            </label>
-                                <input type="text" name="name" class="base-input" placeholder="Other">
+                                    <input  name='deliveryFormatRss' type="checkbox">
+                                    <span class="check-style"></span>
+                                </label>
+                                <input type="text" name="deliveryFormatOther" class="base-input" placeholder="Other">
                             </div>
                         </div>
 
                         <div class="categories-title text-decoration mt-16-responsive">Player/Display Unit Info</div>
                         <div class="input-row">
-                            <label for="currentCount">Current Player Count</label>
-                            <input type="text" id="currentCount" name="currentCount" class="base-input input-field mb-0 ml-30" placeholder="# of Players *">
+                            <label for="currentPlayerCount">Current Player Count</label>
+                            <input type="text" id="currentPlayerCount" name="currentPlayerCount" class="base-input input-field mb-0 ml-30" placeholder="# of Players *">
                         </div>
 
                         <div class="input-row">
-                            <label for="forecastCount">Forecasted Player Count</label>
-                            <input type="text" id="forecastCount" name="forecastCount" class="base-input input-field mb-0 ml-30" placeholder="# of Players *">
+                            <label for="forecastedPlayerCount">Forecasted Player Count</label>
+                            <input type="text" id="forecastedPlayerCount" name="forecastedPlayerCount" class="base-input input-field mb-0 ml-30" placeholder="# of Players *">
                         </div>
 
                         <div class="categories-label">Each Player Gets Data From?</div>
                         <div class="categories-flex-wrapper">
                             <div class="categories-left-item">
                                 <label class="checkbox-other">Our Servers
-                                    <input type="checkbox">
+                                    <input name="dataFromOurServers" type="checkbox">
                                     <span class="check-style"></span>
                                 </label>
                             </div>
                             <div class="categories-left-item">
                                 <label class="checkbox-other">Your Servers
-                                    <input type="checkbox">
+                                    <input name="dataFromYourServers" type="checkbox">
                                     <span class="check-style"></span>
                                 </label>
                             </div>
@@ -278,14 +278,14 @@
                 </div>
 
                 <p class="small-descr mt-60">Please check the box and follow any instructions from reCAPTCHA</p>
-                <div class="g-recaptcha" data-sitekey="6LdZ4rMaAAAAAIxQB8AoK-xzIisbhaPbzrVAVHjl"></div>
+                <div class="g-recaptcha" data-sitekey="6Lf8kMAaAAAAAOlo4g8yvqq8-kptADoG5r6jlT1L"></div>
 
                 <label class="checkbox-other fw-400 mt-60">I agree to the Digichief <a href="terms.html" class="categories-link">Terms and Conditions</a> | <a href="restrictions.html" class="categories-link">Restrictions</a> | <a href="privacy_policy.html" class="categories-link">Privacy Policy</a> |
-                    <input type="checkbox">
+                    <input type="checkbox" name="termsAndConditions" required>
                     <span class="check-style"></span>
                 </label>
 
-                <button class="button sign-up-button">Sign Up</button>
+                <button type="submit" class="button sign-up-button">Sign Up</button>
             </form>
         </div>
     </section>
@@ -334,6 +334,13 @@
     <script src='https://www.google.com/recaptcha/api.js?hl=en'></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/api-controller.js"></script>
+
+    <script>
+        $(function() {
+            $('#signUpForm').on('submit', SignUpController.submitHandler)
+        })
+    </script>
 </body>
 
 </html>
