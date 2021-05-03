@@ -14,9 +14,18 @@ var SignUpController = SignUpController || {}
 
 SignUpController.submitHandler = function(e) {
     e.preventDefault();
+    
 
     if ($(e.target).valid()) {
+
         var recaptchaCode = grecaptcha.getResponse();
+
+        if (!recaptchaCode) {
+            // TODO: alert user
+            return;
+        }
+        
+
         var formData = new FormData(e.target);
         var formDataValues = Object.fromEntries(formData.entries());
         console.log(formDataValues);

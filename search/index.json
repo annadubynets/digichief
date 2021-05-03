@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Overview",
+        "url": "/index.html",
+        "contentKeywords": "Digichief on-line API documentation developers Get API Key Sandbox FAQ",
+        "summary": "Welcome to Digichief on-line API documentation repository for developers..."
+    },
+    {
+        "title": "Get API Key",
+        "url": "/get-api-key.html",
+        "contentKeywords": "Get API Key call setup a trial key sign up api request higher number of requests",
+        "summary": "You will need an API key before you can access any of our content..."
+    },
+    {
+        "title": "Sandbox",
+        "url": "/sandbox.html",
+        "contentKeywords": "setup a Developer Sandbox for you to develop with for content",
+        "summary": "We have setup a Developer Sandbox for you to develop with for content that is seasonal and not being generated \"live\" at the current time..."
+    },
+    {
+        "title": "News API Documentation",
+        "url": "/news.html",
+        "contentKeywords": "Headlines api news documentation",
+        "summary": "News API Documentation..."
+    }
+]
+  
