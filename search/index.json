@@ -14,7 +14,7 @@
     {
         "title": "Sandbox",
         "url": "/sandbox.html",
-        "contentKeywords": "setup a Developer Sandbox for you to develop with for content",
+        "contentKeywords": "We have setup a Developer Sandbox for you to develop with for content that is seasonal and not being generated live at the current time. For example, if this is May and you want to design the look of your output for NFL, naturally NFL would not be in season at that time, so your query would return data from the Sandbox instead of live data. If there is a sandbox for a specific content category, it will be listed in the documentation for the API call format for that particular content category.",
         "summary": "We have setup a Developer Sandbox for you to develop with for content that is seasonal and not being generated \"live\" at the current time..."
     },
     {
