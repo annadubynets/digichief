@@ -1,36 +1,36 @@
 [{
         "title": "Overview",
-        "url": "/index.html",
+        "url": "./index.html",
         "contentKeywords": "Overview Welcome to Digichief's on-line API documentation repository for developers. You can use our APIs to access all of our content feeds if you have the appropriate authorization for your API key. You will find all of our content categories along the side navigation bar to the left. Once a main content category is selected, the navigation menu will expand revealing sub-categories for that main category. Get API Key You will need an API key before you can access any of our content. This key identifies your account and is required for any API calls. If you do not already have a key, please go to Sign up to setup a trial key. Sandbox We have setup a Developer Sandbox for you to develop with for content that is seasonal and not being generated live at the current time. For example, if this is May and you want to design the look of your output for NFL, naturally NFL would not be in season at that time, so your query would return data from the Sandbox instead of live data. If there is a sandbox for a specific content category, it will be listed in the documentation for the API call format for that particular content category. FAQ What is an API request? API stands for Application Programming Interface. It defines the kinds of requests (calls) that can be made, how to make them, the data formats that should be used, the conventions to follow, etc. How long does an API Trial Key last? API trial keys last for 14 days. How many requests can I make on the API Trial Key? An API trial key is content specific and is limited to 1,000 requests. Can I get a higher number of requests for the API Trial Key? Yes. If you need a higher number of requests, please contact sales@digichief.com and they will work with you. Will I be able to see all content within a category on the API Trial Key? Yes. We do not limit any data points on the trial key",
         "summary": "Welcome to Digichief on-line API documentation repository for developers..."
     },
     {
         "title": "Get API Key",
-        "url": "/get-api-key.html",
+        "url": "./get-api-key.html",
         "contentKeywords": "Get API Key call setup a trial key sign up api request higher number of requests",
         "summary": "You will need an API key before you can access any of our content..."
     },
     {
         "title": "Sandbox",
-        "url": "/sandbox.html",
+        "url": "./sandbox.html",
         "contentKeywords": "We have setup a Developer Sandbox for you to develop with for content that is seasonal and not being generated live at the current time. For example, if this is May and you want to design the look of your output for NFL, naturally NFL would not be in season at that time, so your query would return data from the Sandbox instead of live data. If there is a sandbox for a specific content category, it will be listed in the documentation for the API call format for that particular content category.",
         "summary": "We have setup a Developer Sandbox for you to develop with for content that is seasonal and not being generated \"live\" at the current time..."
     },
     {
         "title": "News API Documentation",
-        "url": "/news.html",
+        "url": "./news.html",
         "contentKeywords": "Headlines api news documentation",
         "summary": "News API Documentation..."
     },
     {
         "title": "Headlines v1",
-        "url": "/news-json.html",
+        "url": "./news-json.html",
         "contentKeywords": "Headlines v1 JSON XML Query Structure API Structure: Update Frequency 15 minutes Parameters Query Parameter Description Parameter Options format Must be capitalized category All Top2 Top1 Business Entertainment General Health International Political Science Strange Technology USHeadlines Most recent 2 headlines in each category Most recent headline in each category customer Digichief will give you an unique abbreviation for your company customer_api_key This is your company's unique API key that will be provided by Digichief Data Points Returned Data Point advisorydata datetime datasource News [Array] category title description subcategory abstract story image_800x600 image_1280x720 image_1920x1080 image_1080x1920 image_720x1080 image_600x800 image_800x600_caption image_1280x720_caption image_1920x1080_caption image_1080x1920_caption image_720x1080_caption image_600x800_caption Top Level Date/time file was updated Digichief Data Source Category of news from parameters Title of headline Shortened headline for compact display Indicates geographic location of the headline, i.e., US, EU, etc. Longer version of headline that is more indepth Link to the entire story that is even longer than the abstract Story image in 800x600 pixel format with no caption Story image in 1280x720 pixel format with no caption Story image in 1920x1080 pixel format with no caption Story image in 1080x1920 pixel format with no caption Story image in 720x1080 pixel format with no caption Story image in 600x800 pixel format with no caption Story image in 800x600 pixel format with caption Story image in 1280x720 pixel format with caption Story image in 1920x1080 pixel format with caption Story image in 1080x1920 pixel format with caption Story image in 720x1080 pixel format with caption Story image in 600x800 pixel format with caption",
         "summary": "News JSON | XML"
     },
     {
         "title": "Headlines v1",
-        "url": "/news-mrss.html",
+        "url": "./news-mrss.html",
         "contentKeywords": "MRSS orientation Landscape Portrait ?xml version rss xmlns Channel title atom link description link docs generator language pubDate lastBuildDate Item [Array] guid enclosure url media:content media:description XML version and encoding Mandatory field for MRSS validation en=English Item array publish date Title of headline Shortened headline for compact display Individual item publish date Link to the entire story Category of news from parameters URL for media Media description",
         "summary": "News MRSS"
     }
