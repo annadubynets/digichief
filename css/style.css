@@ -330,7 +330,6 @@ nav {
 }
 
 .search-input:focus {
-    border: none;
     outline: none;
     box-shadow: 0 1px 12px #b8c6db;
     -moz-box-shadow: 0 1px 12px #b8c6db;
@@ -346,6 +345,10 @@ nav {
     color: rgba(0, 0, 0, .5);
     transition: all .4s;
     z-index: 10;
+}
+
+.search-input-wide {
+    width: 98%!important;
 }
 
 .search-btn:hover {

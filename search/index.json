@@ -2,7 +2,7 @@
     {
         "title": "Overview",
         "url": "/index.html",
-        "contentKeywords": "Digichief on-line API documentation developers Get API Key Sandbox FAQ",
+        "contentKeywords": "Overview Welcome to Digichief's on-line API documentation repository for developers. You can use our APIs to access all of our content feeds if you have the appropriate authorization for your API key. You will find all of our content categories along the side navigation bar to the left. Once a main content category is selected, the navigation menu will expand revealing sub-categories for that main category. Get API Key You will need an API key before you can access any of our content. This key identifies your account and is required for any API calls. If you do not already have a key, please go to Sign up to setup a trial key. Sandbox We have setup a Developer Sandbox for you to develop with for content that is seasonal and not being generated live at the current time. For example, if this is May and you want to design the look of your output for NFL, naturally NFL would not be in season at that time, so your query would return data from the Sandbox instead of live data. If there is a sandbox for a specific content category, it will be listed in the documentation for the API call format for that particular content category. FAQ What is an API request? API stands for Application Programming Interface. It defines the kinds of requests (calls) that can be made, how to make them, the data formats that should be used, the conventions to follow, etc. How long does an API Trial Key last? API trial keys last for 14 days. How many requests can I make on the API Trial Key? An API trial key is content specific and is limited to 1,000 requests. Can I get a higher number of requests for the API Trial Key? Yes. If you need a higher number of requests, please contact sales@digichief.com and they will work with you. Will I be able to see all content within a category on the API Trial Key? Yes. We do not limit any data points on the trial key",
         "summary": "Welcome to Digichief on-line API documentation repository for developers..."
     },
     {
@@ -24,4 +24,3 @@
         "summary": "News API Documentation..."
     }
 ]
-  

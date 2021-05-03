@@ -10,23 +10,32 @@ SearchController.setup = function() {
 
     $('.search-btn').on('click', SearchController.handleSearchClick);
 
-    if ($('.search-container')) {
+    if (SearchController.isSearchPage()) {
         const urlParams = new URLSearchParams(window.location.search);
         const query = urlParams.get('query');
+        $('.search-input').val(query);
         SearchController.performSearch(query);
     }
-}
-
-SearchController.getSearchQuery = function() {
-    return $('.search-input').val();
 }
 
 SearchController.handleSearchClick = function(e) {
     e.preventDefault();
     var query = SearchController.getSearchQuery();
     if (query) {
-        window.location.href = "/search.html?query=" + query;
+        if (SearchController.isSearchPage()) {
+            SearchController.performSearch(query);
+        } else {
+            window.location.href = "/search.html?query=" + query;
+        }
     }
+}
+
+SearchController.isSearchPage = function() {
+    return $('.search-container').length > 0;
+}
+
+SearchController.getSearchQuery = function() {
+    return $('.search-input').val();
 }
 
 SearchController.performSearch = function(query) {
@@ -91,7 +100,13 @@ SearchController.renderSearchResult = function(query, result) {
 
     }
     $('.search-results').html(html);
-    $('.search-result-statistic').show();
+    if (query) {
+        $('.search-title').show();
+        $('.search-result-statistic').show();
+    } else {
+        $('.search-title').hide();
+        $('.search-result-statistic').hide();
+    }
 }
 
 $(function() {
