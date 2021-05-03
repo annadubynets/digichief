@@ -181,7 +181,7 @@
         padding: .5em;
     }
     table.responsive-table td:nth-child(1):before {
-        content: 'Query Parameter';
+        content: attr(data-title);
     }
     table.responsive-table td:nth-child(2):before {
         content: 'Description | Options';
