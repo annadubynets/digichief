@@ -25,7 +25,7 @@ SearchController.handleSearchClick = function(e) {
         if (SearchController.isSearchPage()) {
             SearchController.performSearch(query);
         } else {
-            window.location.href = "/search.html?query=" + query;
+            window.location.href = "./search.html?query=" + query;
         }
     }
 }
