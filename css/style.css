@@ -768,7 +768,7 @@ option {
     color: #FF4401;
 }
 
-.sign-up-button {
+.btn-primary {
     background: #FF4401;
     border: 1px solid #000000;
     border-radius: 15px;
@@ -958,4 +958,37 @@ td:nth-child(2) {
 
 .text-indent-30 {
     text-indent: 30px;
+}
+
+/*---------------------*/
+/*   JQuery UI         */
+/*---------------------*/
+
+.ui-widget-content{
+    background: white!important;
+}
+
+.ui-widget-content a {
+    color: black;
+}
+
+.ui-dialog-buttonset .ui-button {
+    background: #FF4401;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*---------------------*/
+/*   Signup page       */
+/*---------------------*/
+
+#termsAndConditions-error {
+    display: block;
+}
+
+.recaptcha-desc.text-error {
+    color: #cc3b3b;
 }

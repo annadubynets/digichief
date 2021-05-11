@@ -42,7 +42,7 @@ if ($("#signUpForm").length > 0) {
             company: "required",
             companyWebsite: "required",
             industry: "required",
-            findUs: "required",
+            howFoundUs: "required",
             termsAndConditions: "required",
         },
         messages: {
@@ -56,7 +56,7 @@ if ($("#signUpForm").length > 0) {
             company: "Company is required.",
             companyWebsite: "Company Website is required.",
             industry: "Please select an item in the list",
-            findUs: "Please select an item in the list",
+            howFoundUs: "Please select an item in the list",
             termsAndConditions: "Please indicate you agree with Terms and Conditions",
         }
     });
