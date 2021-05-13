@@ -230,7 +230,7 @@ nav {
 }
 
 .main-content {
-    margin-left: 380px;
+    margin-left: 400px;
     padding: 30px 16px 227px;
     height: 100%;
     box-sizing: border-box;
@@ -983,11 +983,16 @@ td:nth-child(2) {
     text-indent: 30px;
 }
 
-/*---------------------*/
-/*   JQuery UI         */
+
 /*---------------------*/
 
-.ui-widget-content{
+
+/*   JQuery UI         */
+
+
+/*---------------------*/
+
+.ui-widget-content {
     background: white!important;
 }
 
@@ -1004,8 +1009,13 @@ td:nth-child(2) {
     cursor: pointer;
 }
 
+
 /*---------------------*/
+
+
 /*   Signup page       */
+
+
 /*---------------------*/
 
 #termsAndConditions-error {
