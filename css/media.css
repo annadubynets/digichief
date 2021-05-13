@@ -224,8 +224,8 @@
     td p {
         padding: 0 0 6px 0;
     }
-    td .text-indent-30,
-    td .text-indent-10 {
+    td .text-indent-10,
+    td .text-indent-30 {
         text-indent: 0;
     }
     .menu-link:hover::after,

@@ -97,14 +97,14 @@
 
         <a href="index.html" class="level-1"><span>Getting Started</span></a>
         <a href="news.html" class="level-1"><span>News</span></a>
-        <a href="headlines_v1.html" class="level-2"><span>Headlines v1</span></a>
-        <a href="news-json.html" class="level-3"><span>JSON | XML</span></a>
-        <a href="news-json-structure.html" class="level-4"><span>Query Structure</span></a>
-        <a href="news-mrss-parameters.html" class="level-4"><span>Parameters</span></a>
-        <a href="news-mrss-data-points.html" class="level-4 active"><span>Data Points Returned</span></a>
-        <a href="news-mrss.html" class="level-3"><span>MRSS</span></a>
         <a href="#" class="level-1">Weather</a>
-        <a href="#" class="level-1">Sports</a>
+        <a href="sports.html" class="level-1">Sports</a>
+        <a href="sports-baseball.html" class="level-3 active"><span>Baseball</span></a>
+        <a href="sports-baseball-mlb.html" class="level-2"><span>MLB v1</span></a>
+        <a href="sports-json.html" class="level-4"><span>JSON | XML</span></a>
+        <a href="sports-json-structure.html" class="level-5"><span>Query Structure</span></a>
+        <a href="sports-json-parameters.html" class="level-5"><span>Parameters</span></a>
+        <a href="sports-json-data-points.html" class="level-5"><span>Data Points Returned</span></a>
         <a href="#" class="level-1">Odds</a>
         <a href="#" class="level-1">Stats</a>
         <a href="#" class="level-1">Lottery</a>
@@ -119,11 +119,78 @@
     </div>
 
     <div class="main-content">
-        <div class="main-item fw-500 ">Data Points Returned</div>
+        <h1 class="main-title">Headlines v1</h1>
+        <h2 class="main-subtitle">JSON | XML</h2>
+        <div class="main-item fw-500">Query Structure</div>
+        <div class="main-descr">Update Frequency: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span class="fw-500">15 minutes</span></div>
+        <div class="main-format">API: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp https://api.digichief.com/news/getnews<span>{format}</span>/<span>{category}</span>/<span>{customer}</span>/<span>{customer_api_key}</span></div>
+
+        <div class="main-item fw-500">Parameters</div>
         <table class="responsive-table">
             <colgroup>
                 <col style="width: 30%;">
                 <col style="width: 70%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Query Parameter</th>
+                    <th>Description | Parameter Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">format</p>
+                    </td>
+                    <td>
+                        <p><span class="fw-500">JSON</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark">Must be capitalized</span></p>
+                        <p><span class="fw-500">XML</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark">Must be capitalized</span></p>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">category</p>
+                    </td>
+                    <td>
+                        <p class="fw-500">All</p>
+                        <p><span class="fw-500">Top2</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark ">- Most recent 2 headlines in each category</span></p>
+                        <p><span class="fw-500">Top1</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark ">- Most recent headline in each category</span></p>
+                        <p class="fw-500">Business</p>
+                        <p class="fw-500">Entertainment</p>
+                        <p class="fw-500">General</p>
+                        <p class="fw-500">Health</p>
+                        <p class="fw-500">International</p>
+                        <p class="fw-500">Political</p>
+                        <p class="fw-500">Science</p>
+                        <p class="fw-500">Strange</p>
+                        <p class="fw-500">Technology</p>
+                        <p class="fw-500">USHeadlines</p>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">customer</p>
+                    </td>
+                    <td>
+                        <p class="text-dark ">Digichief will give you an unique abbreviation for your company</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">customer_api_key</p>
+                    </td>
+                    <td>
+                        <p class="text-dark ">Your company's unique API key |Digichief will give this to you</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="main-item fw-500 ">Data Points Returned</div>
+        <table class="responsive-table">
+            <colgroup>
+                <col style="width: 40%;">
+                <col style="width: 60%;">
             </colgroup>
             <thead>
                 <tr>
@@ -142,7 +209,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-10 p-0">datetime</p>
+                        <p class="text-dark text-indent-90 p-0">datetime</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Date/time file was updated</p>
@@ -150,7 +217,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-10 p-0">datasource</p>
+                        <p class="text-dark text-indent-90 p-0">datasource</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Digichief Data Source</p>
@@ -158,13 +225,13 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-10 p-0">News [Array]</p>
+                        <p class="text-dark text-indent-90 p-0">News [Array]</p>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">category</p>
+                        <p class="text-dark text-indent-180 p-0">category</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Category of news from parameters</p>
@@ -172,7 +239,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">title</p>
+                        <p class="text-dark text-indent-180 p-0">title</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Title of headline</p>
@@ -180,7 +247,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">description</p>
+                        <p class="text-dark text-indent-180 p-0">description</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Shortened headline for compact display</p>
@@ -188,7 +255,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">subcategory</p>
+                        <p class="text-dark text-indent-180 p-0">subcategory</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Indicates geographic location of the headline, i.e., US, EU, etc.</p>
@@ -196,7 +263,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">abstract</p>
+                        <p class="text-dark text-indent-180 p-0">abstract</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Longer version of headline that is more indepth</p>
@@ -204,7 +271,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">story</p>
+                        <p class="text-dark text-indent-180 p-0">story</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Link to the entire story that is even longer than the abstract</p>
@@ -212,7 +279,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_800x600</p>
+                        <p class="text-dark text-indent-180 p-0">image_800x600</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">800x600</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -220,7 +287,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_1280x720</p>
+                        <p class="text-dark text-indent-180 p-0">image_1280x720</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">1280x720</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -228,7 +295,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_1920x1080</p>
+                        <p class="text-dark text-indent-180 p-0">image_1920x1080</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">1920x1080</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -236,7 +303,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_1080x1920</p>
+                        <p class="text-dark text-indent-180 p-0">image_1080x1920</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">1080x1920</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -244,7 +311,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_720x1080</p>
+                        <p class="text-dark text-indent-180 p-0">image_720x1080</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">720x1080</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -252,7 +319,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_600x800</p>
+                        <p class="text-dark text-indent-180 p-0">image_600x800</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">600x800</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -260,7 +327,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_800x600_caption</p>
+                        <p class="text-dark text-indent-180 p-0">image_800x600_caption</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">800x600</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -268,7 +335,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_1280x720_caption</p>
+                        <p class="text-dark text-indent-180 p-0">image_1280x720_caption</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">1280x720</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -276,7 +343,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_1920x1080_caption</p>
+                        <p class="text-dark text-indent-180 p-0">image_1920x1080_caption</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">1920x1080</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -284,7 +351,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_1080x1920_caption</p>
+                        <p class="text-dark text-indent-180 p-0">image_1080x1920_caption</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">1080x1920</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -292,7 +359,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_720x1080_caption</p>
+                        <p class="text-dark text-indent-180 p-0">image_720x1080_caption</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">720x1080</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -300,7 +367,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_600x800_caption</p>
+                        <p class="text-dark text-indent-180 p-0">image_600x800_caption</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">600x800</span> pixel format with <span class="fw-500">no caption</span></p>

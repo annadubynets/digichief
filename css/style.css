@@ -78,6 +78,10 @@
     text-decoration: underline;
 }
 
+.text-uppercase {
+    text-transform: uppercase;
+}
+
 h1,
 h2,
 h3,
@@ -301,12 +305,31 @@ nav {
 .level-5 {
     background: #000000;
     color: #FFFFFF!important;
-    padding: 9px 60px!important;
+    padding: 9px 30px 9px 160px!important;
 }
 
 .level-5:hover,
 .level-5.active {
     color: #FF4401!important;
+}
+
+.level-6 {
+    background: #000000;
+    color: #FFFFFF!important;
+    padding: 9px 60px!important;
+}
+
+.level-6:hover,
+.level-6.active {
+    color: #FF4401!important;
+}
+
+.pl-90px {
+    padding-left: 90px!important;
+}
+
+.pl-120px {
+    padding-left: 120px!important;
 }
 
 .search-box {
