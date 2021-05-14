@@ -225,7 +225,12 @@
         padding: 0 0 6px 0;
     }
     td .text-indent-10,
-    td .text-indent-30 {
+    td .text-indent-20,
+    td .text-indent-30,
+    td .text-indent-40,
+    td .text-indent-50,
+    td .text-indent-60,
+    td .text-indent-80 {
         text-indent: 0;
     }
     .menu-link:hover::after,

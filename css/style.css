@@ -979,8 +979,28 @@ td:nth-child(2) {
     text-indent: 10px;
 }
 
+.text-indent-20 {
+    text-indent: 20px;
+}
+
 .text-indent-30 {
     text-indent: 30px;
+}
+
+.text-indent-40 {
+    text-indent: 40px;
+}
+
+.text-indent-50 {
+    text-indent: 50px;
+}
+
+.text-indent-60 {
+    text-indent: 60px;
+}
+
+.text-indent-80 {
+    text-indent: 80px;
 }
 
 
