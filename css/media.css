@@ -237,6 +237,14 @@
     .footer-link:hover:after {
         display: none;
     }
+    .col-left,
+    .col-right {
+        float: none;
+        width: 100%;
+    }
+    .pb-24px {
+        padding-bottom: 0;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1799px) {

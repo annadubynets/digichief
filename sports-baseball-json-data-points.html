@@ -119,78 +119,11 @@
     </div>
 
     <div class="main-content">
-        <h1 class="main-title">Headlines v1</h1>
-        <h2 class="main-subtitle">JSON | XML</h2>
-        <div class="main-item fw-500">Query Structure</div>
-        <div class="main-descr">Update Frequency: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span class="fw-500">15 minutes</span></div>
-        <div class="main-format">API: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp https://api.digichief.com/news/getnews<span>{format}</span>/<span>{category}</span>/<span>{customer}</span>/<span>{customer_api_key}</span></div>
-
-        <div class="main-item fw-500">Parameters</div>
+        <div class="main-item fw-500 ">Data Points Returned</div>
         <table class="responsive-table">
             <colgroup>
                 <col style="width: 30%;">
                 <col style="width: 70%;">
-            </colgroup>
-            <thead>
-                <tr>
-                    <th>Query Parameter</th>
-                    <th>Description | Parameter Options</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="border-bottom">
-                    <td data-title="Query Parameter">
-                        <p class="fw-500">format</p>
-                    </td>
-                    <td>
-                        <p><span class="fw-500">JSON</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark">Must be capitalized</span></p>
-                        <p><span class="fw-500">XML</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark">Must be capitalized</span></p>
-                    </td>
-                </tr>
-                <tr class="border-bottom">
-                    <td data-title="Query Parameter">
-                        <p class="fw-500">category</p>
-                    </td>
-                    <td>
-                        <p class="fw-500">All</p>
-                        <p><span class="fw-500">Top2</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark ">- Most recent 2 headlines in each category</span></p>
-                        <p><span class="fw-500">Top1</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark ">- Most recent headline in each category</span></p>
-                        <p class="fw-500">Business</p>
-                        <p class="fw-500">Entertainment</p>
-                        <p class="fw-500">General</p>
-                        <p class="fw-500">Health</p>
-                        <p class="fw-500">International</p>
-                        <p class="fw-500">Political</p>
-                        <p class="fw-500">Science</p>
-                        <p class="fw-500">Strange</p>
-                        <p class="fw-500">Technology</p>
-                        <p class="fw-500">USHeadlines</p>
-                    </td>
-                </tr>
-                <tr class="border-bottom">
-                    <td data-title="Query Parameter">
-                        <p class="fw-500">customer</p>
-                    </td>
-                    <td>
-                        <p class="text-dark ">Digichief will give you an unique abbreviation for your company</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Query Parameter">
-                        <p class="fw-500">customer_api_key</p>
-                    </td>
-                    <td>
-                        <p class="text-dark ">Your company's unique API key |Digichief will give this to you</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="main-item fw-500 ">Data Points Returned</div>
-        <table class="responsive-table">
-            <colgroup>
-                <col style="width: 40%;">
-                <col style="width: 60%;">
             </colgroup>
             <thead>
                 <tr>
@@ -201,176 +134,2589 @@
             <tbody>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark p-0">advisorydata</p>
+                        <p class="text-dark p-0">id</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Top Level</p>
+                        <p class="text-dark p-0">Game ID</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-90 p-0">datetime</p>
+                        <p class="text-dark text-indent-10 p-0">status</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Date/time file was updated</p>
+                        <a href="#" class="text-dark p-0">Game status <span class="text-primary">link</span></a>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-90 p-0">datasource</p>
+                        <p class="text-dark text-indent-10 p-0">coverage</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Digichief Data Source</p>
+                        <p class="text-dark p-0">Game Coverage</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-90 p-0">News [Array]</p>
+                        <p class="text-dark text-indent-10 p-0">game_number</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Game Number if a double header</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-10 p-0">day_night</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">[D]ay or [N]ight game</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-10 p-0">scheduled</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Scheduled start time [UTC] presented in standard ISO8601 format</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-10 p-0">home_team</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home Team ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-10 p-0">away_team</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away Team ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-10 p-0"> double_header</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">True or False</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-10 p-0">entry_mode</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-10 p-0">reference</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-10 p-0">venue [Array]</p>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-180 p-0">category</p>
+                        <p class="text-dark text-indent-20 p-0">name</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Category of news from parameters</p>
+                        <p class="text-dark p-0">Name of stadium game is being played</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-180 p-0">title</p>
+                        <p class="text-dark text-indent-20 p-0">market</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Title of headline</p>
+                        <p class="text-dark p-0">Market stadium is located</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-180 p-0">description</p>
+                        <p class="text-dark text-indent-20 p-0">capacity</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Shortened headline for compact display</p>
+                        <p class="text-dark p-0">Stadium capacity</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-180 p-0">subcategory</p>
+                        <p class="text-dark text-indent-20 p-0">surface</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Indicates geographic location of the headline, i.e., US, EU, etc.</p>
+                        <p class="text-dark p-0">Stadium playing surface</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-180 p-0">abstract</p>
+                        <p class="text-dark text-indent-20 p-0">address</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Longer version of headline that is more indepth</p>
+                        <p class="text-dark p-0">Stadium street address</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-180 p-0">story</p>
+                        <p class="text-dark text-indent-20 p-0">city</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Link to the entire story that is even longer than the abstract</p>
+                        <p class="text-dark p-0">Stadium city</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-180 p-0">image_800x600</p>
+                        <p class="text-dark text-indent-20 p-0">state</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">800x600</span> pixel format with <span class="fw-500">no caption</span></p>
+                        <p class="text-dark p-0">Stadium state</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-180 p-0">image_1280x720</p>
+                        <p class="text-dark text-indent-20 p-0">zip</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">1280x720</span> pixel format with <span class="fw-500">no caption</span></p>
+                        <p class="text-dark p-0">Stadium zip code</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-180 p-0">image_1920x1080</p>
+                        <p class="text-dark text-indent-20 p-0">country</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">1920x1080</span> pixel format with <span class="fw-500">no caption</span></p>
+                        <p class="text-dark p-0">Stadium country</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-180 p-0">image_1080x1920</p>
+                        <p class="text-dark text-indent-20 p-0">id</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">1080x1920</span> pixel format with <span class="fw-500">no caption</span></p>
+                        <p class="text-dark p-0">Stadium ID</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-180 p-0">image_720x1080</p>
+                        <p class="text-dark text-indent-20 p-0">field_orientation</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">720x1080</span> pixel format with <span class="fw-500">no caption</span></p>
+                        <p class="text-dark p-0">Stadium field orientation</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-180 p-0">image_600x800</p>
+                        <p class="text-dark text-indent-20 p-0">stadium_type</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">600x800</span> pixel format with <span class="fw-500">no caption</span></p>
+                        <p class="text-dark p-0">Stadium enclosure</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-180 p-0">image_800x600_caption</p>
+                        <p class="text-dark text-indent-20 p-0">location [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">lat</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">800x600</span> pixel format with <span class="fw-500">no caption</span></p>
+                        <p class="text-dark p-0">Stadium latitude</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-180 p-0">image_1280x720_caption</p>
+                        <p class="text-dark text-indent-30 p-0">lng</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">1280x720</span> pixel format with <span class="fw-500">no caption</span></p>
+                        <p class="text-dark p-0">Stadium longitude</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-180 p-0">image_1920x1080_caption</p>
+                        <p class="text-dark text-indent-10 p-0">broadcast [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">network</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">1920x1080</span> pixel format with <span class="fw-500">no caption</span></p>
+                        <p class="text-dark p-0">Broadcast network</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-180 p-0">image_1080x1920_caption</p>
+                        <p class="text-dark text-indent-10 p-0">weather [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">forecast [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">temp_f</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">1080x1920</span> pixel format with <span class="fw-500">no caption</span></p>
+                        <p class="text-dark p-0">Forecasted game time temperature (°F)</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-180 p-0">image_720x1080_caption</p>
+                        <p class="text-dark text-indent-30 p-0">condition</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">720x1080</span> pixel format with <span class="fw-500">no caption</span></p>
+                        <p class="text-dark p-0">Forecasted game time weather condition</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-180 p-0">image_600x800_caption</p>
+                        <p class="text-dark text-indent-30 p-0">humidity</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">600x800</span> pixel format with <span class="fw-500">no caption</span></p>
+                        <p class="text-dark p-0">Forecasted game time humidity</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">dew_point_f</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Forecasted game time dew point (F)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">cloud_cover</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Forecasted game time cloud cover (%)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">obs_time</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Last forecast update time [UTC] presented in standard ISO8601 format</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">wind [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">speed_mph</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Forecasted wind speed</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">direction</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Forecasted wind direction</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0"> current_conditions [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">temp_f</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Current temperature (°F)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">condition</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Current weather condition</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">humidity</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Current humidity</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">dew_point_f</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Current dew point (F)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">cloud_cover</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Current cloud cover (%)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">obs_time</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Last current condition update time [UTC] presented in standard ISO8601 format</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">wind</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">speed_mph</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Current wind speed</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">direction</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Current wind direction</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-10 p-0">final [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">inning</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Current inning</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">inning_half</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">[T]op | [B]ottom</p>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-10 p-0">home [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">market</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team market</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">abbr</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team abbreviation</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">runs</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team runs</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">hits</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team hits</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">errors</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team erros</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">win</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team # of wins this season</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">loss</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team # of losses this season</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">probable_pitcher [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">preferred_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team probable starting pitcher preferred name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">first_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team probable starting pitcher preferred name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">preferred_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team probable starting pitcher preferred name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">first_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team probable starting pitcher first name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">last_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team probable starting pitcher last name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">jersey_number</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team probable starting pitcher jersey number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team probable starting pitcher ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">win</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team probable starting pitcher # of wins</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">loss</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team probable starting pitcher # of losses</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">era</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team probable starting pticher ERA</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">starting_pitcher [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">preferred_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team starting pitcher preferred name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">first_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team starting pitcher first name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">last_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team starting pitcher last name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">jersey_number</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team starting pitcher jersey number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team starting pitcher ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">win</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team starting pitcher # of wins</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">loss</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team starting pitcher # of losses</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">era</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team starting pticher ERA</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">scoring [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">number</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Inning #</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">sequence</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">runs</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0"># of Home Team runs this inning, [x] if inning in progress and no runs</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">hits</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0"># of Home Team hits this inning, [x] if inning in progress and no hits</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">errors</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0"># of Home Team errors this inning, [x] if inning in progress and no errors</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">events [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">hitter_id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team hitter ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">pitcher_id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team pitcher ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">inning</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Inning #</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">inning_half</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">[T]op | [B]ottom</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">type</p>
+                    </td>
+                    <td>
+                        <a href="#" class="text-dark p-0">Event type <span class="text-primary">link</span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">hitter_outcome</p>
+                    </td>
+                    <td>
+                        <a href="#" class="text-dark p-0">Hitter outcome <span class="text-primary">link</span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Event ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">runners [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">starting_base</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Base # home team runner started on</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">first_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team runner first name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">last_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team runner last name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">preferred_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team runner preferred name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">jersey_number</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team runner jersey number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team runner ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0"> leaguerank</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team league rank</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">confrank</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team conference rank</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">divrank</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team division rank</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">teamlogo2000x1500</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">URI for home team logo | Size 2000x1500</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">teamlogo720x480</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">URI for home team logo | Size 720x480</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">teamlogo200x150</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">URI for home team logo | Size 2000x1500</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-10 p-0">away [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">market</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team market</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">abbr</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team abbreviation</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">runs</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team runs</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">hits</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team hits</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">errors</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team erros</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">win</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team # of wins this season</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">loss</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team # of losses this season</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">probable_pitcher [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">preferred_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team probable starting pitcher preferred name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">first_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team probable starting pitcher first name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">last_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team probable starting pitcher last name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">jersey_number</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team probable starting pitcher jersey number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team probable starting pitcher ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">win</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team probable starting pitcher # of wins</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">loss</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team probable starting pitcher # of losses</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">era</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team probable starting pticher ERA</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">starting_pitcher [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">preferred_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team starting pitcher preferred name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">first_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team starting pitcher first name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">last_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team starting pitcher last name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">jersey_number</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team starting pitcher jersey number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team starting pitcher ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">win</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team starting pitcher # of wins</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">loss</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team starting pitcher # of losses</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">era</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team starting pticher ERA</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">scoring [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">number</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Inning #</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">sequence</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">runs</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0"># of Away Team runs this inning, [x] if inning in progress and no runs</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">hits</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0"># of Away Team hits this inning, [x] if inning in progress and no hits</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">errors</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0"># of Away Team errors this inning, [x] if inning in progress and no errors</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">events [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">hitter_id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team hitter ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">pitcher_id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team pitcher ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">inning</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Inning #</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">inning_half</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">[T]op | [B]ottom</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">type</p>
+                    </td>
+                    <td>
+                        <a href="#" class="text-dark p-0">Event type <span class="text-primary">link</span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">hitter_outcome</p>
+                    </td>
+                    <td>
+                        <a href="#" class="text-dark p-0">Hitter outcome <span class="text-primary">link</span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Event ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">runners [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">starting_base</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">starting_base</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">first_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team runner first name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">last_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team runner last name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">preferred_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team runner preferred name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">jersey_number</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team runner jersey number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team runner ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">leaguerank</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team league rank</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">confrank</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team conference rank</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">divrank</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team division rank</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">teamlogo2000x1500</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">URI for away team logo | Size 2000x1500</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">teamlogo720x480</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">URI for away team logo | Size 720x480</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">teamlogo200x150</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">URI for away team logo | Size 2000x1500</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-10 p-0">leaguelogo2000x1500</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">URI for league logo | Size 2000x1500</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-10 p-0">leaguelogo720x480</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">URI for league logo | Size 720x480</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-10 p-0">leaguelogo200x150</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">URI for league logo | Size 2000x1500</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-10 p-0">scheduledET</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Scheduled Day/Start Time for game [UTC] presented in standard ISO8601 format</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-10 p-0">odds [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">scheduled</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Scheduled Day/Start Time for game [UTC] presented in standard ISO8601 format</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">start_time_tbd</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Start time TBD: [false] or [true]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">status</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Status: [not_started] or [started]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">tournament_round [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">number</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">group</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">MLB Conference/Division</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">season [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">MLB season name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">start_date</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">MLB season start date</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">end_date</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">MLB season end date</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">year</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">MLB season year</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">tournament_id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">uuids</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">tournament [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Tournament name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">sport [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Sport name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">category [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Category Name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">country_code</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Country</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">uuids</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">competitors [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Team name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">country</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Team country</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">country_code</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Team country code</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">abbreviation</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Team abbreviation</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">qualifier</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">[home] or [away] team</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">rotation_number</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">uuids</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">uuids</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">markets [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">odds_type_id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Moneyline [MoneyLine]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">group_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">books [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Bookmaker </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">outcomes [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">odds_field_id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team current moneyline</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">opening_odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team opening moneyline</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">odds_trend</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team odds trend [neutral], [down], [up]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">odds_field_id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">2</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team current moneyline</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">opening_odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team opening moneyline</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">odds_trend</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team odds trend [neutral], [down], [up]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">odds_type_id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">3</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Over/Under [total]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">group_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">books [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Bookmaker</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">outcomes [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">odds_field_id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">7</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Over</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Current over odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">opening_odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Opening over odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">opening_total</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Opening over</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">total</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Current over</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">odds_trend</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Over odds trend [neutral], [down], [up]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">odds_field_id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">8</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Under</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Current under odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">opening_odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Opening under odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">opening_total</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Opening under</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">total</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Current under</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">odds_trend</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Under odds trend [neutral], [down], [up]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">odds_type_id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">4</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Run Line [run_line]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">group_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">books [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Bookmaker</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">outcomes [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">odds_field_id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">10</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">spread</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team current spread</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team current spread odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">opening_odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team opening spread odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">opening_spread</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team opening spread</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">odds_trend</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home team spread trend [neutral], [down], [up]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">odds_field_id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">12</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">spread</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team current spread</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team current spread odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">opening_odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team opening spread odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">opening_spread</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team opening spread</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">odds_trend</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away team spread trend [neutral], [down], [up]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">markets_last_updated</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Day/Time odds were last updated [UTC] presented in standard ISO8601 format</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">consensus [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">bet_percentage_outcomes [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Moneyline [moneyline]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">outcomes [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">percentage</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus moneyline percentage for home team</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">percentage</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus moneyline percentage for away team</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Run Line [run_line]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">outcomes [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">percentage</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus run line percentage for home team</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">percentage</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus run line percentage for away team</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Over/Under [total]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">outcomes [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Over</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">percentage</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus percentage for over</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Under</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">percentage</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus percentage for under</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">lines [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Current moneyline [moneyline_current]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">outcomes [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus home team current moneyline odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus away team current moneyline odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Opening moneyline [moneyline_open]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">outcomes [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus home team opening moneyline odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus away team opening moneyline odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus current run line [run_line_current]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">spread</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus current spread</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">outcomes [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus home team current run line odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus away team current run line odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus opening run line [run_line_open]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">spread</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus opening spread</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">outcomes [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus home team opening run line odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus away team opening run line odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus current over/under [total_current]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">total</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus current over/under</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">outcomes [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Over</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus current over odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">total</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus current over</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Under</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus current over/under odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus current over/under</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus opening over/under [total_open]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">total</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus opening over/under</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">outcomes [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Over</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus opening over odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">total</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus opening over</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Under</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus opening over/under odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">total</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus opening over/under</p>
                     </td>
                 </tr>
             </tbody>
