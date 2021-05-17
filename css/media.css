@@ -230,7 +230,9 @@
     td .text-indent-40,
     td .text-indent-50,
     td .text-indent-60,
-    td .text-indent-80 {
+    td .text-indent-80,
+    td .text-indent-100,
+    td .text-indent-130 {
         text-indent: 0;
     }
     .menu-link:hover::after,
@@ -242,7 +244,7 @@
         float: none;
         width: 100%;
     }
-    .pb-24px {
+    .pb-20px {
         padding-bottom: 0;
     }
 }
