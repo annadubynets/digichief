@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digichief API Documentation</title>
     <link rel="shortcut icon" href="icons/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/libs/jquery-ui.min.css"
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -105,29 +106,34 @@
                 </label>
 
                 <label for="keys" class="form-radio">API Keys
-                    <input data-email="development@digichief.com" type="radio" name="radio" id="keys">
+                    <input data-email="development@digichief.com" type="radio" name="assistance-radio" id="keys" value="api-keys">
                     <span class="checkmark"></span>
                 </label>
 
                 <label for="assistance" class="form-radio">Integration Assistance
-                    <input data-email="development@digichief.com" type="radio" name="radio" id="assistance">
+                    <input data-email="development@digichief.com" type="radio" name="assistance-radio" id="assistance" value="integration-assistance">
                     <span class="checkmark"></span>
                 </label>
 
                 <label for="sales" class="form-radio">Sales
-                    <input data-email="sales@digichief.com" type="radio" name="radio" id="sales">
+                    <input data-email="sales@digichief.com" type="radio" name="assistance-radio" id="sales" value="sales">
                     <span class="checkmark"></span>
                 </label>
 
                 <label for="other" class="form-radio">Other
-                    <input data-email="sales@digichief.com" type="radio" name="radio" id="other">
+                    <input data-email="sales@digichief.com" type="radio" name="assistance-radio" id="other" value="other">
                     <span class="checkmark"></span>
                 </label>
 
                 <span class="assistance-error"></span>
 
                 <label class="mt-25">Message: Describe what you need assistance with.</label>
-                <textarea></textarea>
+                <textarea name="description"></textarea>
+
+
+                <p class="small-descr mt-60 recaptcha-desc">Please check the box and follow any instructions from reCAPTCHA</p>
+
+                <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LdZ4rMaAAAAAIxQB8AoK-xzIisbhaPbzrVAVHjl"></div>
 
                 <button class="button btn-primary">Submit</button>
             </form>
@@ -175,10 +181,22 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src='https://www.google.com/recaptcha/api.js?hl=en'></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/libs/jquery-ui.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/api-controller.js"></script>
     <script src="js/search-controller.js"></script>
+
+    <script>
+        $(function() {
+            $('#needHelpForm').on('submit', HelpUsController.submitHandler);
+        })
+
+        function recaptchaCallback() {
+            $('.recaptcha-desc').removeClass('text-error')
+        }
+    </script>
 </body>
 
 </html>
