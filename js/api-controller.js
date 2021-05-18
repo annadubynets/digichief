@@ -174,10 +174,7 @@ ModalUtils.showLoader = function() {
     $("#loader-modal").dialog({
         closeOnEscape: false,
         modal: true,
-        width: 375,
-        // open: function(event, ui) {
-        //     $(".ui-dialog-titlebar-close").hide();
-        // }
+        width: 375
     });
 }
 
