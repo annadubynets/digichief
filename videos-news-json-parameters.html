@@ -97,15 +97,9 @@
 
         <a href="index.html" class="level-1"><span>Getting Started</span></a>
         <a href="news.html" class="level-1"><span>News</span></a>
-        <a href="headlines-v1.html" class="level-2"><span>Headlines v1</span></a>
-        <a href="news-json.html" class="level-3"><span>JSON | XML</span></a>
-        <a href="news-mrss.html" class="level-3"><span>MRSS</span></a>
-        <a href="news-mrss-structure.html" class="level-4"><span>Query Structure</span></a>
-        <a href="news-mrss-parameters.html" class="level-4"><span>Parameters</span></a>
-        <a href="news-mrss-data-points.html" class="level-4 active"><span>Data Points Returned</span></a>
         <a href="#" class="level-1">Weather</a>
-        <a href="sports.html" class="level-1">Sports</a>
-        <a href="odds.html" class="level-1">Odds</a>
+        <a href="sports.html" class="level-1"><span>Sports</span></a>
+        <a href="odds.html" class="level-1"><span>Odds</span></a>
         <a href="stats.html" class="level-1">Stats</a>
         <a href="#" class="level-1">Lottery</a>
         <a href="#" class="level-1">Financial</a>
@@ -116,10 +110,68 @@
         <a href="#" class="level-1">Infotainment</a>
         <a href="#" class="level-1">Images</a>
         <a href="videos.html" class="level-1">Videos</a>
+        <a href="videos-news.html" class="level-3"><span>News</span></a>
+        <a href="videos-news-v1.html" class="level-2 pl-90px"><span>News Video v1</span></a>
+        <a href="videos-news-json.html" class="level-4 pl-120px"><span>JSON | XML</span></a>
+        <a href="videos-news-json-structure.html" class="level-5"><span>Query Structure</span></a>
+        <a href="videos-news-json-parameters.html" class="level-5 active"><span>Parameters</span></a>
+        <a href="videos-news-json-data-points.html" class="level-5"><span>Data Points Returned</span></a>
+        <a href="videos-weather.html" class="level-3"><span>Weather</span></a>
     </div>
 
     <div class="main-content">
-        <div class="main-item fw-500 ">Data Points Returned</div>
+        <div class="main-item fw-500">Parameters</div>
+        <table class="responsive-table">
+            <colgroup>
+                <col style="width: 30%;">
+                <col style="width: 70%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Query Parameter</th>
+                    <th>Description | Parameter Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">format</p>
+                    </td>
+                    <td>
+                        <div class="col-left">
+                            <p class="fw-500">JSON</p>
+                        </div>
+                        <div class="col-right">
+                            <p class="text-dark">Must be capitalized</p>
+                        </div>
+                        <div class="col-left">
+                            <p class="fw-500">XML</p>
+                        </div>
+                        <div class="col-right">
+                            <p class="text-dark">Must be capitalized</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">customer</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">Digichief will give you a unique abbrievation for your company</p>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">customer_api_key</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">Your company's unique API key |Digichief will give this to you</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="main-item fw-500">Data Points Returned</div>
         <table class="responsive-table">
             <colgroup>
                 <col style="width: 30%;">
@@ -134,178 +186,70 @@
             <tbody>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark p-0">?xml version</p>
+                        <p class="text-dark p-0">advisorydata</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">XML version and encoding</p>
+                        <p class="text-dark p-0">Top Level</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark p-0">rss xmlns</p>
+                        <p class="text-dark text-indent-10 p-0">content [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">datetime</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
+                        <p class="text-dark p-0">Date/Time last checked for updates</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark p-0">Channel</p>
+                        <p class="text-dark text-indent-20 p-0">datasource</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
+                        <p class="text-dark p-0">Digichief</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-10 p-0">title</p>
+                        <p class="text-dark text-indent-20 p-0">AP-Videos [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30 p-0">versioncreateddate</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
+                        <p class="text-dark p-0">Date/Time video was created</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-10 p-0">atom link</p>
+                        <p class="text-dark text-indent-30 p-0">iso8601</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
+                        <p class="text-dark p-0">Date/Time video was created in ISO8601 format</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-10 p-0">description</p>
+                        <p class="text-dark text-indent-30 p-0">videoURL</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
+                        <p class="text-dark p-0">URL to video</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-10 p-0">link</p>
+                        <p class="text-dark text-indent-30 p-0">type</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-10 p-0">docs</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-10 p-0">generator</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-10 p-0">language</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">en=English</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-10 p-0">pubDate</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0"><span class="text-uppercase">Item </span><span class="fw-500">Array publish date</spanItem></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-10 p-0">lastBuildDate</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-10 p-0">Item [Array]</p>
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">title</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Title of headline</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">description</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Shortened headline for compact display</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">pubDate</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Individual Item publish date</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">link</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Link to the entire story that is even longer than the abstract</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">guid</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">category</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Category of news from parameters</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">enclosure url</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">URL for Media</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">media:content</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">URL for Media</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">media:description</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Media description</p>
+                        <p class="text-dark p-0">Category of news video</p>
                     </td>
                 </tr>
             </tbody>
@@ -337,19 +281,19 @@
                 <div class="footer-socials">
                     <a href="https://www.facebook.com/digichief?ref=hl" target="_blank" class="footer-social-item">
                         <span class="icon-facebook"></span>
-                            </a>
-                            <a href="https://www.linkedin.com/company/digichief-content-feed" target="_blank" class="footer-social-item">
-                                <span class="icon-linkedin2"></span>
-                            </a>
-                            <a href="http://vimeo.com/digichief" target="_blank" class="footer-social-item">
-                                <span class="icon-vimeo"></span>
-                            </a>
-                            <a href="https://twitter.com/DIGI_TWEETS" target="_blank" class="footer-social-item">
-                                <span class="icon-twitter"></span>
-                            </a>
-    </div>
-    </div>
-    </div>
+                    </a>
+                    <a href="https://www.linkedin.com/company/digichief-content-feed" target="_blank" class="footer-social-item">
+                        <span class="icon-linkedin2"></span>
+                    </a>
+                    <a href="http://vimeo.com/digichief" target="_blank" class="footer-social-item">
+                        <span class="icon-vimeo"></span>
+                    </a>
+                    <a href="https://twitter.com/DIGI_TWEETS" target="_blank" class="footer-social-item">
+                        <span class="icon-twitter"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
