@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digichief API Documentation</title>
     <link rel="shortcut icon" href="icons/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/libs/jquery.modal.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -189,33 +190,362 @@
                     <td>
                         <p class="text-dark">Your company's unique API key |Digichief will give this to you</p>
                     </td>
-                </tr>
-                <tr class="border-bottom">
-                    <td data-title="Query Parameter">
-                        <p class="fw-500">team_abbr</p>
-                    </td>
-                    <td>
-                        <div class="col-left">
-                            <a href="#" class="fw-500">Team Abbr <span class="text-primary">link</span></a>
-                        </div>
-                        <div class="col-right">
-                            <p class="text-dark">All or Team Abbr to only get that team</p>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Query Parameter">
-                        <p class="fw-500">bookmaker_abbr</p>
-                    </td>
-                    <td>
-                        <div class="col-left">
-                            <a href="#" class="fw-500">Bookmaker Abbr <span class="text-primary">link</span></a>
-                        </div>
-                        <div class="col-right">
-                            <p class="text-dark">All or Bookmaker Abbr to only get that Bookmaker</p>
-                        </div>
-                    </td>
-                </tr>
+                    <tr class="border-bottom">
+                        <td data-title="Query Parameter">
+                            <p class="fw-500">team_abbr</p>
+                        </td>
+                        <td>
+                            <div class="col-left">
+                                <div id="team-abbr" class="modal">
+                                    <div class="main-item">MLB Team Abbv</div>
+                                    <table class="responsive-table">
+                                        <colgroup>
+                                            <col style="width: 30%;">
+                                            <col style="width: 70%;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">All</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">All teams</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">ARI</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Arizona Diamondbacks</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">ATL</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Atanta Braves</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">BAL</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Baltimore Oriles</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">BOS</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Boston Red Sox</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">CHC</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Chicago Cubs</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">CIN</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Cincinnati Reds</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">CLE</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Cleveland Indians</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">COL</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Colorado Rockies</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">CWS</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Chicago White Sox</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">DET</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Detroit Tigers</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">HOU</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Houston Astros</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">KC</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Kansas City Royals</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">LAA</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Los Angeles Angels</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">LAD</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Los Angeles Dodgers</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">MIA</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Florida Marlins</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">MIL</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Milwaukee Brewers</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">MIN</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Minnesota Twins</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">NYM</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">New Hyor Mets</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">NYY</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">New York Yankees</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">OAK</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Oakland Athletics</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">PHI</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Philadelphia Phillies</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">PIT</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Pittsburgh Pirates</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">SD</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">San Diego Padres</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">SEA</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Seattle Mariners</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">SF</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">San Francisco Giants</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">STL</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">St. Louis Cardinals</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">TB</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Tampa Bay Rays</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">TEX</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Texas Rangers</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">TOR</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Toronto Blue Jays</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">WSH</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Washington Nationals</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- Link to open the modal -->
+                                <p class="fw-500">Team Abbr <a href="#team-abbr" rel="modal:open" class="text-primary">link</a></p>
+                            </div>
+                            <div class="col-right">
+                                <p class="text-dark">All or Team Abbr to only get that team</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Query Parameter">
+                            <p class="fw-500">bookmaker_abbr</p>
+                        </td>
+                        <td>
+                            <div class="col-left">
+                                <div id="bookmaker-abbr" class="modal">
+                                    <div class="main-item">Bookmaker Abbv</div>
+                                    <table class="responsive-table">
+                                        <colgroup>
+                                            <col style="width: 30%;">
+                                            <col style="width: 70%;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">All</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">All bookmakers</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">MGM</p>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">DraftKings</p>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">FanDuel</p>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">SugarHouseNJ</p>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">PointsBet</p>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">CaesarsNewJersey</p>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Bet365NewJersey</p>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">WilliamHillNewJersey</p>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- Link to open the modal -->
+                                <p class="fw-500">Bookmaker Abbr <a href="#bookmaker-abbr" rel="modal:open" class="text-primary">link</a></p>
+                            </div>
+                            <div class="col-right">
+                                <p class="text-dark">All or Bookmaker Abbr to only get that Bookmaker</p>
+                            </div>
+                        </td>
+                    </tr>
             </tbody>
         </table>
 
@@ -1643,6 +1973,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.modal.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/api-controller.js"></script>
     <script src="js/search-controller.js"></script>

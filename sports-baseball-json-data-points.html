@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digichief API Documentation</title>
     <link rel="shortcut icon" href="icons/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/libs/jquery.modal.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -151,7 +152,95 @@
                         <p class="text-dark text-indent-10 p-0">status</p>
                     </td>
                     <td>
-                        <a href="#" class="text-dark p-0">Game status <span class="text-primary">link</span></a>
+                        <div id="game-status" class="modal">
+                            <div class="main-item">Available Game Statuses</div>
+                            <table class="responsive-table">
+                                <colgroup>
+                                    <col style="width: 100%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[scheduled] | scheduled to occur</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[inprogress] | first pitch of game has been thrown</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[complete] | last pitch of game, game stats under review</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[closed] | game has passed stats review after last pitch</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[wdelay] | delayed due to weather</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[fdelay] | delayed due to facility issues</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[odelay] | game has been delayed</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[canceled] | game canceled, no makeup game</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[unnecessary] | scheduled series game but not needed due to a team clinching series</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[if-necessary] | game will be scheduled if required</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[postponed] | game postponed and will be made up</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[suspended] | game suspended and will be rescheduled where left off</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[maintenance] | game failed review and is being repaired</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="text-dark">Game status <a href="#game-status" rel="modal:open" class="text-primary">link</a></p>
                     </td>
                 </tr>
                 <tr>
@@ -876,7 +965,60 @@
                         <p class="text-dark text-indent-30 p-0">type</p>
                     </td>
                     <td>
-                        <a href="#" class="text-dark p-0">Event type <span class="text-primary">link</span></a>
+                        <div id="event-type" class="modal">
+                            <div class="main-item">Event Type List</div>
+                            <table class="responsive-table">
+                                <colgroup>
+                                    <col style="width: 100%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">pitch - The last event logged was a pitch</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">steal - The last event logged was a steal</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">lineup - The last event logged was a lineup change</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">half_start - The last event logged is the start of an inning half</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[half_over - The last event logged is half inning is over</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">event_start - The game has begun</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">event_over - The game is over</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p class="text-dark">Event type <a href="#event-type" rel="modal:open" class="text-primary">link</a></p>
                     </td>
                 </tr>
                 <tr>
@@ -884,7 +1026,433 @@
                         <p class="text-dark text-indent-30 p-0">hitter_outcome</p>
                     </td>
                     <td>
-                        <a href="#" class="text-dark p-0">Hitter outcome <span class="text-primary">link</span></a>
+                        <div id="hitter-outcome" class="modal">
+                            <div class="main-item">Hitter Outcome List</div>
+                            <table class="responsive-table">
+                                <colgroup>
+                                    <col style="width: 100%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aBK = Balk</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aCI = Catcher Interference</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aD = Double</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aDAD3 = Double - Adv 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aDAD4 = Double - Adv Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aFCAD2 = Fielders Choice - Adv 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aFCAD3 = Fielders Choice - Adv 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aFCAD4 = Fielders Choice - Adv Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aHBP = Hit By Pitch</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aIBB = Intentional Walk</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aKLAD1 = Strike Looking - Adv 1st</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aKLAD2 = Strike Looking - Adv 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aKLAD3 = Strike Looking - Adv 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aKLAD4 = Strike Looking - Adv Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aKSAD1 = Strike Swinging - Adv 1st</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aKSAD2 = Strike Swinging - Adv 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aKSAD3 = Strike Swinging - Adv 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aKSAD4 = Strike Swinging - Adv Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aROE = Reached On Error</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aROEAD2 = Reached On Error - Adv 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aROEAD3 = Reached On Error - Adv 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aROEAD4 = Reached On Error - Adv Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aS = Single</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSAD2 = Single - Adv 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSAD3 = Single - Adv 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSAD4 = Single - Adv Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSBAD1 = Sacrifice Bunt - Adv 1st</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSBAD2 = Sacrifice Bunt - Adv 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSBAD3 = Sacrifice Bunt - Adv 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSBAD4 = Sacrifice Bunt - Adv Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSFAD1 = Sacrifice Fly - Adv 1st</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSFAD2 = Sacrifice Fly - Adv 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSFAD3 = Sacrifice Fly - Adv 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSFAD4 = Sacrifice Fly - Adv Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aT = Triple</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aTAD4 = Triple - Adv Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">bAB = Enforced Ball</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">bB = Ball</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">bDB = Dirt Ball</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">bIB = Intentional Ball</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">bPO = Pitchout</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">kF = Foul Ball</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">kFT = Foul Tip</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">kKL = Strike Looking</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">kKS = Strike Swinging</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oBI = Hitter Interference</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oDT3 = Double - Out at 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oDT4 = Double - Out at Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oFC = Fielders Choice</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oFCT2 = Fielders Choice - Out at 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oFCT3 = Fielders Choice - Out at 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oFCT4 = Fielders Choice - Out at Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oFO = Fly Out</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oGO = Ground Out</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oKLT1 = Strike Looking - Out at 1st</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oKLT2 = Strike Looking - Out at 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oKLT3 = Strike Looking - Out at 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oKLT4 = Strike Looking - Out at Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oKST1 = Strike Swinging - Out at 1st</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oKST2 = Strike Swinging - Out at 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oKST3 = Strike Swinging - Out at 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oKST4 = Strike Swinging - Out at Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oLO = Line Out</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oOBB = Out of Batters Box</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oOP = Out on Appeal</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oPO = Pop Out</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oROET2 = Reached On Error - Out at 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oROET3 = Reached On Error - Out at 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oROET4 = Reached On Error - Out at Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oSB = Sacrifice Bunt</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oSBT2 = Sacrifice Bunt - Out at 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oSBT3 = Sacrifice Bunt - Out at 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oSBT4 = Sacrifice Bunt - Out at Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oSF = Sacrifice Fly</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oSFT2 = Sacrifice Fly - Out at 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oSFT3 = Sacrifice Fly - Out at 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oSFT4 = Sacrifice Fly - Out at Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oST2 = Single - Out at 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oST3 = Single - Out at 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oST4 = Single - Out at Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oTT4 = Triple - Out at Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">rPABC - Ruling Pending, At Bat Continues</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">rPABO - Ruling Pending, At Bat Over</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p class="text-dark">Hitter outcome <a href="#hitter-outcome" rel="modal:open" class="text-primary">link</a></p>
                     </td>
                 </tr>
                 <tr>
@@ -1312,7 +1880,60 @@
                         <p class="text-dark text-indent-40 p-0">type</p>
                     </td>
                     <td>
-                        <a href="#" class="text-dark p-0">Event type <span class="text-primary">link</span></a>
+                        <div id="event-type" class="modal">
+                            <div class="main-item">Event Type List</div>
+                            <table class="responsive-table">
+                                <colgroup>
+                                    <col style="width: 100%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">pitch - The last event logged was a pitch</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">steal - The last event logged was a steal</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">lineup - The last event logged was a lineup change</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">half_start - The last event logged is the start of an inning half</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[half_over - The last event logged is half inning is over</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">event_start - The game has begun</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">event_over - The game is over</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p class="text-dark">Event type <a href="#event-type" rel="modal:open" class="text-primary">link</a></p>
                     </td>
                 </tr>
                 <tr>
@@ -1320,7 +1941,433 @@
                         <p class="text-dark text-indent-40 p-0">hitter_outcome</p>
                     </td>
                     <td>
-                        <a href="#" class="text-dark p-0">Hitter outcome <span class="text-primary">link</span></a>
+                        <div id="hitter-outcome" class="modal">
+                            <div class="main-item">Hitter Outcome List</div>
+                            <table class="responsive-table">
+                                <colgroup>
+                                    <col style="width: 100%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aBK = Balk</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aCI = Catcher Interference</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aD = Double</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aDAD3 = Double - Adv 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aDAD4 = Double - Adv Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aFCAD2 = Fielders Choice - Adv 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aFCAD3 = Fielders Choice - Adv 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aFCAD4 = Fielders Choice - Adv Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aHBP = Hit By Pitch</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aIBB = Intentional Walk</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aKLAD1 = Strike Looking - Adv 1st</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aKLAD2 = Strike Looking - Adv 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aKLAD3 = Strike Looking - Adv 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aKLAD4 = Strike Looking - Adv Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aKSAD1 = Strike Swinging - Adv 1st</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aKSAD2 = Strike Swinging - Adv 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aKSAD3 = Strike Swinging - Adv 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aKSAD4 = Strike Swinging - Adv Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aROE = Reached On Error</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aROEAD2 = Reached On Error - Adv 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aROEAD3 = Reached On Error - Adv 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aROEAD4 = Reached On Error - Adv Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aS = Single</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSAD2 = Single - Adv 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSAD3 = Single - Adv 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSAD4 = Single - Adv Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSBAD1 = Sacrifice Bunt - Adv 1st</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSBAD2 = Sacrifice Bunt - Adv 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSBAD3 = Sacrifice Bunt - Adv 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSBAD4 = Sacrifice Bunt - Adv Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSFAD1 = Sacrifice Fly - Adv 1st</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSFAD2 = Sacrifice Fly - Adv 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSFAD3 = Sacrifice Fly - Adv 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aSFAD4 = Sacrifice Fly - Adv Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aT = Triple</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">aTAD4 = Triple - Adv Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">bAB = Enforced Ball</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">bB = Ball</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">bDB = Dirt Ball</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">bIB = Intentional Ball</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">bPO = Pitchout</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">kF = Foul Ball</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">kFT = Foul Tip</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">kKL = Strike Looking</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">kKS = Strike Swinging</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oBI = Hitter Interference</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oDT3 = Double - Out at 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oDT4 = Double - Out at Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oFC = Fielders Choice</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oFCT2 = Fielders Choice - Out at 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oFCT3 = Fielders Choice - Out at 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oFCT4 = Fielders Choice - Out at Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oFO = Fly Out</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oGO = Ground Out</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oKLT1 = Strike Looking - Out at 1st</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oKLT2 = Strike Looking - Out at 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oKLT3 = Strike Looking - Out at 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oKLT4 = Strike Looking - Out at Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oKST1 = Strike Swinging - Out at 1st</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oKST2 = Strike Swinging - Out at 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oKST3 = Strike Swinging - Out at 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oKST4 = Strike Swinging - Out at Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oLO = Line Out</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oOBB = Out of Batters Box</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oOP = Out on Appeal</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oPO = Pop Out</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oROET2 = Reached On Error - Out at 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oROET3 = Reached On Error - Out at 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oROET4 = Reached On Error - Out at Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oSB = Sacrifice Bunt</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oSBT2 = Sacrifice Bunt - Out at 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oSBT3 = Sacrifice Bunt - Out at 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oSBT4 = Sacrifice Bunt - Out at Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oSF = Sacrifice Fly</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oSFT2 = Sacrifice Fly - Out at 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oSFT3 = Sacrifice Fly - Out at 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oSFT4 = Sacrifice Fly - Out at Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oST2 = Single - Out at 2nd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oST3 = Single - Out at 3rd</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oST4 = Single - Out at Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">oTT4 = Triple - Out at Home</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">rPABC - Ruling Pending, At Bat Continues</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">rPABO - Ruling Pending, At Bat Over</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p class="text-dark">Hitter outcome <a href="#hitter-outcome" rel="modal:open" class="text-primary">link</a></p>
                     </td>
                 </tr>
                 <tr>
@@ -2770,6 +3817,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.modal.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/api-controller.js"></script>
     <script src="js/search-controller.js"></script>

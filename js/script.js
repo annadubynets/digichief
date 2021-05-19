@@ -129,7 +129,7 @@ $(function() {
 $(function() {
     var alert = $('.alert.show');
     if (alert.length > 0) {
-        $( window ).resize(function() {
+        $(window).resize(function() {
             addContentPadding(alert.height());
         });
 

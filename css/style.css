@@ -888,8 +888,7 @@ td {
     vertical-align: top;
 }
 
-td p,
-a {
+td p {
     text-decoration: none;
     color: #FF4401;
     font-weight: normal;
@@ -898,7 +897,7 @@ a {
     overflow-wrap: break-word;
 }
 
-td a span {
+td p a {
     font-weight: 500;
     text-decoration: underline;
 }
@@ -909,6 +908,11 @@ td a span {
 
 .p-0 {
     padding: 0;
+}
+
+.modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
 }
 
 .border-bottom {
@@ -1079,4 +1083,13 @@ td:nth-child(2) {
 .col-right {
     float: right;
     width: 65%;
+}
+
+.jquery-modal.blocker.current {
+    z-index: 10001;
+}
+
+.modal table tr td {
+    border-right: none;
+    background: transparent;
 }

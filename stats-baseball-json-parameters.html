@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digichief API Documentation</title>
     <link rel="shortcut icon" href="icons/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/libs/jquery.modal.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -191,7 +192,268 @@
                     </td>
                     <td>
                         <div class="col-left">
-                            <a href="#" class="fw-500">Team Abbr <span class="text-primary">link</span></a>
+                            <div id="team-abbr" class="modal">
+                                <div class="main-item">MLB Team Abbv</div>
+                                <table class="responsive-table">
+                                    <colgroup>
+                                        <col style="width: 30%;">
+                                        <col style="width: 70%;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">All</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">All teams</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">ARI</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Arizona Diamondbacks</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">ATL</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Atanta Braves</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">BAL</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Baltimore Oriles</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">BOS</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Boston Red Sox</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">CHC</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Chicago Cubs</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">CIN</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Cincinnati Reds</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">CLE</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Cleveland Indians</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">COL</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Colorado Rockies</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">CWS</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Chicago White Sox</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">DET</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Detroit Tigers</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">HOU</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Houston Astros</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">KC</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Kansas City Royals</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">LAA</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Los Angeles Angels</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">LAD</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Los Angeles Dodgers</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">MIA</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Florida Marlins</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">MIL</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Milwaukee Brewers</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">MIN</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Minnesota Twins</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">NYM</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">New Hyor Mets</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">NYY</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">New York Yankees</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">OAK</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Oakland Athletics</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">PHI</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Philadelphia Phillies</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">PIT</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Pittsburgh Pirates</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">SD</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">San Diego Padres</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">SEA</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Seattle Mariners</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">SF</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">San Francisco Giants</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">STL</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">St. Louis Cardinals</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">TB</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Tampa Bay Rays</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">TEX</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Texas Rangers</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">TOR</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Toronto Blue Jays</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">WSH</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Washington Nationals</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Link to open the modal -->
+                            <p class="fw-500">Team Abbr <a href="#team-abbr" rel="modal:open" class="text-primary">link</a></p>
                         </div>
                         <div class="col-right">
                             <p class="text-dark">All or Team Abbr to only get that team</p>
@@ -3218,7 +3480,87 @@
                         <p class="text-dark text-indent-60 p-0">position</p>
                     </td>
                     <td>
-                        <a href="#" class="text-dark p-0">Player postion <span class="text-primary">link</span></a>
+                        <div id="player-postions" class="modal">
+                            <div class="main-item">Player Postions</div>
+                            <table class="responsive-table">
+                                <colgroup>
+                                    <col style="width: 100%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">C = Catcher</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">IF = Infield</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">1B = First base</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">2B = Second base</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">3B = Third Base</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">SS = Shortstop</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">OF = Outfield</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">LF = Left Field</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">CF = Centerfield</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">P = Pitcher</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">RF = Right Field</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">RP = Relief Pitcher</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">SP = Starting Pitcher</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">DH = Designated Hitter </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="text-dark">Player postion <a href="#player-postions" rel="modal:open" class="text-primary">link</a></p>
                     </td>
                 </tr>
                 <tr>
@@ -3226,7 +3568,87 @@
                         <p class="text-dark text-indent-60 p-0">primary_position</p>
                     </td>
                     <td>
-                        <a href="#" class="text-dark p-0">Player primary postion <span class="text-primary">link</span></a>
+                        <div id="player-postions" class="modal">
+                            <div class="main-item">Player Postions</div>
+                            <table class="responsive-table">
+                                <colgroup>
+                                    <col style="width: 100%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">C = Catcher</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">IF = Infield</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">1B = First base</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">2B = Second base</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">3B = Third Base</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">SS = Shortstop</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">OF = Outfield</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">LF = Left Field</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">CF = Centerfield</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">P = Pitcher</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">RF = Right Field</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">RP = Relief Pitcher</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">SP = Starting Pitcher</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">DH = Designated Hitter </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="text-dark">Player primary postion <a href="#player-postions" rel="modal:open" class="text-primary">link</a></p>
                     </td>
                 </tr>
             </tbody>
@@ -3274,6 +3696,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.modal.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/api-controller.js"></script>
     <script src="js/search-controller.js"></script>
