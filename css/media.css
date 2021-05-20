@@ -78,6 +78,7 @@
     }
     .sidebar {
         min-width: auto;
+        height: 100%;
     }
     .sidebar .search-box,
     .sidebar a {
