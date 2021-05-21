@@ -218,6 +218,21 @@
         border: none;
         background: none;
     }
+    .modal table.responsive-table td {
+        display: inline-block;
+    }
+    .modal table.responsive-table td:nth-child(1):before,
+    .modal table.responsive-table td:nth-child(2):before {
+        display: none;
+    }
+    .modal table.responsive-table td:nth-child(1),
+    .modal table.responsive-table td:nth-child(2) {
+        padding-left: 0;
+    }
+    .modal table.responsive-table tr {
+        border-bottom: 1px solid #D1CDCD!important;
+        min-width: 100%;
+    }
     td {
         border-right: none!important;
         min-height: 30px;
