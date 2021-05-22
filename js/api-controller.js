@@ -1,13 +1,12 @@
 var APIHelper = APIHelper || {};
-APIHelper.url = "https://3hj4hcrvxb.execute-api.us-east-2.amazonaws.com/default";
-APIHelper.signUpEndpoint = '/digichief-signup';
-APIHelper.helpUsEndpoint = '/digichief-helpus';
+APIHelper.signUpEndpoint = 'https://3hj4hcrvxb.execute-api.us-east-2.amazonaws.com/default/digichief-signup';
+APIHelper.helpUsEndpoint = 'https://0g7uus37xj.execute-api.us-east-2.amazonaws.com/default/digichief-help';
 
 //APIHelper.url = 'http://127.0.0.1:3000/digichief-signup'
 
 APIHelper.postSignUp = function(data) {
     return $.ajax({
-        url: APIHelper.url + APIHelper.signUpEndpoint,
+        url: APIHelper.signUpEndpoint,
         crossDomain: true,
         method: 'POST',
         data: JSON.stringify(data),
@@ -18,7 +17,7 @@ APIHelper.postSignUp = function(data) {
 
 APIHelper.postHelpUs = function(data) {
     return $.ajax({
-        url: APIHelper.url + APIHelper.helpUsEndpoint,
+        url: APIHelper.helpUsEndpoint,
         crossDomain: true,
         method: 'POST',
         data: JSON.stringify(data),
@@ -29,9 +28,7 @@ APIHelper.postHelpUs = function(data) {
 
 
 
-
 var SignUpController = SignUpController || {}
-
 
 SignUpController.submitHandler = function(e) {
     e.preventDefault();
@@ -90,10 +87,17 @@ HelpUsController.submitHandler = function(e) {
         APIHelper.postHelpUs(formDataValues).then(function() {
             ModalUtils.hideLoader();
             ModalUtils.showThankYou();
+            grecaptcha.reset();
+            e.target.reset();
         }).fail(function (err) {
             console.log(err);
             ModalUtils.hideLoader();
-            ModalUtils.showError(err);
+            var resp = err.responseJSON;
+            if (resp.error == 'invalid-recaptcha') {
+                $('.recaptcha-desc').addClass('text-error');
+            } else {
+                ModalUtils.showError(err);
+            }
             grecaptcha.reset();
         });
     }
