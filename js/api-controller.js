@@ -38,7 +38,6 @@ SignUpController.submitHandler = function(e) {
         $('.recaptcha-desc').addClass('text-error');
     }
     
-
     if ($(e.target).valid()) {
         if (!recaptchaCode) {
             return;
@@ -51,11 +50,19 @@ SignUpController.submitHandler = function(e) {
         ModalUtils.showLoader();
 
         APIHelper.postSignUp(formDataValues).then(function() {
-            window.location.href = "signing-up.html";
+            ModalUtils.hideLoader();
+            ModalUtils.showThankYou();
+            grecaptcha.reset();
+            e.target.reset();
         }).fail(function (err) {
             console.log(err);
             ModalUtils.hideLoader();
-            ModalUtils.showError(err);
+            var resp = err.responseJSON || {};
+            if (resp.error == 'invalid-recaptcha') {
+                $('.recaptcha-desc').addClass('text-error');
+            } else {
+                ModalUtils.showError(err);
+            }
             grecaptcha.reset();
         });
     }
@@ -92,7 +99,7 @@ HelpUsController.submitHandler = function(e) {
         }).fail(function (err) {
             console.log(err);
             ModalUtils.hideLoader();
-            var resp = err.responseJSON;
+            var resp = err.responseJSON || {};
             if (resp.error == 'invalid-recaptcha') {
                 $('.recaptcha-desc').addClass('text-error');
             } else {
@@ -139,7 +146,7 @@ ModalUtils.setup = function() {
     var thankYouMessage = `
         <div id="thank-you-modal" style="display: none;" title="Success">
             <p>
-                Thank you, your request has been submitted.
+                Thank you! Your request has been submitted.
             </p>
         </div>`;
     $('body').append($(thankYouMessage));
