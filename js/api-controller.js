@@ -51,7 +51,9 @@ SignUpController.submitHandler = function(e) {
 
         APIHelper.postSignUp(formDataValues).then(function() {
             ModalUtils.hideLoader();
-            ModalUtils.showThankYou();
+            ModalUtils.showThankYou(function() {
+                window.location.href = "index.html"
+            });
             grecaptcha.reset();
             e.target.reset();
         }).fail(function (err) {
@@ -167,14 +169,18 @@ ModalUtils.showError = function() {
     });
 }
 
-ModalUtils.showThankYou = function() {
+ModalUtils.showThankYou = function(submitCb) {
     ModalUtils.setup();
     $("#thank-you-modal").dialog({
         modal: true,
         width: 375,
         buttons: {
             Ok: function() {
-                $( this ).dialog( "close" );
+                $(this).dialog("close");
+
+                if (submitCb) {
+                    submitCb();
+                }
             }
         }
     });
