@@ -1,13 +1,12 @@
 var APIHelper = APIHelper || {};
-APIHelper.url = "https://3hj4hcrvxb.execute-api.us-east-2.amazonaws.com/default";
-APIHelper.signUpEndpoint = '/digichief-signup';
-APIHelper.helpUsEndpoint = '/digichief-helpus';
+APIHelper.signUpEndpoint = 'https://3hj4hcrvxb.execute-api.us-east-2.amazonaws.com/default/digichief-signup';
+APIHelper.helpUsEndpoint = 'https://0g7uus37xj.execute-api.us-east-2.amazonaws.com/default/digichief-help';
 
 //APIHelper.url = 'http://127.0.0.1:3000/digichief-signup'
 
 APIHelper.postSignUp = function(data) {
     return $.ajax({
-        url: APIHelper.url + APIHelper.signUpEndpoint,
+        url: APIHelper.signUpEndpoint,
         crossDomain: true,
         method: 'POST',
         data: JSON.stringify(data),
@@ -18,7 +17,7 @@ APIHelper.postSignUp = function(data) {
 
 APIHelper.postHelpUs = function(data) {
     return $.ajax({
-        url: APIHelper.url + APIHelper.helpUsEndpoint,
+        url: APIHelper.helpUsEndpoint,
         crossDomain: true,
         method: 'POST',
         data: JSON.stringify(data),
@@ -29,9 +28,7 @@ APIHelper.postHelpUs = function(data) {
 
 
 
-
 var SignUpController = SignUpController || {}
-
 
 SignUpController.submitHandler = function(e) {
     e.preventDefault();
@@ -41,7 +38,6 @@ SignUpController.submitHandler = function(e) {
         $('.recaptcha-desc').addClass('text-error');
     }
     
-
     if ($(e.target).valid()) {
         if (!recaptchaCode) {
             return;
@@ -54,11 +50,21 @@ SignUpController.submitHandler = function(e) {
         ModalUtils.showLoader();
 
         APIHelper.postSignUp(formDataValues).then(function() {
-            window.location.href = "signing-up.html";
+            ModalUtils.hideLoader();
+            ModalUtils.showThankYou(function() {
+                window.location.href = "index.html"
+            });
+            grecaptcha.reset();
+            e.target.reset();
         }).fail(function (err) {
             console.log(err);
             ModalUtils.hideLoader();
-            ModalUtils.showError(err);
+            var resp = err.responseJSON || {};
+            if (resp.error == 'invalid-recaptcha') {
+                $('.recaptcha-desc').addClass('text-error');
+            } else {
+                ModalUtils.showError(err);
+            }
             grecaptcha.reset();
         });
     }
@@ -90,10 +96,17 @@ HelpUsController.submitHandler = function(e) {
         APIHelper.postHelpUs(formDataValues).then(function() {
             ModalUtils.hideLoader();
             ModalUtils.showThankYou();
+            grecaptcha.reset();
+            e.target.reset();
         }).fail(function (err) {
             console.log(err);
             ModalUtils.hideLoader();
-            ModalUtils.showError(err);
+            var resp = err.responseJSON || {};
+            if (resp.error == 'invalid-recaptcha') {
+                $('.recaptcha-desc').addClass('text-error');
+            } else {
+                ModalUtils.showError(err);
+            }
             grecaptcha.reset();
         });
     }
@@ -135,7 +148,7 @@ ModalUtils.setup = function() {
     var thankYouMessage = `
         <div id="thank-you-modal" style="display: none;" title="Success">
             <p>
-                Thank you, your request has been submitted.
+                Thank you! Your request has been submitted.
             </p>
         </div>`;
     $('body').append($(thankYouMessage));
@@ -156,14 +169,18 @@ ModalUtils.showError = function() {
     });
 }
 
-ModalUtils.showThankYou = function() {
+ModalUtils.showThankYou = function(submitCb) {
     ModalUtils.setup();
     $("#thank-you-modal").dialog({
         modal: true,
         width: 375,
         buttons: {
             Ok: function() {
-                $( this ).dialog( "close" );
+                $(this).dialog("close");
+
+                if (submitCb) {
+                    submitCb();
+                }
             }
         }
     });
