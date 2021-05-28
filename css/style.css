@@ -1034,6 +1034,10 @@ td:nth-child(2) {
     text-indent: 80px;
 }
 
+.text-indent-90 {
+    text-indent: 90px;
+}
+
 .text-indent-100 {
     text-indent: 100px;
 }
