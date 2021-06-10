@@ -104,11 +104,11 @@
         <a href="odds-baseball.html" class="level-3"><span>Baseball</span></a>
         <a href="odds-basketball.html" class="level-3"><span>Basketball</span></a>
         <a href="odds-basketball-nba.html" class="level-2 pl-90px"><span>NBA Odds v1</span></a>
-        <a href="odds-basketball-json.html" class="level-4 pl-120px active"><span>JSON | XML</span></a>
-        <a href="odds-basketball-json-structure.html" class="level-5"><span>Query Structure</span></a>
-        <a href="odds-basketball-json-parameters.html" class="level-5"><span>Parameters</span></a>
-        <a href="odds-basketball-json-data-points.html" class="level-5"><span>Data Points Returned</span></a>
         <a href="odds-basketball-wnba.html" class="level-2 pl-90px"><span>WNBA Odds v1</span></a>
+        <a href="odds-basketball-wnba-json.html" class="level-4 pl-120px"><span>JSON | XML</span></a>
+        <a href="odds-basketball-wnba-json-structure.html" class="level-5"><span>Query Structure</span></a>
+        <a href="odds-basketball-wnba-json-parameters.html" class="level-5"><span>Parameters</span></a>
+        <a href="odds-basketball-wnba-json-data-points.html" class="level-5 active"><span>Data Points Returned</span></a>
         <a href="api-being-developed.html" class="level-3"><span>Football</span></a>
         <a href="api-being-developed.html" class="level-3"><span>Golf</span></a>
         <a href="api-being-developed.html" class="level-3"><span>Hockey</span></a>
@@ -127,199 +127,6 @@
     </div>
 
     <div class="main-content">
-        <h2 class="main-subtitle">NBA Odds v1</h2>
-        <div class="main-item mb-20 fw-500">Query Structure</div>
-        <div class="col-left mb-20">
-            <div class="main-descr">Update Frequency:</div>
-        </div>
-        <div class="col-right mb-20">
-            <div class="main-descr fw-500">As Necessary</div>
-        </div>
-        <div class="col-left mb-20">
-            <div class="main-format">API:</div>
-        </div>
-        <div class="col-right mb-20">
-            <div class="main-format">https://api.digichief.com/sports-nba/getodds<span>{format}</span>/<span>{customer}</span>/<span>{customer_api_key}</span>/<span>{team_abbr}</span>/<span>{bookmaker_abbr}</span></div>
-        </div>
-
-        <div class="main-item fw-500">Parameters</div>
-        <table class="responsive-table">
-            <colgroup>
-                <col style="width: 30%;">
-                <col style="width: 70%;">
-            </colgroup>
-            <thead>
-                <tr>
-                    <th>Query Parameter</th>
-                    <th>Description | Parameter Options</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="border-bottom">
-                    <td data-title="Query Parameter">
-                        <p class="fw-500">format</p>
-                    </td>
-                    <td>
-                        <div class="col-left">
-                            <p class="fw-500">JSON</p>
-                        </div>
-                        <div class="col-right">
-                            <p class="text-dark">Must be capitalized</p>
-                        </div>
-                        <div class="col-left">
-                            <p class="fw-500">XML</p>
-                        </div>
-                        <div class="col-right">
-                            <p class="text-dark">Must be capitalized</p>
-                        </div>
-                        <div class="col-left">
-                            <p class="fw-500">JSON_dev</p>
-                        </div>
-                        <div class="col-right">
-                            <p class="text-dark">Sandbox file</p>
-                        </div>
-                        <div class="col-left">
-                            <p class="fw-500">XML_dev</p>
-                        </div>
-                        <div class="col-right">
-                            <p class="text-dark">Sandbox file</p>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="border-bottom">
-                    <td data-title="Query Parameter">
-                        <p class="fw-500">customer</p>
-                    </td>
-                    <td>
-                        <p class="text-dark">Digichief will give you a unique abbrievation for your company</p>
-                    </td>
-                </tr>
-                <tr class="border-bottom">
-                    <td data-title="Query Parameter">
-                        <p class="fw-500">customer_api_key</p>
-                    </td>
-                    <td>
-                        <p class="text-dark">Your company's unique API key | Digichief will give this to you</p>
-                    </td>
-                    <tr class="border-bottom">
-                        <td data-title="Query Parameter">
-                            <p class="fw-500">team_abbr</p>
-                        </td>
-                        <td>
-                            <div class="col-left">
-                                <div id="team-abbr" class="modal">
-                                    <div class="main-item">NBA Team Abbv</div>
-                                    <table class="responsive-table">
-                                        <colgroup>
-                                            <col style="width: 30%;">
-                                            <col style="width: 70%;">
-                                        </colgroup>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <p class="text-dark">All</p>
-                                                </td>
-                                                <td>
-                                                    <p class="text-dark">All teams</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                                <!-- Link to open the modal -->
-                                <p class="fw-500">Team Abbr <a href="#team-abbr" rel="modal:open" class="text-primary">link</a></p>
-                            </div>
-                            <div class="col-right">
-                                <p class="text-dark">All or Team Abbr to only get that team</p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-title="Query Parameter">
-                            <p class="fw-500">bookmaker_abbr</p>
-                        </td>
-                        <td>
-                            <div class="col-left">
-                                <div id="bookmaker-abbr" class="modal">
-                                    <div class="main-item">Bookmaker Abbv</div>
-                                    <table class="responsive-table">
-                                        <colgroup>
-                                            <col style="width: 30%;">
-                                            <col style="width: 70%;">
-                                        </colgroup>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <p class="text-dark">All</p>
-                                                </td>
-                                                <td>
-                                                    <p class="text-dark">All bookmakers</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p class="text-dark">MGM</p>
-                                                </td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p class="text-dark">DraftKings</p>
-                                                </td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p class="text-dark">FanDuel</p>
-                                                </td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p class="text-dark">SugarHouseNJ</p>
-                                                </td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p class="text-dark">PointsBet</p>
-                                                </td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p class="text-dark">CaesarsNewJersey</p>
-                                                </td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p class="text-dark">Bet365NewJersey</p>
-                                                </td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p class="text-dark">WilliamHillNewJersey</p>
-                                                </td>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                                <!-- Link to open the modal -->
-                                <p class="fw-500">Bookmaker Abbr <a href="#bookmaker-abbr" rel="modal:open" class="text-primary">link</a></p>
-                            </div>
-                            <div class="col-right">
-                                <p class="text-dark">All or Bookmaker Abbr to only get that Bookmaker</p>
-                            </div>
-                        </td>
-                    </tr>
-            </tbody>
-        </table>
-
         <div class="main-item fw-500">Data Points Returned</div>
         <table class="responsive-table">
             <colgroup>
@@ -363,7 +170,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-20 p-0">NBA [Array]</p>
+                        <p class="text-dark text-indent-20 p-0">WNBA [Array]</p>
                     </td>
                     <td></td>
                 </tr>
@@ -426,7 +233,7 @@
                         <p class="text-dark text-indent-50 p-0">group</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">NBA Conference/Division</p>
+                        <p class="text-dark p-0">WNBA Conference/Division</p>
                     </td>
                 </tr>
                 <tr>
@@ -448,7 +255,7 @@
                         <p class="text-dark text-indent-50 p-0">name</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">NBA season name</p>
+                        <p class="text-dark p-0">WNBA season name</p>
                     </td>
                 </tr>
                 <tr>
@@ -456,7 +263,7 @@
                         <p class="text-dark text-indent-50 p-0">start_date</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">NBA season start date</p>
+                        <p class="text-dark p-0">WNBA season start date</p>
                     </td>
                 </tr>
                 <tr>
@@ -464,7 +271,7 @@
                         <p class="text-dark text-indent-50 p-0">end_date</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">NBA season end date</p>
+                        <p class="text-dark p-0">WNBA season end date</p>
                     </td>
                 </tr>
                 <tr>
@@ -472,7 +279,7 @@
                         <p class="text-dark text-indent-50 p-0">year</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">NBA season year</p>
+                        <p class="text-dark p-0">WNBA season year</p>
                     </td>
                 </tr>
                 <tr>
@@ -771,7 +578,7 @@
                         <p class="text-dark text-indent-80 p-0">name</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Bookmaker </p>
+                        <p class="text-dark p-0">Bookmaker</p>
                     </td>
                 </tr>
                 <tr>
@@ -902,7 +709,7 @@
                         <p class="text-dark text-indent-100 p-0">name</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Bookmaker </p>
+                        <p class="text-dark p-0">Bookmaker</p>
                     </td>
                 </tr>
                 <tr>
