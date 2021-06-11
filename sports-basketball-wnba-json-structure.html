@@ -103,11 +103,11 @@
         <a href="sports-baseball.html" class="level-3"><span>Baseball</span></a>
         <a href="sports-basketball.html" class="level-3"><span>Basketball</span></a>
         <a href="sports-basketball-nba.html" class="level-2 pl-90px"><span>NBA v1</span></a>
-        <a href="sports-basketball-json.html" class="level-4 pl-120px active"><span>JSON | XML</span></a>
-        <a href="sports-basketball-json-structure.html" class="level-5"><span>Query Structure</span></a>
-        <a href="sports-basketball-json-parameters.html" class="level-5"><span>Parameters</span></a>
-        <a href="sports-basketball-json-data-points.html" class="level-5"><span>Data Points Returned</span></a>
         <a href="sports-basketball-wnba.html" class="level-2 pl-90px"><span>WNBA v1</span></a>
+        <a href="sports-basketball-wnba-json.html" class="level-4 pl-120px"><span>JSON | XML</span></a>
+        <a href="sports-basketball-wnba-json-structure.html" class="level-5 active"><span>Query Structure</span></a>
+        <a href="sports-basketball-wnba-json-parameters.html" class="level-5"><span>Parameters</span></a>
+        <a href="sports-basketball-wnba-json-data-points.html" class="level-5"><span>Data Points Returned</span></a>
         <a href="api-being-developed.html" class="level-3"><span>Football</span></a>
         <a href="api-being-developed.html" class="level-3"><span>Golf</span></a>
         <a href="api-being-developed.html" class="level-3"><span>Hockey</span></a>
@@ -127,11 +127,10 @@
     </div>
 
     <div class="main-content">
-        <h2 class="main-subtitle">NBA v1</h2>
         <div class="main-item mb-20 fw-500">Query Structure</div>
         <div class="main-descr">Update Frequency: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp As Necessary</div>
-        <div class="main-format">API: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Boxscore &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp https://api.digichief.com/sports-nba/<span>{method}</span>/<span>{format}</span>/<span>{customer}</span>/<span>{customer_api_key}</span></div>
-        <div class="main-format">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Boxscore with odds &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp https://api.digichief.com/sports-nba/<span>{method}</span>/<span>{format}</span>/<span>{customer}</span>/<span>{customer_api_key}</span>/<span>{team_abbr}</span>/<span>{bookmaker_abbr}</span></div>
+        <div class="main-format">API: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Boxscore &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp https://api.digichief.com/sports-wnba/<span>{method}</span>/<span>{format}</span>/<span>{customer}</span>/<span>{customer_api_key}</span></div>
+        <div class="main-format">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Boxscore with odds &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp https://api.digichief.com/sports-wnba/<span>{method}</span>/<span>{format}</span>/<span>{customer}</span>/<span>{customer_api_key}</span>/<span>{team_abbr}</span>/<span>{bookmaker_abbr}</span></div>
 
         <div class="main-item fw-500">Parameters</div>
         <table class="responsive-table">
@@ -236,7 +235,7 @@
                     <td>
                         <div class="col-left">
                             <div id="team-abbr" class="modal">
-                                <div class="main-item">NBA Team Abbv</div>
+                                <div class="main-item">WNBA Team Abbv</div>
                                 <table class="responsive-table">
                                     <colgroup>
                                         <col style="width: 30%;">
@@ -256,31 +255,7 @@
                                                 <p class="text-dark">ATL</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">Atlanta Hawks</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">BKN</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Brooklyn Nets</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">BOS</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Boston Celtics</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">CHA</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Charlotte Hornets</p>
+                                                <p class="text-dark">Atlanta Dream</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -288,15 +263,15 @@
                                                 <p class="text-dark">CHI</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">Chicago Bulls</p>
+                                                <p class="text-dark">Chicago Sky</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <p class="text-dark">CLE</p>
+                                                <p class="text-dark">CON</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">Cleveland Cavaliers</p>
+                                                <p class="text-dark">Connecticut Sun</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -304,39 +279,7 @@
                                                 <p class="text-dark">DAL</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">Dallas Mavericks</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">DEN</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Denver Nuggets</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">DET</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Detroit Pistons</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">GSW</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Golden State Warriorss</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">HOU</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Houston Rockets</p>
+                                                <p class="text-dark">Dallas Wings</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -344,55 +287,23 @@
                                                 <p class="text-dark">IND</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">Indiana Pacers</p>
+                                                <p class="text-dark">Indiana Fever</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <p class="text-dark">LAD</p>
+                                                <p class="text-dark">LAS</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">Los Angeles Dodgers</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">LAC</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">LA Clippers</p>
+                                                <p class="text-dark">Los Angeles Sparks</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <p class="text-dark">LAL</p>
+                                                <p class="text-dark">LVA</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">Los Angeles Lakers</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">MEM</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Memphis Grizzlies</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">MIA</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Miami Heat</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">MIL</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Milwaukee Bucks</p>
+                                                <p class="text-dark">Las Vegas Aces</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -400,95 +311,31 @@
                                                 <p class="text-dark">MIN</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">Minnesota Timberwolves</p>
+                                                <p class="text-dark">Minnesota Lynx</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <p class="text-dark">NOP</p>
+                                                <p class="text-dark">NYL</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">New Orleans Pelicans</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">NYK</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">New York Knicks</p>
+                                                <p class="text-dark">New York Liberty</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <p class="text-dark">OKC</p>
+                                                <p class="text-dark">PHO</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">Oklahoma City Thunder</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">ORL</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Orlando Magic</p>
+                                                <p class="text-dark">Phoenix Mercury</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <p class="text-dark">PHI</p>
+                                                <p class="text-dark">SEA</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">Philadelphia 76ers</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">PHX</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Phoenix Sunds</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">POR</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Portland Trail Blazers</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">SAC</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Sacramento Kings</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">SAS</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">San Antonio Spurs</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">TOR</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Toronto Raptors</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">UTA</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Utah Jazz</p>
+                                                <p class="text-dark">Seattle Storm</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -496,7 +343,7 @@
                                                 <p class="text-dark">WAS</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">Washington Wizards</p>
+                                                <p class="text-dark">Wasington Mystics</p>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -639,7 +486,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark p-0">NBA [Array]</p>
+                        <p class="text-dark p-0">WNBA [Array]</p>
                     </td>
                     <td></td>
                 </tr>
@@ -4240,7 +4087,7 @@
                         <p class="text-dark text-indent-40 p-0">group</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">NBA Conference/Division</p>
+                        <p class="text-dark p-0">WNBA Conference/Division</p>
                     </td>
                 </tr>
                 <tr>
@@ -4262,7 +4109,7 @@
                         <p class="text-dark text-indent-40 p-0">name</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">NBA season name</p>
+                        <p class="text-dark p-0">WNBA season name</p>
                     </td>
                 </tr>
                 <tr>
@@ -4270,7 +4117,7 @@
                         <p class="text-dark text-indent-40 p-0">start_date</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">NBA season start date</p>
+                        <p class="text-dark p-0">WNBA season start date</p>
                     </td>
                 </tr>
                 <tr>
@@ -4278,7 +4125,7 @@
                         <p class="text-dark text-indent-40 p-0">end_date</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">NBA season end date</p>
+                        <p class="text-dark p-0">WNBA season end date</p>
                     </td>
                 </tr>
                 <tr>
@@ -4286,7 +4133,7 @@
                         <p class="text-dark text-indent-40 p-0">year</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">NBA season year</p>
+                        <p class="text-dark p-0">WNBA season year</p>
                     </td>
                 </tr>
                 <tr>
