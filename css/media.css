@@ -250,7 +250,11 @@
     td .text-indent-80,
     td .text-indent-90,
     td .text-indent-100,
+    td .text-indent-110,
+    td .text-indent-120,
     td .text-indent-130,
+    td .text-indent-140,
+    td .text-indent-150,
     td .text-indent-160 {
         text-indent: 0;
     }

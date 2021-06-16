@@ -1042,8 +1042,24 @@ td:nth-child(2) {
     text-indent: 100px;
 }
 
+.text-indent-110 {
+    text-indent: 110px;
+}
+
+.text-indent-120 {
+    text-indent: 120px;
+}
+
 .text-indent-130 {
     text-indent: 130px;
+}
+
+.text-indent-140 {
+    text-indent: 140px;
+}
+
+.text-indent-150 {
+    text-indent: 150px;
 }
 
 .text-indent-160 {
