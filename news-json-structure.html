@@ -103,6 +103,7 @@
         <a href="news-json-parameters.html" class="level-4"><span>Parameters</span></a>
         <a href="news-json-data-points.html" class="level-4"><span>Data Points Returned</span></a>
         <a href="news-mrss.html" class="level-3"><span>MRSS</span></a>
+        <a href="news-spa.html" class="level-2"><span>Spanish Headlines v1</span></a>
         <a href="api-being-developed.html" class="level-1">Weather</a>
         <a href="sports.html" class="level-1"><span>Sports</span></a>
         <a href="odds.html" class="level-1"><span>Odds</span></a>
@@ -218,7 +219,13 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-10 p-0">datetime</p>
+                        <p class="text-dark text-indent-20 p-0">content [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">datetime</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Date/time file was updated</p>
@@ -226,7 +233,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-10 p-0">datasource</p>
+                        <p class="text-dark text-indent-40 p-0">datasource</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Digichief Data Source</p>
@@ -234,13 +241,13 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-10 p-0">News [Array]</p>
+                        <p class="text-dark text-indent-40 p-0">News [Array]</p>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">category</p>
+                        <p class="text-dark text-indent-100 p-0">category</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Category of news from parameters</p>
@@ -248,7 +255,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">title</p>
+                        <p class="text-dark text-indent-100 p-0">title</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Title of headline</p>
@@ -256,7 +263,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">description</p>
+                        <p class="text-dark text-indent-100 p-0">description</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Shortened headline for compact display</p>
@@ -264,7 +271,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">subcategory</p>
+                        <p class="text-dark text-indent-100 p-0">subcategory</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Indicates geographic location of the headline, i.e., US, EU, etc.</p>
@@ -272,7 +279,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">abstract</p>
+                        <p class="text-dark text-indent-100 p-0">abstract</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Longer version of headline that is more indepth</p>
@@ -280,7 +287,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">story</p>
+                        <p class="text-dark text-indent-100 p-0">story</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Link to the entire story that is even longer than the abstract</p>
@@ -288,7 +295,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_800x600</p>
+                        <p class="text-dark text-indent-100 p-0">image_800x600</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">800x600</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -296,7 +303,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_1280x720</p>
+                        <p class="text-dark text-indent-100 p-0">image_1280x720</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">1280x720</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -304,7 +311,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_1920x1080</p>
+                        <p class="text-dark text-indent-100 p-0">image_1920x1080</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">1920x1080</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -312,7 +319,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_1080x1920</p>
+                        <p class="text-dark text-indent-100 p-0">image_1080x1920</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">1080x1920</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -320,7 +327,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_720x1080</p>
+                        <p class="text-dark text-indent-100 p-0">image_720x1080</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">720x1080</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -328,7 +335,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_600x800</p>
+                        <p class="text-dark text-indent-100 p-0">image_600x800</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">600x800</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -336,7 +343,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_800x600_caption</p>
+                        <p class="text-dark text-indent-100 p-0">image_800x600_caption</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">800x600</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -344,7 +351,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_1280x720_caption</p>
+                        <p class="text-dark text-indent-100 p-0">image_1280x720_caption</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">1280x720</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -352,7 +359,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_1920x1080_caption</p>
+                        <p class="text-dark text-indent-100 p-0">image_1920x1080_caption</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">1920x1080</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -360,7 +367,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_1080x1920_caption</p>
+                        <p class="text-dark text-indent-100 p-0">image_1080x1920_caption</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">1080x1920</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -368,7 +375,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_720x1080_caption</p>
+                        <p class="text-dark text-indent-100 p-0">image_720x1080_caption</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">720x1080</span> pixel format with <span class="fw-500">no caption</span></p>
@@ -376,7 +383,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">image_600x800_caption</p>
+                        <p class="text-dark text-indent-100 p-0">image_600x800_caption</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Story image in <span class="fw-500">600x800</span> pixel format with <span class="fw-500">no caption</span></p>

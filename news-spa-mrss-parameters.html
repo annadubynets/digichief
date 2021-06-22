@@ -98,12 +98,12 @@
         <a href="index.html" class="level-1"><span>Getting Started</span></a>
         <a href="news.html" class="level-1"><span>News</span></a>
         <a href="headlines-v1.html" class="level-2"><span>Headlines v1</span></a>
-        <a href="news-json.html" class="level-3 active"><span>JSON | XML</span></a>
-        <a href="news-json-structure.html" class="level-4"><span>Query Structure</span></a>
-        <a href="news-json-parameters.html" class="level-4"><span>Parameters</span></a>
-        <a href="news-json-data-points.html" class="level-4"><span>Data Points Returned</span></a>
-        <a href="news-mrss.html" class="level-3"><span>MRSS</span></a>
         <a href="news-spa.html" class="level-2"><span>Spanish Headlines v1</span></a>
+        <a href="news-spa-json.html" class="level-3"><span>JSON | XML</span></a>
+        <a href="news-spa-mrss.html" class="level-3"><span>MRSS</span></a>
+        <a href="news-spa-mrss-structure.html" class="level-4"><span>Query Structure</span></a>
+        <a href="news-spa-mrss-parameters.html" class="level-4 active"><span>Parameters</span></a>
+        <a href="news-spa-mrss-data-points.html" class="level-4"><span>Data Points Returned</span></a>
         <a href="api-being-developed.html" class="level-1">Weather</a>
         <a href="sports.html" class="level-1"><span>Sports</span></a>
         <a href="odds.html" class="level-1"><span>Odds</span></a>
@@ -120,23 +120,6 @@
     </div>
 
     <div class="main-content">
-        <h1 class="main-title">Headlines v1</h1>
-        <h2 class="main-subtitle">JSON | XML</h2>
-        <div class="main-item mb-20 fw-500">Query Structure</div>
-        <div class="col-left mb-20">
-            <div class="main-descr">Update Frequency:</div>
-        </div>
-        <div class="col-right mb-20">
-            <div class="main-descr fw-500">15 minutes</div>
-        </div>
-
-        <div class="col-left mb-20">
-            <div class="main-format">API:</div>
-        </div>
-        <div class="col-right mb-20">
-            <div class="main-format">https://api.digichief.com/news/getnews<span>{format}</span>/<span>{category}</span>/<span>{customer}</span>/<span>{customer_api_key}</span></div>
-        </div>
-
         <div class="main-item fw-500">Parameters</div>
         <table class="responsive-table">
             <colgroup>
@@ -152,11 +135,11 @@
             <tbody>
                 <tr class="border-bottom">
                     <td data-title="Query Parameter">
-                        <p class="fw-500">format</p>
+                        <p class="fw-500">orientation</p>
                     </td>
                     <td>
-                        <p><span class="fw-500">JSON</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark">Must be capitalized</span></p>
-                        <p><span class="fw-500">XML</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark">Must be capitalized</span></p>
+                        <p><span class="fw-500">Landscape</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark">Must be capitalized</span></p>
+                        <p><span class="fw-500">Portrait</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark">Must be capitalized</span></p>
                     </td>
                 </tr>
                 <tr class="border-bottom">
@@ -165,8 +148,8 @@
                     </td>
                     <td>
                         <p class="fw-500">All</p>
-                        <p><span class="fw-500">Top2</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark ">- Most recent 2 headlines in each category</span></p>
-                        <p><span class="fw-500">Top1</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark ">- Most recent headline in each category</span></p>
+                        <p><span class="fw-500">Top2</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark ">- Most recent 2 headlines in each category</span></p>
+                        <p><span class="fw-500">Top1</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span class="text-dark ">- Most recent headline in each category</span></p>
                         <p class="fw-500">Business</p>
                         <p class="fw-500">Entertainment</p>
                         <p class="fw-500">General</p>
@@ -213,51 +196,111 @@
             <tbody>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark p-0">advisorydata</p>
+                        <p class="text-dark p-0">?xml version</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Top Level</p>
+                        <p class="text-dark p-0">XML version and encoding</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-20 p-0">content [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">datetime</p>
+                        <p class="text-dark p-0">rss xmlns</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Date/time file was updated</p>
+                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">datasource</p>
+                        <p class="text-dark p-0">channel</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Digichief Data Source</p>
+                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">News [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">category</p>
+                        <p class="text-dark text-indent-50 p-0">title</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Category of news from parameters</p>
+                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">title</p>
+                        <p class="text-dark text-indent-50 p-0">atom link</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">description</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">link</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">docs</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">generator</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">language</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">en=English</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">pubDate</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0"><span class="text-uppercase">Item </span><span class="fw-500">Array publish date</spanItem></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">lastBuildDate</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">item [Array]</p>
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-140 p-0">title</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Title of headline</p>
@@ -265,7 +308,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">description</p>
+                        <p class="text-dark text-indent-140 p-0">description</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Shortened headline for compact display</p>
@@ -273,23 +316,15 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">subcategory</p>
+                        <p class="text-dark text-indent-140 p-0">pubDate</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Indicates geographic location of the headline, i.e., US, EU, etc.</p>
+                        <p class="text-dark p-0">Individual Item publish date</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">abstract</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Longer version of headline that is more indepth</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">story</p>
+                        <p class="text-dark text-indent-140 p-0">link</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Link to the entire story that is even longer than the abstract</p>
@@ -297,98 +332,42 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">image_800x600</p>
+                        <p class="text-dark text-indent-140 p-0">guid</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">800x600</span> pixel format with <span class="fw-500">no caption</span></p>
+                        <p class="text-dark p-0">Mandatory field for MRSS Validation</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">image_1280x720</p>
+                        <p class="text-dark text-indent-140 p-0">category</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">1280x720</span> pixel format with <span class="fw-500">no caption</span></p>
+                        <p class="text-dark p-0">Category of news from parameters</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">image_1920x1080</p>
+                        <p class="text-dark text-indent-140 p-0">enclosure url</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">1920x1080</span> pixel format with <span class="fw-500">no caption</span></p>
+                        <p class="text-dark p-0">URL for Media</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">image_1080x1920</p>
+                        <p class="text-dark text-indent-140 p-0">media:content</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">1080x1920</span> pixel format with <span class="fw-500">no caption</span></p>
+                        <p class="text-dark p-0">URL for Media</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">image_720x1080</p>
+                        <p class="text-dark text-indent-140 p-0">media:description</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">720x1080</span> pixel format with <span class="fw-500">no caption</span></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">image_600x800</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">600x800</span> pixel format with <span class="fw-500">no caption</span></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">image_800x600_caption</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">800x600</span> pixel format with <span class="fw-500">no caption</span></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">image_1280x720_caption</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">1280x720</span> pixel format with <span class="fw-500">no caption</span></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">image_1920x1080_caption</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">1920x1080</span> pixel format with <span class="fw-500">no caption</span></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">image_1080x1920_caption</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">1080x1920</span> pixel format with <span class="fw-500">no caption</span></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">image_720x1080_caption</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">720x1080</span> pixel format with <span class="fw-500">no caption</span></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">image_600x800_caption</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Story image in <span class="fw-500">600x800</span> pixel format with <span class="fw-500">no caption</span></p>
+                        <p class="text-dark p-0">Media description</p>
                     </td>
                 </tr>
             </tbody>
@@ -420,19 +399,19 @@
                 <div class="footer-socials">
                     <a href="https://www.facebook.com/digichief?ref=hl" target="_blank" class="footer-social-item">
                         <span class="icon-facebook"></span>
-                    </a>
-                    <a href="https://www.linkedin.com/company/digichief-content-feed" target="_blank" class="footer-social-item">
-                        <span class="icon-linkedin2"></span>
-                    </a>
-                    <a href="http://vimeo.com/digichief" target="_blank" class="footer-social-item">
-                        <span class="icon-vimeo"></span>
-                    </a>
-                    <a href="https://twitter.com/DIGI_TWEETS" target="_blank" class="footer-social-item">
-                        <span class="icon-twitter"></span>
-                    </a>
-                </div>
-            </div>
-        </div>
+                            </a>
+                            <a href="https://www.linkedin.com/company/digichief-content-feed" target="_blank" class="footer-social-item">
+                                <span class="icon-linkedin2"></span>
+                            </a>
+                            <a href="http://vimeo.com/digichief" target="_blank" class="footer-social-item">
+                                <span class="icon-vimeo"></span>
+                            </a>
+                            <a href="https://twitter.com/DIGI_TWEETS" target="_blank" class="footer-social-item">
+                                <span class="icon-twitter"></span>
+                            </a>
+    </div>
+    </div>
+    </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
