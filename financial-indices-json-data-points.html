@@ -105,11 +105,11 @@
         <a href="api-being-developed.html" class="level-1">Lottery</a>
         <a href="financial.html" class="level-1">Financial</a>
         <a href="financial-quotes-v1.html" class="level-2 pl-90px"><span>Quotes v1</span></a>
-        <a href="financial-quotes-json.html" class="level-4 pl-120px"><span>JSON | XML</span></a>
-        <a href="financial-quotes-json-structure.html" class="level-5 active"><span>Query Structure</span></a>
-        <a href="financial-quotes-json-parameters.html" class="level-5"><span>Parameters</span></a>
-        <a href="financial-quotes-json-data-points.html" class="level-5"><span>Data Points Returned</span></a>
         <a href="financial-indices-v1.html" class="level-3 pl-90px"><span>Indices v1</span></a>
+        <a href="financial-indices-json.html" class="level-4 pl-120px"><span>JSON | XML</span></a>
+        <a href="financial-indices-json-structure.html" class="level-5"><span>Query Structure</span></a>
+        <a href="financial-indices-json-parameters.html" class="level-5"><span>Parameters</span></a>
+        <a href="financial-indices-json-data-points.html" class="level-5 active"><span>Data Points Returned</span></a>
         <a href="financial-commodities-v1.html" class="level-3 pl-90px"><span>Commodities v1</span></a>
         <a href="api-being-developed.html" class="level-1">Flights</a>
         <a href="api-being-developed.html" class="level-1">Traffic</a>
@@ -121,227 +121,6 @@
     </div>
 
     <div class="main-content">
-        <div class="main-item mb-20 fw-500">Query Structure</div>
-        <div class="col-left mb-20">
-            <div class="main-descr">Update Frequency:</div>
-        </div>
-        <div class="col-right mb-20">
-            <div class="main-descr fw-500">As Necessary</div>
-        </div>
-        <div class="col-left mb-20">
-            <div class="main-format">API:</div>
-        </div>
-        <div class="col-right mb-20">
-            <div class="main-format">https://api.digichief.com/financial/getquotes/<span>{customer}</span>/<span>{customer_api_key}</span>?<span>{parameters]</span></div>
-        </div>
-
-        <div class="main-item fw-500">Parameters</div>
-        <table class="responsive-table">
-            <colgroup>
-                <col style="width: 30%;">
-                <col style="width: 70%;">
-            </colgroup>
-            <thead>
-                <tr>
-                    <th>Query Parameter</th>
-                    <th>Description | Parameter Options</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="border-bottom">
-                    <td data-title="Query Parameter">
-                        <p class="fw-500">customer</p>
-                    </td>
-                    <td>
-                        <p class="text-dark">Digichief will give you a unique abbrievation for your company</p>
-                    </td>
-                </tr>
-                <tr class="border-bottom">
-                    <td data-title="Query Parameter">
-                        <p class="fw-500">customer_api_key</p>
-                    </td>
-                    <td>
-                        <p class="text-dark">Your company's unique API key | Digichief will give this to you</p>
-                    </td>
-                </tr>
-                <tr class="border-bottom">
-                    <td data-title="Query Parameter">
-                        <p class="fw-500">parameters</p>
-                    </td>
-                    <td>
-                        <div class="col-left">
-                            <p class="fw-500">format=</p>
-                        </div>
-                        <div class="col-right">
-                            <p class="text-dark">json or xml</p>
-                        </div>
-                        <div class="col-left">
-                            <p class="fw-500">symbol=</p>
-                        </div>
-                        <div class="col-right">
-                            <div id="special-symbols" class="modal">
-                                <div class="main-item">Special Symbols</div>
-                                <table class="responsive-table">
-                                    <colgroup>
-                                        <col style="width: 30%;">
-                                        <col style="width: 70%;">
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$DJI-EOD</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Dow EOD</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$SPX-EOD</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">S&P EOD</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$COMP-EOD</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">NASDAQ EOD</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">t10mostactive</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Top 10 Most Active</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">t10percentgainers</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Top 10 Percent Gainers</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">t10percentlosers</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Top 10 Percent Losers</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$N225</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Nikkei 225</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$NDX</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Nasdaq 100</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$TX20</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">TSX Canadian</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$TX6C</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">TSX 60 Index</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$IRX</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">13-week T-bill</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$FVX</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">5-year T-note</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$TNX</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">10-year T-note</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$TYX</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">30-year T-note</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$FTSE</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">FTSE 100</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$NYA</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">NYSE</p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <p class="text-dark">Ticker symbol: stock, mutual funds and Special <a href="#special-symbols" rel="modal:open" class="text-primary">link</a></p>
-                            <p class="text-dark">Up to 50 symbols separated by a comma</p>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="border-bottom">
-                    <td data-title="Query Parameter">
-                        <p class="fw-500">customer</p>
-                    </td>
-                    <td>
-                        <p class="text-dark">Digichief will give you a unique abbrievation for your company</p>
-                    </td>
-                </tr>
-                <tr class="border-bottom">
-                    <td data-title="Query Parameter">
-                        <p class="fw-500">customer_api_key</p>
-                    </td>
-                    <td>
-                        <p class="text-dark">Your company's unique API key | Digichief will give this to you</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
         <div class="main-item fw-500">Data Points Returned</div>
         <table class="responsive-table">
             <colgroup>
@@ -388,7 +167,7 @@
                         <p class="text-dark text-indent-80 p-0">Symbol</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Symbol</p>
+                        <p class="text-dark p-0">Ticker Symbol</p>
                     </td>
                 </tr>
                 <tr>
@@ -724,8 +503,8 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
     <script src="js/jquery.modal.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/api-controller.js"></script>
     <script src="js/search-controller.js"></script>
 </body>
