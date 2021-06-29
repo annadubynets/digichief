@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digichief API Documentation</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/libs/jquery.modal.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -97,17 +96,16 @@
         </div>
 
         <a href="index.html" class="level-1"><span>Getting Started</span></a>
-        <a href="overview.html" class="level-6"><span>Overview</span></a>
-        <a href="get-api-key.html" class="level-6"><span>Get API Key</span></a>
-        <a href="sandbox.html" class="level-6"><span>Sandbox</span></a>
-        <a href="faq.html" class="level-6"><span>FAQ</span></a>
         <a href="news.html" class="level-1"><span>News</span></a>
         <a href="api-being-developed.html" class="level-1">Weather</a>
         <a href="sports.html" class="level-1"><span>Sports</span></a>
         <a href="odds.html" class="level-1"><span>Odds</span></a>
         <a href="stats.html" class="level-1"><span>Stats</span></a>
         <a href="api-being-developed.html" class="level-1">Lottery</a>
-        <a href="financial.html" class="level-1">Financial</a>
+        <a href="financial.html" class="level-1 active">Financial</a>
+        <a href="financial-quotes-v1.html" class="level-3 pl-90px"><span>Quotes v1</span></a>
+        <a href="financial-indices-v1.html" class="level-3 pl-90px"><span>Indices v1</span></a>
+        <a href="financial-commodities-v1.html" class="level-3 pl-90px"><span>Commodities v1</span></a>
         <a href="api-being-developed.html" class="level-1">Flights</a>
         <a href="api-being-developed.html" class="level-1">Traffic</a>
         <a href="api-being-developed.html" class="level-1">Transit</a>
@@ -118,42 +116,10 @@
     </div>
 
     <div class="main-content">
-        <h1 class="main-title">API Documentation for Developers</h1>
-        <h2 class="main-subtitle">Overview</h2>
-        <div class="main-descr">Welcome to Digichief's on-line API documentation repository for developers. You can use our APIs to access all of our content feeds if you have the appropriate authorization for your API key. You will find all of our content categories along the
-            side navigation bar to the left. Once a main content category is selected, the navigation menu will expand revealing sub-categories for that main category.
-        </div>
-
-        <h2 class="main-subtitle">Get API Key</h2>
-        <div class="main-descr">You will need an API key before you can access any of our content. This key identifies your account and is required for any API calls. If you do not already have a key, please go to <a href="sign-up.html" target="_blank" class="main-link">Sign up</a>            to setup a trial key.
-        </div>
-
-        <h2 class="main-subtitle">Sandbox</h2>
-        <div class="main-descr">We have setup a Developer Sandbox for you to develop with for content that is seasonal and not being generated "live" at the current time. For example, if this is May and you want to design the look of your output for NFL, naturally NFL would
-            not be "in season" at that time, so your query would return data from the Sandbox instead of live data. If there is a sandbox for a specific content category, it will be listed in the documentation for the API call format for that particular
-            content category.
-        </div>
-
-        <h2 class="main-subtitle">FAQ</h2>
-        <div class="main-item">What is an API request?</div>
-        <div class="main-descr">API stands for "Application Programming Interface." It defines the kinds of requests (calls) that can be made, how to make them, the data formats that should be used, the conventions to follow, etc.
-        </div>
-
-        <div class="main-item">How long does an API Trial Key last?</div>
-        <div class="main-descr">API trial keys last for 14 days.
-        </div>
-
-        <div class="main-item">How many requests can I make on the API Trial Key?</div>
-        <div class="main-descr">An API trial key is content specific and is limited to 1,000 requests.
-        </div>
-
-        <div class="main-item">Can I get a higher number of requests for the API Trial Key?</div>
-        <div class="main-descr">Yes. If you need a higher number of requests, please contact <a href="mailto:sales@digichief.com" target="_blank" class="main-link">sales@digichief.com</a> and they will work with you.
-        </div>
-
-        <div class="main-item">Will I be able to see all content within a category on the API Trial Key?</div>
-        <div class="main-descr">Yes. We do not limit any data points on the trial key .
-        </div>
+        <h1 class="main-title">Financial API Documentation</h1>
+        <a href="financial-quotes-v1.html" class="news-link">Quotes v1</a>
+        <a href="financial-indices-v1.html" class="news-link">Indices v1</a>
+        <a href="financial-commodities-v1.html" class="news-link">Commodities v1</a>
     </div>
 
     <footer class="footer">
@@ -197,8 +163,6 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.modal.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/api-controller.js"></script>
     <script src="js/search-controller.js"></script>
