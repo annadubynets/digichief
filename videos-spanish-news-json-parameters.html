@@ -109,17 +109,152 @@
         <a href="api-being-developed.html" class="level-1">Health</a>
         <a href="api-being-developed.html" class="level-1">Infotainment</a>
         <a href="api-being-developed.html" class="level-1">Images</a>
-        <a href="videos.html" class="level-1 active"><span>Videos</span></a>
+        <a href="videos.html" class="level-1"><span>Videos</span></a>
         <a href="videos-news.html" class="level-3"><span>News</span></a>
         <a href="videos-spanish-news.html" class="level-3"><span>Spanish News</span></a>
+        <a href="videos-spanish-news-v1.html" class="level-2 pl-90px"><span>Spanish News Video v1</span></a>
+        <a href="videos-spanish-news-json.html" class="level-4 pl-120px"><span>JSON | XML</span></a>
+        <a href="videos-spanish-news-json-structure.html" class="level-5"><span>Query Structure</span></a>
+        <a href="videos-spanish-news-json-parameters.html" class="level-5 active"><span>Parameters</span></a>
+        <a href="videos-spanish-news-json-data-points.html" class="level-5"><span>Data Points Returned</span></a>
         <a href="videos-weather.html" class="level-3"><span>Weather</span></a>
     </div>
 
     <div class="main-content">
-        <h1 class="main-title">Videos API Documentation</h1>
-        <a href="videos-news.html" class="news-link">News</a>
-        <a href="videos-spanish-news.html" class="news-link">Spanish News</a>
-        <a href="videos-weather.html" class="news-link">Weather</a>
+        <div class="main-item fw-500">Parameters</div>
+        <table class="responsive-table">
+            <colgroup>
+                <col style="width: 30%;">
+                <col style="width: 70%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Query Parameter</th>
+                    <th>Description | Parameter Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">format</p>
+                    </td>
+                    <td>
+                        <div class="col-left">
+                            <p class="fw-500">JSON</p>
+                        </div>
+                        <div class="col-right">
+                            <p class="text-dark">Must be capitalized</p>
+                        </div>
+                        <div class="col-left">
+                            <p class="fw-500">XML</p>
+                        </div>
+                        <div class="col-right">
+                            <p class="text-dark">Must be capitalized</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">customer</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">Digichief will give you a unique abbrievation for your company</p>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">customer_api_key</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">Your company's unique API key | Digichief will give this to you</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="main-item fw-500">Data Points Returned</div>
+        <table class="responsive-table">
+            <colgroup>
+                <col style="width: 30%;">
+                <col style="width: 70%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Data Points</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark p-0">advisorydata</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Top Level</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">content [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">datetime</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Date/Time last checked for updates</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">datasource</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Digichief</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">AP-Videos [Array]</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120 p-0">versioncreateddate</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Date/Time video was created</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120 p-0">iso8601</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Date/Time video was created in ISO8601 format</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120 p-0">videoURL</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">URL to video</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Category of news video</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <footer class="footer">
