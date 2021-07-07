@@ -99,22 +99,16 @@
         <a href="index.html" class="level-1"><span>Getting Started</span></a>
         <a href="news.html" class="level-1"><span>News</span></a>
         <a href="weather.html" class="level-1"><span>Weather</span></a>
+        <a href="weather-forecasts-v1.html" class="level-2 pl-90px"><span>Forecasts/Current Conditions v1</span></a>
+        <a href="weather-forecasts-json.html" class="level-4 pl-120px"><span>JSON | XML</span></a>
+        <a href="weather-forecasts-json-structure.html" class="level-5"><span>Query Structure</span></a>
+        <a href="weather-forecasts-json-parameters.html" class="level-5"><span>Parameters</span></a>
+        <a href="weather-forecasts-json-data-points.html" class="level-5 active"><span>Data Points Returned</span></a>
         <a href="sports.html" class="level-1"><span>Sports</span></a>
         <a href="odds.html" class="level-1"><span>Odds</span></a>
-        <a href="odds-baseball.html" class="level-3"><span>Baseball</span></a>
-        <a href="odds-basketball.html" class="level-3"><span>Basketball</span></a>
-        <a href="odds-basketball-nba.html" class="level-2 pl-90px"><span>NBA Odds v1</span></a>
-        <a href="odds-basketball-wnba.html" class="level-2 pl-90px"><span>WNBA Odds v1</span></a>
-        <a href="odds-basketball-wnba-json.html" class="level-4 pl-120px"><span>JSON | XML</span></a>
-        <a href="odds-basketball-wnba-json-structure.html" class="level-5"><span>Query Structure</span></a>
-        <a href="odds-basketball-wnba-json-parameters.html" class="level-5"><span>Parameters</span></a>
-        <a href="odds-basketball-wnba-json-data-points.html" class="level-5 active"><span>Data Points Returned</span></a>
-        <a href="api-being-developed.html" class="level-3"><span>Football</span></a>
-        <a href="odds-hockey.html" class="level-3"><span>Hockey</span></a>
-        <a href="api-being-developed.html" class="level-3"><span>Soccer</span></a>
         <a href="stats.html" class="level-1"><span>Stats</span></a>
         <a href="api-being-developed.html" class="level-1">Lottery</a>
-        <a href="api-being-developed.html" class="level-1">Financial</a>
+        <a href="financial.html" class="level-1">Financial</a>
         <a href="api-being-developed.html" class="level-1">Flights</a>
         <a href="api-being-developed.html" class="level-1">Traffic</a>
         <a href="api-being-developed.html" class="level-1">Transit</a>
@@ -140,231 +134,115 @@
             <tbody>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark p-0"> advisorydata [Array]</p>
+                        <p class="text-dark p-0">advisorydata [Array]</p>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-10 p-0">content [Array]</p>
+                        <p class="text-dark text-indent-20 p-0">content [Array]</p>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-20 p-0">datetime</p>
+                        <p class="text-dark text-indent-40 p-0">iso8601</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Last update time [UTC] presented in standard ISO8601 format</p>
+                        <p class="text-dark p-0">Update Date/Time in ISO8601 format</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-20 p-0">datasource</p>
+                        <p class="text-dark text-indent-40 p-0">pubDate</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Digichief</p>
+                        <p class="text-dark p-0">Update Date/Time in another format</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-20 p-0">WNBA [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">id</p>
+                        <p class="text-dark text-indent-40 p-0">datetime</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
+                        <p class="text-dark p-0">Update Date/Time in another format</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">scheduled</p>
+                        <p class="text-dark text-indent-40 p-0">datasource</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Scheduled Day/Start Time for game [UTC] presented in standard ISO8601 format</p>
+                        <p class="text-dark p-0">Digigchief Weather</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">start_time_tbd</p>
+                        <p class="text-dark text-indent-40 p-0">dataapi</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Start time TBD: [false] or [true]</p>
+                        <p class="text-dark p-0">For Digichief internal use only</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">status</p>
+                        <p class="text-dark text-indent-40 p-0">dbpath</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Status: [not_started] or [started]</p>
+                        <p class="text-dark p-0">For Digichief internal use only</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">tournament_round [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">type</p>
+                        <p class="text-dark text-indent-40 p-0">title</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
+                        <p class="text-dark p-0">Weather title</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">number</p>
+                        <p class="text-dark text-indent-40 p-0">server</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
+                        <p class="text-dark p-0">For Digichief internal use only</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">group</p>
+                        <p class="text-dark text-indent-40 p-0">version</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">WNBA Conference/Division</p>
+                        <p class="text-dark p-0">Application version number</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">season [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">id</p>
+                        <p class="text-dark text-indent-40 p-0">citystate</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
+                        <p class="text-dark p-0">City & State</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">name</p>
+                        <p class="text-dark text-indent-40 p-0">city</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">WNBA season name</p>
+                        <p class="text-dark p-0">City</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">start_date</p>
+                        <p class="text-dark text-indent-40 p-0">state</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">WNBA season start date</p>
+                        <p class="text-dark p-0">State</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">end_date</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">WNBA season end date</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">year</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">WNBA season year</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">tournament_id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">uuids</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">tournament [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Tournament name</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">sport [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Sport name</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">category [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Category Name</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">country_code</p>
+                        <p class="text-dark text-indent-40 p-0">country</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Country</p>
@@ -372,1300 +250,1178 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">uuids</p>
+                        <p class="text-dark text-indent-40 p-0">location</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
+                        <p class="text-dark p-0">Zip code</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">competitors [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">id</p>
+                        <p class="text-dark text-indent-40 p-0">latitude</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
+                        <p class="text-dark p-0">Latitude</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">name</p>
+                        <p class="text-dark text-indent-40 p-0">longitude</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Team name</p>
+                        <p class="text-dark p-0">Longitude</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">country</p>
+                        <p class="text-dark text-indent-40 p-0">description</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Team country</p>
+                        <p class="text-dark p-0">Weather description</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">country_code</p>
+                        <p class="text-dark text-indent-40 p-0">languagecode</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Team country code</p>
+                        <p class="text-dark p-0">Language code</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">abbreviation</p>
+                        <p class="text-dark text-indent-40 p-0">language</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Team abbreviation</p>
+                        <p class="text-dark p-0">Language</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">qualifier</p>
+                        <p class="text-dark text-indent-40 p-0">metric</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">[home] or [away] team</p>
+                        <p class="text-dark p-0">Metric units [true] or [false]</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">rotation_number</p>
+                        <p class="text-dark text-indent-40 p-0">localtime</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
+                        <p class="text-dark p-0">Local time</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">uuids</p>
+                        <p class="text-dark text-indent-40 p-0">timezone</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
+                        <p class="text-dark p-0">Time zone</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">venue [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">id</p>
+                        <p class="text-dark text-indent-40 p-0">lSky</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
+                        <p class="text-dark p-0">Sky spelling word chosen language</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">name</p>
+                        <p class="text-dark text-indent-40 p-0">lDewPoint</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Stadium name</p>
+                        <p class="text-dark p-0">Dew point word in chosen language</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">capacity</p>
+                        <p class="text-dark text-indent-40 p-0">lTemperature</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Stadium capacity</p>
+                        <p class="text-dark p-0">Temperature word in chosen language</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">city_name</p>
+                        <p class="text-dark text-indent-40 p-0">lHumidity</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Stadium city</p>
+                        <p class="text-dark p-0">Humidity word in chosen language</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">country_name</p>
+                        <p class="text-dark text-indent-40 p-0">lWind</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Stadium Country</p>
+                        <p class="text-dark p-0">Wind word in chosen language</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">map_coordinates</p>
+                        <p class="text-dark text-indent-40 p-0">lBarometer</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Stadium latitude, longitude</p>
+                        <p class="text-dark p-0">Barometer word in chosen language</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">country_code</p>
+                        <p class="text-dark text-indent-40 p-0">lComfort</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Stadium Country</p>
+                        <p class="text-dark p-0">Comfort word in chosen language</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">uuids</p>
+                        <p class="text-dark text-indent-40 p-0">lCeiling</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
+                        <p class="text-dark p-0">Ceiling word in chosen language</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">uuids</p>
+                        <p class="text-dark text-indent-40 p-0">lHigh</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
+                        <p class="text-dark p-0">High word in chosen language</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">markets [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">odds_type_id</p>
+                        <p class="text-dark text-indent-40 p-0">lLow</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">1</p>
+                        <p class="text-dark p-0">Low word in chosen language</p>
                     </td>
                 </tr>
-                <tr></tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">name</p>
+                        <p class="text-dark text-indent-40 p-0">lCurrent</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Moneyline [MoneyLine]</p>
+                        <p class="text-dark p-0">Current word in chosen language</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">group_name</p>
+                        <p class="text-dark text-indent-40 p-0">lPrecipitation</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
+                        <p class="text-dark p-0">Precipitation word in chosen language</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">books [Array]</p>
+                        <p class="text-dark text-indent-40 p-0">current [Array]</p>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">id</p>
+                        <p class="text-dark text-indent-60 p-0">iso8601</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
+                        <p class="text-dark p-0">Current conditions update time in ISO8601</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">name</p>
+                        <p class="text-dark text-indent-60 p-0">sky</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Bookmaker</p>
+                        <p class="text-dark p-0">Sky</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">outcomes [Array]</p>
+                        <p class="text-dark text-indent-60 p-0">description</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Weather description</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">temp</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Temperature [F]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">tempC</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Temperature [C]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">tempdescription</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Temperature description</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">dewpoint</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Dew point [F]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">dewpointC</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Dew point [C]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">wind</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Wind [mi/hr]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">windkm</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Wind [km/hr]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">winddir</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Wind direction</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">barometer</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Barometer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">barometermillibars</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Barometer [millibars]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">bartendency</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Bartendency</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">comfort</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Comfort</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">comfortC</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Comfort [C]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">humidity</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Humidity</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">visibility_mi</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Visibility [miles]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">visibility_km</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Visibility [Km]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">cloud_base_cover_type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Cloud_Base_Cover_Type</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">cloud_base_cover_feet</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Cloud_Base_Cover_Feet</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">cloud_base_cover_meters</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Cloud_Base_Cover_Meters</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">graphic</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Graphic</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">graphiclink</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">URI for graphic</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">graphicid</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Graphic ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">station</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Reporting station</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">daylight</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">[D] or [N]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">airqcategoryname</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Air quality</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">airqconcentration</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Air quality concentration</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">airqpollutantname</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Air quality pollutant</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">derivedcurrent [Array]</p>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">odds_field_id</p>
+                        <p class="text-dark text-indent-60 p-0">description</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">1</p>
+                        <p class="text-dark p-0">Weather description</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">type</p>
+                        <p class="text-dark text-indent-60 p-0">temp</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Home team</p>
+                        <p class="text-dark p-0">Temperature [F]</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">odds</p>
+                        <p class="text-dark text-indent-60 p-0">tempC</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Home team current moneyline</p>
+                        <p class="text-dark p-0">Temperature [C]</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">opening_odds</p>
+                        <p class="text-dark text-indent-60 p-0">tempdescription</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Home team opening moneyline</p>
+                        <p class="text-dark p-0">Temperature description</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">odds_trend</p>
+                        <p class="text-dark text-indent-60 p-0">dewpoint</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Home team odds trend [neutral], [down], [up]</p </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">odds_field_id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">2</p>
+                        <p class="text-dark p-0">Dew point [F]</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">type</p>
+                        <p class="text-dark text-indent-60 p-0">dewpointC</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Away team</p>
+                        <p class="text-dark p-0">Dew point [C]</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">odds</p>
+                        <p class="text-dark text-indent-60 p-0">wind</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Away team current moneyline</p>
+                        <p class="text-dark p-0">Wind [mi/hr]</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">opening_odds</p>
+                        <p class="text-dark text-indent-60 p-0">windkm</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Away team opening moneyline</p>
+                        <p class="text-dark p-0">Wind [km/hr]</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">odds_trend</p>
+                        <p class="text-dark text-indent-60 p-0">winddir</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Away team odds trend [neutral], [down], [up]</p>
+                        <p class="text-dark p-0">Wind direction</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">odds_type_id</p>
+                        <p class="text-dark text-indent-60 p-0">barometer</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">3</p>
+                        <p class="text-dark p-0">Barometer</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">name</p>
+                        <p class="text-dark text-indent-60 p-0">barometermillibars</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Over/Under [total]</p>
+                        <p class="text-dark p-0">Barometer [millibars]</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">group_name</p>
+                        <p class="text-dark text-indent-60 p-0">bartendency</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
+                        <p class="text-dark p-0">Bartendency</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">books [Array]</p>
+                        <p class="text-dark text-indent-60 p-0">comfort</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Comfort temperature</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">comfortC</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Comfort temperature [C]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">humidity</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Humidity</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">visibility_mi</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Visibility [miles]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">visibility_km</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Visibility [Km]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">cloud_base_cover_type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Cloud_Base_Cover_Type</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">cloud_base_cover_feet</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Cloud_Base_Cover_Feet</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">cloud_base_cover_meters</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Cloud_Base_Cover_Meters</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">graphic</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Graphic</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">graphiclink</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">URI for graphic</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">graphicid</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Graphic ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">station</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Reporting station</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">daylight</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">[D] or [N]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">airqcategoryname</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Air quality</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">airqconcentration</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Air quality concentration</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">airqpollutantname</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Air quality pollutant</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">forecast [Array]</p>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">id</p>
+                        <p class="text-dark text-indent-60 p-0">iso8601</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
+                        <p class="text-dark p-0">Forecast conditions update time in ISO8601</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
+                        <p class="text-dark text-indent-60 p-0">day</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Bookmaker</p>
+                        <p class="text-dark p-0">Day abbreviated</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes [Array]</p>
+                        <p class="text-dark text-indent-60 p-0">dayofweek</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Day of week, Sunday=1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">longday</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Day long form</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">sky</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Sky</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">description</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Weather description</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">high</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">High temperature [F]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">highC</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">High temperature [C]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">low</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Low temperature [F]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">lowC</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Low temperature [C]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">tempdescription</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Temperature description</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">dewpoint</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Dew point [F]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">dewpointC</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Dew point [C]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">comfort</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Comfort temperature [F]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">comfortC</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Comfort temperature [C]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">humidity</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Humidity</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">precip</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Precipitation chance [%]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">uvindex</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">UV index</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">barometer</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Barometer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">barometermillibars</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Barometer [millibars]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">wind</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Wind [mi/hr]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">windkm</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Wind [km/hr]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">winddir</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Wind direction</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">graphic</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Graphic</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">graphiclink</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">URI for graphic</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">graphicid</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Graphic ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">daylight</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Still have daylight [D]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">moonphase</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Moon phase</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">sunrise</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Sunrise time</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">sunset</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Sunset time</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">airqcategoryname</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Air quality</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">airqconcentration</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Air quality concentration</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">airqpollutantname</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Air quality pollutant</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">textforecasts [Array]</p>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds_field_id</p>
+                        <p class="text-dark text-indent-50 p-0">Today</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">7</p>
+                        <p class="text-dark p-0">Today forecast in text form</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">type</p>
+                        <p class="text-dark text-indent-50 p-0">Tuesday</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Over</p>
+                        <p class="text-dark p-0">Tuesday foredast in text form</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds</p>
+                        <p class="text-dark text-indent-50 p-0">Wednesday</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Current over odds</p>
+                        <p class="text-dark p-0">Wednesday forecast in text form</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">opening_odds</p>
+                        <p class="text-dark text-indent-50 p-0">Thursday</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Opening over odds</p>
+                        <p class="text-dark p-0">Thursday forecast in text form</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">opening_total</p>
+                        <p class="text-dark text-indent-50 p-0">Friday</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Opening over</p>
+                        <p class="text-dark p-0">Friday forecast in text form</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">total</p>
+                        <p class="text-dark text-indent-50 p-0">Saturday</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Current over</p>
+                        <p class="text-dark p-0">Saturday forecast in text form</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds_trend</p>
+                        <p class="text-dark text-indent-50 p-0">Sunday</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Over odds trend [neutral], [down], [up]</p>
+                        <p class="text-dark p-0">Sunday forecast in text form</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds_field_id</p>
+                        <p class="text-dark text-indent-50 p-0">Monday</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">8</p>
+                        <p class="text-dark p-0">Monday forecast in text form</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">type</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Under</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Current under odds</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">opening_odds</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Opening under odds</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">opening_total</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Opening under</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">total</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Current under</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds_trend</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Under odds trend [neutral], [down], [up]</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">odds_type_id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">2</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">3way</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">group_name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">books [Array]</p>
+                        <p class="text-dark text-indent-40 p-0">daypartforecast [Array]</p>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">id</p>
+                        <p class="text-dark text-indent-60 p-0">iso8601</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
+                        <p class="text-dark p-0">Current conditions update time in ISO8601</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
+                        <p class="text-dark text-indent-60 p-0">dayofweek</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Bookmaker</p>
+                        <p class="text-dark p-0">Day of week, Sunday=1</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes [Array]</p>
+                        <p class="text-dark text-indent-60 p-0">periodname</p>
                     </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds_field_id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">3</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">type</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Home team</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Home team current 3way</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">opening_odds</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Home team opening 3way</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds_trend</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Home team odds trend [neutral], [down], [up]</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds_field_id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">5</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0"> type</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Away team</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Away team current 3way</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">opening_odds</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Away team opening 3way</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds_trend</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Away team odds trend [neutral], [down], [up]</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds_field_id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">4</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">type</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Draw</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Draw current 3way</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">opening_odds</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Draw opening 3way</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds_trend</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Draw odds trend [neutral], [down], [up]</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-120 p-0">odds_type_id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">4</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-120 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Run Line [run_line]</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-120 p-0">group_name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-120 p-0">books [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Bookmaker </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">outcomes [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">odds_field_id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">10</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Home team</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">spread</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Home team current spread</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">odds</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Home team current spread odds</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">opening_odds</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Home team opening spread odds</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">opening_spread</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Home team opening spread</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">odds_trend</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Home team spread trend [neutral], [down], [up]</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">odds_field_id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">12</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Away team</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">spread</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Away team current spread</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">odds</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Away team current spread odds</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">opening_odds</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Away team opening spread odds</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">opening_spread</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Away team opening spread</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">odds_trend</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Away team spread trend [neutral], [down], [up]</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">markets_last_updated</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Day/Time odds were last updated [UTC] presented in standard ISO8601 format</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">consensus [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">bet_percentage_outcomes [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Moneyline [moneyline]</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Home</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">percentage</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Consensus moneyline percentage for home team</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Away</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">percentage</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Consensus moneyline percentage for away team</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Run Line [run_line]</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Home</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">percentage</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Consensus run line percentage for home team</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Away</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">percentage</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Consensus run line percentage for away team</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Over/Under [total]</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Over</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">percentage</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Consensus percentage for over</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Under</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">percentage</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Consensus percentage for under</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">lines [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Current moneyline [moneyline_current]</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
-                    </td>
                     <td>
-                        <p class="text-dark p-0">Home</p>
+                        <p class="text-dark p-0">Day + [morning[, [afternoon] or [evening]</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">odds</p>
+                        <p class="text-dark text-indent-60 p-0">shortperiodname</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus home team current moneyline odds</p>
+                        <p class="text-dark p-0">Period name shortened</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
+                        <p class="text-dark text-indent-60 p-0">temperature</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Away</p>
+                        <p class="text-dark p-0">Temperature [F]</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">odds</p>
+                        <p class="text-dark text-indent-60 p-0">temperatureC</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus away team current moneyline odds</p>
+                        <p class="text-dark p-0">Temperature [C]</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
+                        <p class="text-dark text-indent-60 p-0">tempdescription</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Opening moneyline [moneyline_open]</p>
+                        <p class="text-dark p-0">Temperature description</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes [Array]</p>
+                        <p class="text-dark text-indent-60 p-0">dewpoint</p>
                     </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Home</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">odds</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Consensus home team opening moneyline odds</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Away</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">odds</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Consensus away team opening moneyline odds</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Consensus current run line [run_line_current]</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">spread</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Consensus current spread</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Home</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">odds</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Consensus home team current run line odds</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Away</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">odds</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Consensus away team current run line odds</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Consensus opening run line [run_line_open]</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">spread</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Consensus opening spread</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes [Array]</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Home</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">odds</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Consensus home team opening run line odds</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Away</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">odds</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Consensus away team opening run line odds</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
-                    </td>
                     <td>
-                        <p class="text-dark p-0">Consensus current over/under [total_current]</p>
+                        <p class="text-dark p-0">Dew point [F]</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">total</p>
+                        <p class="text-dark text-indent-60 p-0">dewpointC</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus current over/under</p>
+                        <p class="text-dark p-0">Dew point [C]</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes [Array]</p>
+                        <p class="text-dark text-indent-60 p-0">comfort</p>
                     </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
-                    </td>
                     <td>
-                        <p class="text-dark p-0">Over</p>
+                        <p class="text-dark p-0">Comfort temperature [F]</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">odds</p>
+                        <p class="text-dark text-indent-60 p-0">comfortC</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus current over odds</p>
+                        <p class="text-dark p-0">Comfort temperature [C]</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">total</p>
+                        <p class="text-dark text-indent-60 p-0">humidity</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus current over</p>
+                        <p class="text-dark p-0">Humidity</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
+                        <p class="text-dark text-indent-60 p-0">precip</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Under</p>
+                        <p class="text-dark p-0">Precipitation chance [%]</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">odds</p>
+                        <p class="text-dark text-indent-60 p-0">wind</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus current over/under odds</p>
+                        <p class="text-dark p-0">Wind [mi/hr]</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">total</p>
+                        <p class="text-dark text-indent-60 p-0">windkm</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus current over/under</p>
+                        <p class="text-dark p-0">Wind [km/hr]</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
+                        <p class="text-dark text-indent-60 p-0">winddir</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus opening over/under [total_open]</p>
+                        <p class="text-dark p-0">Wind direction</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">total</p>
+                        <p class="text-dark text-indent-60 p-0">weathersummary</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus opening over/under</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes [Array]</p>
+                        <p class="text-dark p-0">Short text weather summary</p>
                     </td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
+                        <p class="text-dark text-indent-60 p-0">forecast</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Over</p>
+                        <p class="text-dark p-0">Short text weather forecast</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">odds</p>
+                        <p class="text-dark text-indent-60 p-0">graphic</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus opening over odds</p>
+                        <p class="text-dark p-0">Graphic</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">total</p>
+                        <p class="text-dark text-indent-60 p-0">graphiclink</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus opening over</p>
+                        <p class="text-dark p-0">URI for graphic</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">type</p>
+                        <p class="text-dark text-indent-60 p-0">graphicid</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Under</p>
+                        <p class="text-dark p-0">Graphic ID</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">odds</p>
+                        <p class="text-dark text-indent-60 p-0">daylight</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus opening over/under odds</p>
+                        <p class="text-dark p-0">Still have daylight [D]</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-160 p-0">total</p>
+                        <p class="text-dark text-indent-60 p-0">description</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus opening over/under</p>
+                        <p class="text-dark p-0">Short text weather description</p>
                     </td>
                 </tr>
             </tbody>

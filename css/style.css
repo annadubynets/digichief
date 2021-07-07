@@ -74,6 +74,10 @@
     padding-bottom: 20px;
 }
 
+.pb-150px {
+    padding-bottom: 150px;
+}
+
 .pl-30 {
     padding-left: 30px;
 }
@@ -241,7 +245,7 @@ nav {
 }
 
 .main-content {
-    margin-left: 400px;
+    margin-left: 460px;
     padding: 30px 16px 227px;
     height: 100%;
     box-sizing: border-box;
@@ -931,6 +935,10 @@ td p a {
 
 .text-dark {
     color: #000;
+}
+
+.text-danger {
+    color: #FF4401!important;
 }
 
 td:nth-child(2) {

@@ -1,13 +1,10 @@
-@media (max-width: 992px) {
-    .menu-link {
-        font-size: 18px;
-    }
+@media screen and (max-width: 992px) {
     .categories-flex-container {
         flex-direction: column;
     }
-}
-
-@media screen and (max-width: 768px) {
+    .pb-150px {
+        padding-bottom: 0px;
+    }
     .mt-16-responsive {
         margin-top: 16px;
     }
