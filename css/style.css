@@ -877,10 +877,11 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+    border: 1px solid #000;
 }
 
 tr {
-    border-bottom: 1px solid #D1CDCD;
+    border-bottom: 1px solid #000;
     min-width: calc(100vw - 100px);
 }
 
@@ -894,11 +895,11 @@ th {
 }
 
 td {
-    background: #D1CDCD;
+    background: #FFFFFF;
     padding: 8px;
     text-align: start;
-    border-right: 20px solid white;
     vertical-align: top;
+    border-right: 1px solid #000;
 }
 
 td p {
@@ -930,7 +931,7 @@ td p a {
 }
 
 .border-bottom {
-    border-bottom: 1px solid #FF4401;
+    border-bottom: 1px solid #000;
 }
 
 .text-dark {
