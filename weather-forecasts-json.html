@@ -3443,6 +3443,10 @@
                     </td>
                     <td>
                         <div id="sky-list" class="modal">
+                            <p>A quick word about Sky values as it appears in the Digichief Weather Feed. We have intelligence written into our code that places a higher emphasis on Precipitation vs Sky. In other words, if there is a Precipitation value,
+                                it will always trump the sky value. The numeric value column from the sky descriptor table (Table 2) is used only if there is NO precipitation descriptor. </p>
+
+                            <p>However, if there are ‘Widely scattered tstorms’, then there is a precipitation descriptor, so the sky descriptor is ignored and the number will be 116 from the Precipitation Table. (Table 3)</p>
                             <div class="main-item">Sky Descriptors</div>
                             <table class="responsive-table">
                                 <colgroup>
