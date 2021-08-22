@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digichief API Documentation</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/libs/jquery.modal.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="container">
+                <div class="header-flex-container">
+                    <div class="header-logo xs-hidden">
+                        <a href="index.html">
+                            <img src="icons/logo.png" alt="logo" class="logo-img">
+                        </a>
+                    </div>
+
+                    <div class="header-logo xs-visible">
+                        <a href="index.html">
+                            <img src="icons/logo_mobile.svg" alt="logo" class="logo-img">
+                        </a>
+                    </div>
+
+                    <ul class="menu">
+                        <li class="menu-item"><a href="index.html" class="menu-link active">API Documentation</a></li>
+                        <li class="menu-item"><a href="sign-up.html" class="menu-link">Sign Up</a></li>
+                        <li class="menu-item"><a href="contact.html" class="menu-link">Contact</a></li>
+
+                        <li class="footer-item">
+                            <a href="need-help.html" class="footer-link">Need Help?</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="terms.html" class="footer-link">Terms and Conditions</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="restrictions.html" class="footer-link">Restrictions</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                        </li>
+                        <div class="footer-socials">
+                            <a href="https://www.facebook.com/digichief?ref=hl" target="_blank" class="footer-social-item">
+                                <span class="icon-facebook"></span>
+                            </a>
+                            <a href="https://www.linkedin.com/company/digichief-content-feed" target="_blank" class="footer-social-item">
+                                <span class="icon-linkedin2"></span>
+                            </a>
+                            <a href="http://vimeo.com/digichief" target="_blank" class="footer-social-item">
+                                <span class="icon-vimeo"></span>
+                            </a>
+                            <a href="https://twitter.com/DIGI_TWEETS" target="_blank" class="footer-social-item">
+                                <span class="icon-twitter"></span>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="alert">
+        <div class="container">
+            <div class="alert-flex-container">
+                <div class="alert-descr">A field here so that we can put in messages if needed, usually this will not be here, width=800</div>
+                <div class="alert-descr">Area for future sub-menus if needed, program them</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sidebar">
+        <div class="sidebar-wrapper">
+            <div class="search-box">
+                <input class="search-input" type="text" placeholder="Search......">
+                <button class="search-btn">
+                    <span class="icon-search"></span>
+                </button>
+            </div>
+
+            <a href="#" data-toggle=".wrapper" id="sidebar-toggle">
+                <span class="icon-radix-icons_double-arrow-left sidebar-icon-close"></span>
+                <span class="icon-radix-icons_double-arrow-right sidebar-icon-open"></span>
+            </a>
+        </div>
+
+        <a href="index.html" class="level-1"><span>Getting Started</span></a>
+        <a href="news.html" class="level-1"><span>News</span></a>
+        <a href="weather.html" class="level-1"><span>Weather</span></a>
+        <a href="sports.html" class="level-1"><span>Sports</span></a>
+        <a href="odds.html" class="level-1"><span>Odds</span></a>
+        <a href="stats.html" class="level-1"><span>Stats</span></a>
+        <a href="lottery.html" class="level-1">Lottery</a>
+        <a href="financial.html" class="level-1">Financial</a>
+        <a href="flights.html" class="level-1">Flights</a>
+        <a href="api-being-developed.html" class="level-1">Traffic</a>
+        <a href="api-being-developed.html" class="level-1">Transit</a>
+        <a href="api-being-developed.html" class="level-1">Health</a>
+        <a href="infotainment.html" class="level-1">Infotainment</a>
+        <a href="infotainment-v1.html" class="level-2 pl-90px"><span>Infotainment v1</span></a>
+        <a href="infotainment-json.html" class="level-4 pl-120px"><span>JSON | XML</span></a>
+        <a href="infotainment-json-structure.html" class="level-5 active"><span>Query Structure</span></a>
+        <a href="infotainment-json-parameters.html" class="level-5"><span>Parameters</span></a>
+        <a href="infotainment-json-data-points.html" class="level-5"><span>Data Points Returned</span></a>
+        <a href="api-being-developed.html" class="level-1">Images</a>
+        <a href="videos.html" class="level-1"><span>Videos</span></a>
+    </div>
+
+    <div class="main-content">
+        <div class="main-item mb-20 fw-500">Query Structure</div>
+        <div class="col-left mb-20">
+            <div class="main-descr">Update Frequency:</div>
+        </div>
+        <div class="col-right mb-20">
+            <div class="main-descr fw-500">As Necessary</div>
+        </div>
+        <div class="col-left mb-20">
+            <div class="main-format">API:</div>
+        </div>
+        <div class="col-right mb-20">
+            <div class="main-format">https://api.digichief.com/infotainment/getinfotainment/<span>{customer}</span>/<span>{customer_api_key}</span>?<span>{parameter}</span>&<span>{optional_parameters}</span></div>
+        </div>
+
+        <div class="main-item fw-500">Parameters</div>
+        <table class="responsive-table">
+            <colgroup>
+                <col style="width: 30%;">
+                <col style="width: 70%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Query Parameter</th>
+                    <th>Description | Parameter Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">customer</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">Digichief will give you a unique abbrievation for your company</p>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">customer_api_key</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">Your company's unique API key | Digichief will give this to you</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">parameters</p>
+                    </td>
+                    <td>
+                        <p class="text-dark fw-500">Mandatory Parameter</p>
+
+
+                        <div class="col-left">
+                            <p class="fw-500">category=</p>
+                        </div>
+                        <div class="col-right">
+                            <div id="categories" class="modal">
+                                <div class="main-item">List of Categories</div>
+                                <table class="responsive-table">
+                                    <colgroup>
+                                        <col style="width: 30%;">
+                                        <col style="width: 70%;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">All</p>
+                                            </td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">Trivia</p>
+                                            </td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">BOTD</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Born on this Date</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">TDIH</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">This Day in History</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">HealthTIps</p>
+                                            </td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">Horoscopes</p>
+                                            </td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">FunFacts</p>
+                                            </td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">Quotes</p>
+                                            </td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="text-dark"><a href="#categories" rel="modal:open" class="text-primary">List</a> of categories</p>
+
+                        </div>
+
+                        <div class="mb-45">
+                            <div class="col-left">
+                                <p class="fw-500"></p>
+                            </div>
+                            <div class="col-right">
+                                <p class="text-dark text-indent-60">Note: You can use multiple categories separated by commas</p>
+                            </div>
+                        </div>
+
+                        <p class="text-dark fw-500">Optional Parameters</p>
+
+                        <div class="col-left">
+                            <p class="fw-500">format=</p>
+                        </div>
+                        <div class="col-right">
+                            <p class="text-dark">XML or JSON (returns JSON if not used)</p>
+                        </div>
+                        <div class="col-left">
+                            <p class="fw-500">qty=</p>
+                        </div>
+                        <div class="col-right">
+                            <p class="text-dark">Quantity of records returned per category (returns R1 if not used)</p>
+                        </div>
+                        <div class="col-left">
+                            <p class="fw-500"></p>
+                        </div>
+                        <div class="col-right">
+                            <p class="text-dark">R1 (Random one)</p>
+                        </div>
+                        <div class="col-left">
+                            <p class="fw-500"></p>
+                        </div>
+                        <div class="col-right">
+                            <p class="text-dark">R2 (Random two)</p>
+                        </div>
+                        <div class="col-left">
+                            <p class="fw-500"></p>
+                        </div>
+                        <div class="col-right">
+                            <p class="text-dark">R5 (Random five)</p>
+                        </div>
+                        <div class="col-left">
+                            <p class="fw-500"></p>
+                        </div>
+                        <div class="col-right">
+                            <p class="text-dark">R10 (Random ten)</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="main-item fw-500">Data Points Returned</div>
+        <table class="responsive-table">
+            <colgroup>
+                <col style="width: 30%;">
+                <col style="width: 70%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Data Points</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark p-0">advisorydata</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-20 p-0">content</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">datetime</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Update Date/Time in ISO8601 format</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">datasource</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Digichief Infotainment</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-40 p-0">BornOn</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">item</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Person with description and year</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">year</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Year born</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">entry</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Person with description</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">graphic</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Graphic link if available</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">FunFact</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">item</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Fun fact</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">graphic</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Graphic link if available</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">HealthTip</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">category</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Health category</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">tip</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Health tip</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">graphic</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Graphic link if available</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">Horoscope</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">item</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Zodiac sign with date and horoscope</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">horoscope</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Horoscope only</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">sign</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Zodiac sign only</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">dates</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Zodiac date range only</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">graphic</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Graphic link if available</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">Quote</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">category</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Quote category</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">author</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Quote author</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">quote</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Quote text</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">graphic</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Graphic link if available</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">ThisDay</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">date</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">This day date</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">event</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Event that happened on this date</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">description</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Description of event that happened on this date</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">graphic</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Graphic link if available</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-50 p-0">Trivia</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">category</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Trivia category</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">subcategory</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Trivia subcategory</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">question</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Trivia question</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">answers</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-70 p-0">correct</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Correct Answer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-70 p-0">answer1</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Randomized answer #1 (this could also be the correct answer)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-70 p-0">answer2</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Randomized answer #2 (this could also be the correct answer)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-70 p-0">answer3</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Randomized answer #3 (this could also be the correct answer)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-70 p-0">answer4</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Randomized answer #4 (this could also be the correct answer)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">factoid</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Additional factoid on the subject in the question</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">graphic</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Graphic link if available</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-flex-container">
+                <ul class="footer-menu">
+                    <li class="footer-item">
+                        <a href="need-help.html" class="footer-link">Need Help?</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="terms.html" class="footer-link">Terms and Conditions</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="restrictions.html" class="footer-link">Restrictions</a>
+                    </li>
+                </ul>
+
+                <div class="footer-items">
+                    <div class="footer-copyright">
+                        © 2021 Digichief LLC<br> All Rights Reserved
+                    </div>
+                    <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/digichief?ref=hl" target="_blank" class="footer-social-item">
+                        <span class="icon-facebook"></span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/digichief-content-feed" target="_blank" class="footer-social-item">
+                        <span class="icon-linkedin2"></span>
+                    </a>
+                    <a href="http://vimeo.com/digichief" target="_blank" class="footer-social-item">
+                        <span class="icon-vimeo"></span>
+                    </a>
+                    <a href="https://twitter.com/DIGI_TWEETS" target="_blank" class="footer-social-item">
+                        <span class="icon-twitter"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/api-controller.js"></script>
+    <script src="js/search-controller.js"></script>
+</body>
+
+</html>
