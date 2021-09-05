@@ -102,15 +102,16 @@
         <a href="sports.html" class="level-1"><span>Sports</span></a>
         <a href="odds.html" class="level-1"><span>Odds</span></a>
         <a href="odds-baseball.html" class="level-3"><span>Baseball</span></a>
-        <a href="odds-baseball-mlb.html" class="level-2 pl-90px"><span>MLB Odds v1</span></a>
-        <a href="odds-baseball-json.html" class="level-4 pl-120px"><span>JSON | XML</span></a>
-        <a href="odds-baseball-json-structure.html" class="level-5"><span>Query Structure</span></a>
-        <a href="odds-baseball-json-parameters.html" class="level-5"><span>Parameters</span></a>
-        <a href="odds-baseball-json-data-points.html" class="level-5 active"><span>Data Points Returned</span></a>
         <a href="odds-basketball.html" class="level-3"><span>Basketball</span></a>
         <a href="odds-football.html" class="level-3"><span>Football</span></a>
+        <a href="odds-football-ncaa.html" class="level-2 pl-90px"><span>NCAA Odds v1</span></a>
+        <a href="odds-football-nfl.html" class="level-2 pl-90px"><span>NFL Odds v1</span></a>
+        <a href="odds-football-nfl-json.html" class="level-4 pl-120px"><span>JSON | XML</span></a>
+        <a href="odds-football-nfl-json-structure.html" class="level-5"><span>Query Structure</span></a>
+        <a href="odds-football-nfl-json-parameters.html" class="level-5"><span>Parameters</span></a>
+        <a href="odds-football-nfl-json-data-points.html" class="level-5 active"><span>Data Points Returned</span></a>
         <a href="odds-hockey.html" class="level-3"><span>Hockey</span></a>
-        <a href="odds-soccer.html" class="level-3"><span>Soccer</span></a>
+        <a href="stats-soccer.html" class="level-3"><span>Soccer</span></a>
         <a href="stats.html" class="level-1"><span>Stats</span></a>
         <a href="lottery.html" class="level-1">Lottery</a>
         <a href="financial.html" class="level-1"><span>Financial</span></a>
@@ -124,7 +125,6 @@
     </div>
 
     <div class="main-content">
-        <div class="main-item fw-500">Data Points Returned</div>
         <table class="responsive-table">
             <colgroup>
                 <col style="width: 30%;">
@@ -139,428 +139,43 @@
             <tbody>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark p-0"> advisorydata</p>
+                        <p class="text-dark p-0">advisorydata</p>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-10 p-0">content</p>
+                        <p class="text-dark p-0 text-indent-20">content</p>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-20 p-0">datetime</p>
+                        <p class="text-dark p-0 text-indent-40">datetime</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Last update time [UTC] presented in standard ISO8601 format</p>
+                        <p class="text-dark p-0">Update Date/Time in ISO8601 format</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-20 p-0">datasource</p>
+                        <p class="text-dark p-0 text-indent-40">datasource</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Digichief</p>
+                        <p class="text-dark p-0">Digichief Sports</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-20 p-0">MLB</p>
+                        <p class="text-dark p-0 text-indent-40">NFL</p>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">id</p>
+                        <p class="text-dark text-indent-60 p-0">odds</p>
                     </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">scheduled</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Scheduled Day/Start Time for game [UTC] presented in standard ISO8601 format</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">start_time_tbd</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Start time TBD: [false] or [true]</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">status</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Status: [not_started] or [started]</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">tournament_round</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">type</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">number</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">group</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">MLB Conference/Division</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">season</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">MLB season name</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">start_date</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">MLB season start date</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">end_date</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">MLB season end date</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">year</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">MLB season year</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">tournament_id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">uuids</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">tournament</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Tournament name</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">sport</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Sport name</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">category</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Category Name</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">country_code</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Country</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">uuids</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">competitors</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Team name</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">country</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Team country</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">country_code</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Team country code</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">abbreviation</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Team abbreviation</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">qualifier</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">[home] or [away] team</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">rotation_number</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">uuids</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">venue</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Stadium name</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">capacity</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Stadium capacity</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">city_name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Stadium city</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">country_name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Stadium Country</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">map_coordinates</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Stadium latitude, longitude</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">country_code</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Stadium Country</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-50 p-0">uuids</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">uuids</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-40 p-0">markets</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">odds_type_id</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">1</p>
-                    </td>
-                </tr>
-                <tr></tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Moneyline [MoneyLine]</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">group_name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-60 p-0">books</p>
-                    </td>
-                    <td></td>
+                    <td> </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
@@ -572,21 +187,453 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">name</p>
+                        <p class="text-dark text-indent-80 p-0">scheduled</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Bookmaker </p>
+                        <p class="text-dark p-0">Scheduled Day/Start Time for game [UTC] presented in standard ISO8601 format</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">outcomes</p>
+                        <p class="text-dark text-indent-80 p-0">start_time_tbd</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Start time TBD: [false] or [true]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">status</p>
+                    </td>
+                    <td>
+                        <div id="game-status" class="modal">
+                            <div class="main-item">Available Game Statuses</div>
+                            <table class="responsive-table">
+                                <colgroup>
+                                    <col style="width: 100%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[scheduled] | scheduled to occur</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[created] | game created, begun loggin info.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[inprogress] | first pitch of game has been thrown</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[halftime] | game currently at halftime</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[complete] | last pitch of game, game stats under review</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[closed] | game has passed stats review after last pitch</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[cancelled] | game cancelled, no makeup game</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[delayed] | start of game delayed or switched from inprogress to dealyed for some reason</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[postponed] | game postponed and will be made up</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[time-tbd] | game scheduled, but time has not been announced</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">[flex-schedule] Scheduled, but will be moved most likely for broadcast purposes</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <a href="#game-status" rel="modal:open" class="text-primary fw-500">Game status</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">tournament_round</p>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">odds_field_id</p>
+                        <p class="text-dark text-indent-110 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Type</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">number</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">season</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Season ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Season name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">start_date</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Season start date</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">end_date</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Season end date</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">year</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Season year</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">tournament_id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Tournament ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">uuids</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">NFL-2021-PRE</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">tournament</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Tournament ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Tournament name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">sport</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Sport ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Sport name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">category</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Category ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Category name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">country_code</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Category country code</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">competitors</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Competitor ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Competitor name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">country</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Competitor country</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">country_code</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Country code</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">abbreviation</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Country abbreviation</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">qualifier</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">[home] or [away]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">uuids</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">venue</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Venue ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Venue name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">capacity</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Venue capacity</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">city_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Venue city</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">country_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Venue country</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">map_coordinates</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Venue Lat/Lon</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">country_code</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Venue country code</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">uuids</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">uuids</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">markets</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">odds_type_id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Odds ID=1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Moneyline</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">group_name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">For Digichief internal use</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">books</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Bookmaker ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Bookmaker name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">outcomes</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-160 p-0">odds_field_id</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">1</p>
@@ -594,7 +641,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">type</p>
+                        <p class="text-dark text-indent-160 p-0">type</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Home team</p>
@@ -602,7 +649,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">odds</p>
+                        <p class="text-dark text-indent-160 p-0">odds</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Home team current moneyline</p>
@@ -610,7 +657,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">opening_odds</p>
+                        <p class="text-dark text-indent-160 p-0">opening_odds</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Home team opening moneyline</p>
@@ -618,14 +665,15 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">odds_trend</p>
+                        <p class="text-dark text-indent-160 p-0">odds_trend</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Home team odds trend [neutral], [down], [up]</p </td>
+                        <p class="text-dark p-0">Home team odds trend [neutral], [down], [up]</p>
+                    </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">odds_field_id</p>
+                        <p class="text-dark text-indent-160 p-0">odds_field_id</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">2</p>
@@ -633,7 +681,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">type</p>
+                        <p class="text-dark text-indent-160 p-0">type</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Away team</p>
@@ -641,7 +689,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">odds</p>
+                        <p class="text-dark text-indent-160 p-0">odds</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Away team current moneyline</p>
@@ -649,7 +697,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">opening_odds</p>
+                        <p class="text-dark text-indent-160 p-0">opening_odds</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Away team opening moneyline</p>
@@ -657,45 +705,32 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">odds_trend</p>
+                        <p class="text-dark text-indent-160 p-0">odds_trend</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Away team odds trend [neutral], [down], [up]</p>
                     </td>
                 </tr>
+
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">odds_type_id</p>
+                        <p class="text-dark text-indent-110 p-0">odds_type_id</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">3</p>
+                        <p class="text-dark p-0">Odds ID=3</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">name</p>
+                        <p class="text-dark text-indent-110 p-0">name</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Over/Under [total]</p>
+                        <p class="text-dark p-0">Total (O/U)</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">group_name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">books</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">id</p>
+                        <p class="text-dark text-indent-110 p-0">group_name</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">For Digichief internal use</p>
@@ -703,21 +738,35 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Bookmaker </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes</p>
+                        <p class="text-dark text-indent-110 p-0">books</p>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds_field_id</p>
+                        <p class="text-dark text-indent-130 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Bookmaker ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Bookmaker name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">outcomes</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-160 p-0">odds_field_id</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">7</p>
@@ -725,7 +774,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">type</p>
+                        <p class="text-dark text-indent-160 p-0">type</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Over</p>
@@ -733,7 +782,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds</p>
+                        <p class="text-dark text-indent-160 p-0">odds</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Current over odds</p>
@@ -741,7 +790,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">opening_odds</p>
+                        <p class="text-dark text-indent-160 p-0">opening_odds</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Opening over odds</p>
@@ -749,7 +798,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">opening_total</p>
+                        <p class="text-dark text-indent-160 p-0">opening_total</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Opening over</p>
@@ -757,7 +806,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">total</p>
+                        <p class="text-dark text-indent-160 p-0">total</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Current over</p>
@@ -765,15 +814,16 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds_trend</p>
+                        <p class="text-dark text-indent-160 p-0">odds_trend</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Over odds trend [neutral], [down], [up]</p>
                     </td>
                 </tr>
+
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds_field_id</p>
+                        <p class="text-dark text-indent-160 p-0">odds_field_id</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">8</p>
@@ -781,7 +831,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">type</p>
+                        <p class="text-dark text-indent-160 p-0">type</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Under</p>
@@ -789,7 +839,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds</p>
+                        <p class="text-dark text-indent-160 p-0">odds</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Current under odds</p>
@@ -797,7 +847,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">opening_odds</p>
+                        <p class="text-dark text-indent-160 p-0">opening_odds</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Opening under odds</p>
@@ -805,7 +855,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">opening_total</p>
+                        <p class="text-dark text-indent-160 p-0">opening_total</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Opening under</p>
@@ -813,7 +863,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">total</p>
+                        <p class="text-dark text-indent-160 p-0">total</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Current under</p>
@@ -821,45 +871,32 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds_trend</p>
+                        <p class="text-dark text-indent-160 p-0">odds_trend</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Under odds trend [neutral], [down], [up]</p>
                     </td>
                 </tr>
+
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">odds_type_id</p>
+                        <p class="text-dark text-indent-110 p-0">odds_type_id</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">4</p>
+                        <p class="text-dark p-0">Odds ID=4</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">name</p>
+                        <p class="text-dark text-indent-110 p-0">name</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Run Line [run_line]</p>
+                        <p class="text-dark p-0">Spread (runline)</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">group_name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">For Digichief internal use</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-80 p-0">books</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">id</p>
+                        <p class="text-dark text-indent-110 p-0">group_name</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">For Digichief internal use</p>
@@ -867,21 +904,35 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Bookmaker</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes</p>
+                        <p class="text-dark text-indent-110 p-0">books</p>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds_field_id</p>
+                        <p class="text-dark text-indent-130 p-0">id</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Bookmaker ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Bookmaker name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">outcomes</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-160 p-0">odds_field_id</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">10</p>
@@ -889,7 +940,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">type</p>
+                        <p class="text-dark text-indent-160 p-0">type</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Home team</p>
@@ -897,7 +948,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">spread</p>
+                        <p class="text-dark text-indent-160 p-0">spread</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Home team current spread</p>
@@ -905,7 +956,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds</p>
+                        <p class="text-dark text-indent-160 p-0">odds</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Home team current spread odds</p>
@@ -913,7 +964,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">opening_odds</p>
+                        <p class="text-dark text-indent-160 p-0">opening_odds</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Home team opening spread odds</p>
@@ -921,7 +972,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">opening_spread</p>
+                        <p class="text-dark text-indent-160 p-0">opening_spread</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Home team opening spread</p>
@@ -929,15 +980,16 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds_trend</p>
+                        <p class="text-dark text-indent-160 p-0">odds_trend</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Home team spread trend [neutral], [down], [up]</p>
                     </td>
                 </tr>
+
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds_field_id</p>
+                        <p class="text-dark text-indent-160 p-0">odds_field_id</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">12</p>
@@ -945,7 +997,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0"> type</p>
+                        <p class="text-dark text-indent-160 p-0">type</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Away team</p>
@@ -953,7 +1005,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">spread</p>
+                        <p class="text-dark text-indent-160 p-0">spread</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Away team current spread</p>
@@ -961,7 +1013,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds</p>
+                        <p class="text-dark text-indent-160 p-0">odds</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Away team current spread odds</p>
@@ -969,7 +1021,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">opening_odds</p>
+                        <p class="text-dark text-indent-160 p-0">opening_odds</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Away team opening spread odds</p>
@@ -977,7 +1029,7 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">opening_spread</p>
+                        <p class="text-dark text-indent-160 p-0">opening_spread</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Away team opening spread</p>
@@ -985,15 +1037,16 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">odds_trend</p>
+                        <p class="text-dark text-indent-160 p-0">odds_trend</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">L</p>
+                        <p class="text-dark p-0">Away team spread trend [neutral], [down], [up]</p>
                     </td>
                 </tr>
+
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-20 p-0">markets_last_updated</p>
+                        <p class="text-dark text-indent-60 p-0">markets_last_updated</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Day/Time odds were last updated [UTC] presented in standard ISO8601 format</p>
@@ -1001,27 +1054,27 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-20 p-0">consensus</p>
+                        <p class="text-dark text-indent-60 p-0">consensus</p>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">bet_percentage_outcomes</p>
+                        <p class="text-dark text-indent-80 p-0">bet_percentage_outcomes</p>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
+                        <p class="text-dark text-indent-110 p-0">name</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Moneyline [moneyline]</p>
+                        <p class="text-dark p-0">Moneyline</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes</p>
+                        <p class="text-dark text-indent-110 p-0">outcomes</p>
                     </td>
                     <td></td>
                 </tr>
@@ -1059,15 +1112,15 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
+                        <p class="text-dark text-indent-110 p-0">name</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Run Line [run_line]</p>
+                        <p class="text-dark p-0">Spread (runline)</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes</p>
+                        <p class="text-dark text-indent-110 p-0">outcomes</p>
                     </td>
                     <td></td>
                 </tr>
@@ -1105,15 +1158,15 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
+                        <p class="text-dark text-indent-110 p-0">name</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Over/Under [total]</p>
+                        <p class="text-dark p-0">Total (O/U)</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes</p>
+                        <p class="text-dark text-indent-110 p-0">outcomes</p>
                     </td>
                     <td></td>
                 </tr>
@@ -1151,29 +1204,21 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">lines</p>
+                        <p class="text-dark text-indent-80 p-0">lines</p>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-30 p-0">last_name</p>
+                        <p class="text-dark text-indent-110 p-0">name</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Away team starting pitcher last name</p>
+                        <p class="text-dark p-0">Current moneyline</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Current moneyline [moneyline_current]</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes</p>
+                        <p class="text-dark text-indent-110 p-0">outcomes</p>
                     </td>
                     <td></td>
                 </tr>
@@ -1211,15 +1256,69 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
+                        <p class="text-dark text-indent-110 p-0">name</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Opening moneyline [moneyline_open]</p>
+                        <p class="text-dark p-0">Live moneyline</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes</p>
+                        <p class="text-dark text-indent-110 p-0">last_updated</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Day/Time odds were last updated [UTC] presented in standard ISO8601 format</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">outcomes</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus home team live moneyline odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus away team live moneyline odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Opening moneyline</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">outcomes</p>
                     </td>
                     <td></td>
                 </tr>
@@ -1257,23 +1356,23 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
+                        <p class="text-dark text-indent-110 p-0">name</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus current run line [run_line_current]</p>
+                        <p class="text-dark p-0">Current spread (runline)</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">spread</p>
+                        <p class="text-dark text-indent-110 p-0">spread</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus current spread</p>
+                        <p class="text-dark p-0">Spread current</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes</p>
+                        <p class="text-dark text-indent-110 p-0">outcomes</p>
                     </td>
                     <td></td>
                 </tr>
@@ -1290,7 +1389,7 @@
                         <p class="text-dark text-indent-130 p-0">odds</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus home team current run line odds</p>
+                        <p class="text-dark p-0">Consensus home team current spread (run line) odds</p>
                     </td>
                 </tr>
                 <tr>
@@ -1306,28 +1405,36 @@
                         <p class="text-dark text-indent-130 p-0">odds</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus away team current run line odds</p>
+                        <p class="text-dark p-0">Consensus away team current spread (run line) odds</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
+                        <p class="text-dark text-indent-110 p-0">name</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus opening run line [run_line_open]</p>
+                        <p class="text-dark p-0">Live spread (runline)</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">spread</p>
+                        <p class="text-dark text-indent-110 p-0">last_updated</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus opening spread</p>
+                        <p class="text-dark p-0">Day/Time odds were last updated [UTC] presented in standard ISO8601 format</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes</p>
+                        <p class="text-dark text-indent-110 p-0">spread</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Spread live</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">outcomes</p>
                     </td>
                     <td></td>
                 </tr>
@@ -1344,7 +1451,7 @@
                         <p class="text-dark text-indent-130 p-0">odds</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus home team opening run line odds</p>
+                        <p class="text-dark p-0">Consensus home team live spread (run line) odds</p>
                     </td>
                 </tr>
                 <tr>
@@ -1360,28 +1467,83 @@
                         <p class="text-dark text-indent-130 p-0">odds</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus away team opening run line odds</p>
+                        <p class="text-dark p-0">Consensus away team live spread (run line) odds</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
+                        <p class="text-dark text-indent-110 p-0">name</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus current over/under [total_current]</p>
+                        <p class="text-dark p-0">Open spread (runline)</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">total</p>
+                        <p class="text-dark text-indent-110 p-0">spread</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus current over/under</p>
+                        <p class="text-dark p-0">Spread open</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes</p>
+                        <p class="text-dark text-indent-110 p-0">outcomes</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Home</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus home team open spread (run line) odds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Away</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus away team open spread (run line) odds</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Current total (O/U)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">total</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Total current</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">outcomes</p>
                     </td>
                     <td></td>
                 </tr>
@@ -1396,14 +1558,6 @@
                 <tr>
                     <td data-title="Data Points">
                         <p class="text-dark text-indent-130 p-0">odds</p>
-                    </td>
-                    <td>
-                        <p class="text-dark p-0">Consensus current over odds</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-title="Data Points">
-                        <p class="text-dark text-indent-130 p-0">total</p>
                     </td>
                     <td>
                         <p class="text-dark p-0">Consensus current over</p>
@@ -1411,6 +1565,14 @@
                 </tr>
                 <tr>
                     <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">total</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus over/under total</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
                         <p class="text-dark text-indent-130 p-0">type</p>
                     </td>
                     <td>
@@ -1422,7 +1584,7 @@
                         <p class="text-dark text-indent-130 p-0">odds</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus current over/under odds</p>
+                        <p class="text-dark p-0">Consensus current under</p>
                     </td>
                 </tr>
                 <tr>
@@ -1430,30 +1592,62 @@
                         <p class="text-dark text-indent-130 p-0">total</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus current over/under</p>
+                        <p class="text-dark p-0">Consensus over/under total</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">name</p>
+                        <p class="text-dark text-indent-110 p-0">name</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus opening over/under [total_open]</p>
+                        <p class="text-dark p-0">Live total (O/U)</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">total</p>
+                        <p class="text-dark text-indent-110 p-0">last_updated</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus opening over/under</p>
+                        <p class="text-dark p-0">Day/Time odds were last updated [UTC] presented in standard ISO8601 format</p>
                     </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
-                        <p class="text-dark text-indent-100 p-0">outcomes</p>
+                        <p class="text-dark text-indent-110 p-0">total</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Total live</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">outcomes</p>
                     </td>
                     <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Under</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus live under</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">total</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus over/under total</p>
+                    </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
@@ -1468,7 +1662,7 @@
                         <p class="text-dark text-indent-130 p-0">odds</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus opening over odds</p>
+                        <p class="text-dark p-0">Consensus live over</p>
                     </td>
                 </tr>
                 <tr>
@@ -1476,7 +1670,54 @@
                         <p class="text-dark text-indent-130 p-0">total</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus opening over</p>
+                        <p class="text-dark p-0">Consensus opening over/under</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">name</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Open total (O/U)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">total</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Total open</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-110 p-0">outcomes</p>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Over</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">odds</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus open over</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-130 p-0">total</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Consensus over/under total</p>
                     </td>
                 </tr>
                 <tr>
@@ -1492,7 +1733,7 @@
                         <p class="text-dark text-indent-130 p-0">odds</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus opening over/under odds</p>
+                        <p class="text-dark p-0">Consensus open under</p>
                     </td>
                 </tr>
                 <tr>
@@ -1500,7 +1741,7 @@
                         <p class="text-dark text-indent-130 p-0">total</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">Consensus opening over/under</p>
+                        <p class="text-dark p-0">Consensus over/under total</p>
                     </td>
                 </tr>
             </tbody>
