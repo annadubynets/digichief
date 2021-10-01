@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digichief API Documentation</title>
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/libs/jquery.modal.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -103,9 +104,12 @@
         <a href="stats.html" class="level-1"><span>Stats</span></a>
         <a href="lottery.html" class="level-1">Lottery</a>
         <a href="financial.html" class="level-1"><span>Financial</span></a>
-        <a href="financial-quotes-v1.html" class="level-2 pl-90px active"><span>Quotes v1</span></a>
+        <a href="financial-quotes-v1.html" class="level-2 pl-90px"><span>Quotes v1</span></a>
         <a href="financial-quotes-json.html" class="level-4 pl-120px"><span>JSON | XML</span></a>
         <a href="financial-quotes-rss.html" class="level-4 pl-120px"><span>RSS</span></a>
+        <a href="financial-quotes-rss-structure.html" class="level-5"><span>Query Structure</span></a>
+        <a href="financial-quotes-rss-parameters.html" class="level-5"><span>Parameters</span></a>
+        <a href="financial-quotes-rss-data-points.html" class="level-5 active"><span>Data Points Returned</span></a>
         <a href="financial-indices-v1.html" class="level-3 pl-90px"><span>Indices v1</span></a>
         <a href="financial-commodities-v1.html" class="level-3 pl-90px"><span>Commodities v1</span></a>
         <a href="flights.html" class="level-1">Flights</a>
@@ -114,13 +118,95 @@
         <a href="api-being-developed.html" class="level-1">Health</a>
         <a href="infotainment.html" class="level-1">Infotainment</a>
         <a href="api-being-developed.html" class="level-1">Images</a>
-        <a href="videos.html" class="level-1"><span>Video</span></a>
+        <a href="videos.html" class="level-1"><span>Videos</span></a>
     </div>
 
     <div class="main-content">
-        <h1 class="main-title">Financial API Documentation</h1>
-        <a href="financial-quotes-json.html" class="news-link">JSON | XML</a>
-        <a href="financial-quotes-rss.html" class="news-link">RSS</a>
+        <div class="main-item fw-500">Data Points Returned</div>
+        <table class="responsive-table">
+            <colgroup>
+                <col style="width: 30%;">
+                <col style="width: 70%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Data Points</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark p-0">channel</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Mandatory field for validation</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark p-0">title</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Digichief Stocks</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark p-0">link</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Digichief Website</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark p-0">description</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Content Type</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark p-0">docs</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">rss board specification</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark p-0">generator</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Digichief Content Server</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark p-0">lastBuildDate</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Last Build Date [GMT]</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark p-0">item</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark p-0">title</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Stock Name, Price, Change amount, Volume</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <footer class="footer">
@@ -164,6 +250,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.modal.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/api-controller.js"></script>
     <script src="js/search-controller.js"></script>
