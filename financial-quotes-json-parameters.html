@@ -110,8 +110,8 @@
         <a href="financial-quotes-json-parameters.html" class="level-5 active"><span>Parameters</span></a>
         <a href="financial-quotes-json-data-points.html" class="level-5"><span>Data Points Returned</span></a>
         <a href="financial-quotes-rss.html" class="level-4 pl-120px"><span>RSS</span></a>
-        <a href="financial-indices-v1.html" class="level-3 pl-90px"><span>Indices v1</span></a>
-        <a href="financial-commodities-v1.html" class="level-3 pl-90px"><span>Commodities v1</span></a>
+        <!-- <a href="financial-indices-v1.html" class="level-3 pl-90px"><span>Indices v1</span></a>
+        <a href="financial-commodities-v1.html" class="level-3 pl-90px"><span>Commodities v1</span></a> -->
         <a href="flights.html" class="level-1">Flights</a>
         <a href="api-being-developed.html" class="level-1">Traffic</a>
         <a href="api-being-developed.html" class="level-1">Transit</a>
@@ -166,44 +166,31 @@
                             <p>symbol=</p>
                         </div>
                         <div class="col-right">
-                            <div id="special-symbols" class="modal">
+                            <div id="special-symbols" class="modal modal-lg">
                                 <div class="main-item">Special Symbols</div>
                                 <table class="responsive-table">
                                     <colgroup>
                                         <col style="width: 30%;">
-                                        <col style="width: 70%;">
+                                        <col style="width: 50%;">
+                                        <col style="width: 20%;">
                                     </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>SYMBOL or LIST</th>
+                                            <th>DESCRIPTION</th>
+                                            <th>TYPE</th>
+                                        </tr>
+                                    </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$DJI-EOD</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Dow EOD</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$SPX-EOD</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">S&P EOD</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$COMP-EOD</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">NASDAQ EOD</p>
-                                            </td>
-                                        </tr>
                                         <tr>
                                             <td>
                                                 <p class="text-dark">t10mostactive</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">Top 10 Most Active</p>
+                                                <p class="text-dark">Top 10 Most Active, optional parameter: &exchange=[NYSE or NASDAQ}</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Most Active</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -211,7 +198,10 @@
                                                 <p class="text-dark">t10percentgainers</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">Top 10 Percent Gainers</p>
+                                                <p class="text-dark">Top 10 Percent Gainers, optional parameter: &exchange=[NYSE or NASDAQ}</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Top Gainers</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -219,77 +209,214 @@
                                                 <p class="text-dark">t10percentlosers</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">Top 10 Percent Losers</p>
+                                                <p class="text-dark">Top 10 Percent Losers, optional parameter: &exchange=[NYSE or NASDAQ}</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Top Losers</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <p class="text-dark">N225</p>
+                                                <p class="text-dark">t10mostpopular</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">Nikkei 225</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">NDX</p>
+                                                <p class="text-dark">Top 10 Popular Stocks</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">Nasdaq 100</p>
+                                                <p class="text-dark">Most Popular</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <p class="text-dark">IRX</p>
+                                                <p class="text-dark">$Brent</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">13-week T-bill</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">FVX</p>
+                                                <p class="text-dark">Brent crude</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">5-year T-note</p>
+                                                <p class="text-dark">Commodity</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <p class="text-dark">TNX</p>
+                                                <p class="text-dark">$Cocoa</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">10-year T-note</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">TYX</p>
+                                                <p class="text-dark">Cocoa</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">30-year T-note</p>
+                                                <p class="text-dark">Commodity</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <p class="text-dark">FTSE</p>
+                                                <p class="text-dark">$Coffee</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">FTSE 100</p>
+                                                <p class="text-dark">Coffee</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Commodity</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <p class="text-dark">$NYA</p>
+                                                <p class="text-dark">$Copper</p>
                                             </td>
                                             <td>
-                                                <p class="text-dark">NYSE</p>
+                                                <p class="text-dark">Copper</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Commodity</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">$Corn</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Corn</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Commodity</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">$Cotton</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Cotton</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Commodity</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">$Fcattle</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Feeder Cattle</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Commodity</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">$Gold</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Gold</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Commodity</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">$Hogs</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Hogs</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Commodity</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">$Lcattle</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Live Cattle</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Commodity</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">$NatGas</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Natural Gas</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Commodity</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">$Oil</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">West Texas crude</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Commodity</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">$Platinum</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Platinum</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Commodity</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">$Rice</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Rice</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Commodity</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">$Silver</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Silver</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Commodity</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">$Soybean</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Soybean</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Commodity</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">$Wheat</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Wheat</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-dark">Commodity</p>
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-                            <p class="text-dark">Ticker symbol: stock, mutual funds and Special <a href="#special-symbols" rel="modal:open" class="text-primary">link</a></p>
+                            <p class="text-dark">Ticker symbol: stock, mutual funds commodities and Special <a href="#special-symbols" rel="modal:open" class="text-primary">link</a></p>
                             <p class="text-dark">Up to 50 symbols separated by a comma</p>
                         </div>
                     </td>
@@ -337,6 +464,14 @@
                         <p class="text-dark text-indent-40 p-0">quotes</p>
                     </td>
                     <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-80 p-0">Type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Provides type of financial content, such as Quote, Most Active, Top Gainers, Top Losers, Most Popular</p>
+                    </td>
                 </tr>
                 <tr>
                     <td data-title="Data Points">
@@ -631,7 +766,7 @@
                         <p class="text-dark text-indent-80 p-0">CompanyLogo2000x1500</p>
                     </td>
                     <td>
-                        <p class="text-dark p-0">URI: https://financial-media.digichief.com/company/logos/2000x1500/symbol.png</p>
+                        <p class="text-dark p-0">URI: https://financial-media.digichief.com/xxx/xxxxx/400x400/TSLA.png</p>
                     </td>
                 </tr>
             </tbody>
