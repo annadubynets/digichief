@@ -914,7 +914,6 @@ th {
 }
 
 td {
-    background: #FFFFFF;
     padding: 8px;
     text-align: start;
     vertical-align: top;
@@ -929,6 +928,7 @@ td p {
     line-height: 18px;
     padding: 6px 0;
     overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 td p a {
@@ -937,8 +937,6 @@ td p a {
 }
 
 table.light th {
-    background-color: #FFFFFF;
-    color: #000;
     font-weight: bold;
     font-size: 16px;
     padding: 13px 10px;
@@ -1176,6 +1174,6 @@ td:nth-child(2) {
 }
 
 .modal table tr td {
-    border-right: none;
+    border-right: 1px solid #000;
     background: transparent;
 }

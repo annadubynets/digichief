@@ -198,7 +198,7 @@
     }
     table.responsive-table tr,
     table.responsive-table td {
-        display: block;
+        display: inline-block;
     }
     table.responsive-table tr {
         position: relative;
@@ -266,6 +266,9 @@
     }
     .pb-20px {
         padding-bottom: 0;
+    }
+    colgroup col {
+        width: 100%!important;
     }
 }
 
