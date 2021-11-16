@@ -217,11 +217,13 @@
         display: inline-block;
     }
     .modal table.responsive-table td:nth-child(1):before,
-    .modal table.responsive-table td:nth-child(2):before {
+    .modal table.responsive-table td:nth-child(2):before,
+    .modal table.responsive-table td:nth-child(3):before {
         display: none;
     }
     .modal table.responsive-table td:nth-child(1),
-    .modal table.responsive-table td:nth-child(2) {
+    .modal table.responsive-table td:nth-child(2),
+    .modal table.responsive-table td:nth-child(3) {
         padding-left: 0;
     }
     .modal table.responsive-table tr {
