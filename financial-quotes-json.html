@@ -169,268 +169,1714 @@
                         <p>parameters</p>
                     </td>
                     <td>
-                        <div class="col-left">
-                            <p>format=</p>
-                        </div>
-                        <div class="col-right">
-                            <p class="text-dark">json or xml</p>
-                        </div>
-                        <div class="col-left">
-                            <p>symbol=</p>
-                        </div>
-                        <div class="col-right">
-                            <div id="special-symbols" class="modal modal-lg">
-                                <div class="main-item">Special Symbols</div>
-                                <table class="responsive-table">
-                                    <colgroup>
-                                        <col style="width: 30%;">
-                                        <col style="width: 50%;">
-                                        <col style="width: 20%;">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>SYMBOL or LIST</th>
-                                            <th>DESCRIPTION</th>
-                                            <th>TYPE</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">t10mostactive</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Top 10 Most Active</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Most Active</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">t10percentgainers</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Top 10 Percent Gainers</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Top Gainers</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">t10percentlosers</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Top 10 Percent Losers</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Top Losers</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">t10mostpopular</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Top 10 Popular Stocks</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Most Popular</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$Brent</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Brent crude</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Commodity</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$Cocoa</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Cocoa</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Commodity</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$Coffee</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Coffee</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Commodity</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$Copper</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Copper</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Commodity</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$Corn</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Corn</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Commodity</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$Cotton</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Cotton</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Commodity</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$Fcattle</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Feeder Cattle</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Commodity</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$Gold</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Gold</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Commodity</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$Hogs</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Hogs</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Commodity</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$Lcattle</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Live Cattle</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Commodity</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$NatGas</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Natural Gas</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Commodity</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$Oil</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">West Texas crude</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Commodity</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$Platinum</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Platinum</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Commodity</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$Rice</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Rice</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Commodity</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$Silver</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Silver</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Commodity</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$Soybean</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Soybean</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Commodity</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="text-dark">$Wheat</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Wheat</p>
-                                            </td>
-                                            <td>
-                                                <p class="text-dark">Commodity</p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        <div class="d-flex">
+                            <div class="col-left">
+                                <p>format=</p>
                             </div>
-                            <p class="text-dark">Ticker symbol: stock, mutual funds commodities and Special <a href="#special-symbols" rel="modal:open" class="text-primary">link</a></p>
-                            <p class="text-dark">Up to 50 symbols separated by a comma</p>
+                            <div class="col-right">
+                                <p class="text-dark">json or xml</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="col-left">
+                                <p>symbol=</p>
+                            </div>
+                            <div class="col-right">
+                                <div id="special-symbols" class="modal modal-lg">
+                                    <div class="main-item">Special Symbols</div>
+                                    <table class="responsive-table">
+                                        <colgroup>
+                                            <col style="width: 30%;">
+                                            <col style="width: 50%;">
+                                            <col style="width: 20%;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>SYMBOL or LIST</th>
+                                                <th>DESCRIPTION</th>
+                                                <th>TYPE</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">t10mostactive</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Top 10 Most Active</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Most Active</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">t10percentgainers</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Top 10 Percent Gainers</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Top Gainers</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">t10percentlosers</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Top 10 Percent Losers</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Top Losers</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">t10mostpopular</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Top 10 Popular Stocks</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Most Popular</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">$Brent</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Brent crude</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Commodity</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">$Cocoa</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Cocoa</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Commodity</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">$Coffee</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Coffee</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Commodity</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">$Copper</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Copper</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Commodity</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">$Corn</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Corn</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Commodity</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">$Cotton</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Cotton</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Commodity</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">$Fcattle</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Feeder Cattle</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Commodity</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">$Gold</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Gold</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Commodity</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">$Hogs</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Hogs</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Commodity</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">$Lcattle</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Live Cattle</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Commodity</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">$NatGas</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Natural Gas</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Commodity</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">$Oil</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">West Texas crude</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Commodity</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">$Platinum</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Platinum</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Commodity</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">$Rice</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Rice</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Commodity</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">$Silver</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Silver</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Commodity</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">$Soybean</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Soybean</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Commodity</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">$Wheat</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Wheat</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">Commodity</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="text-dark">Ticker symbol: stock, mutual funds commodities and Special <a href="#special-symbols" rel="modal:open" class="text-primary">link</a></p>
+                                <p class="text-dark">Up to 50 symbols separated by a comma</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="col-left">
+                                <p>&amp;currency=</p>
+                            </div>
+                            <div class="col-right">
+                                <div id="currency-abbr" class="modal">
+                                    <table class="responsive-table light">
+                                        <colgroup>
+                                            <col style="width: 30%;">
+                                            <col style="width: 70%;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>Country/Currency</th>
+                                                <th>Acronym/AbbreviationAcr./Abb.</th>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Australia Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">AUD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Great Britain Pound</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">GBP</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Euro</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">EUR</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Japan Yen</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">JPY</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Switzerland Franc</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">CHF</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">USA Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">USD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Afghanistan Afghani</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">AFN</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Albania Lek</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">ALL</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Algeria Dinar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">DZD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Angola Kwanza</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">AOA</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Argentina Peso</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">ARS</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Armenia Dram</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">AMD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Aruba Florin</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">AWG</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Australia Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">AUD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Austria Schilling</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">ATS (EURO)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Belgium Franc</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">BEF (EURO)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Azerbaijan New Manat</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">AZN</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Bahamas Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">BSD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Bahrain Dinar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">BHD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Bangladesh Taka</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">BDT</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Barbados Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">BBD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Belarus Ruble</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">BYR</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Belize Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">BZD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Bermuda Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">BMD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Bhutan Ngultrum</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">BTN</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Bolivia Boliviano</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">BOB</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Bosnia Mark</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">BAM</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Botswana Pula</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">BWP</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Brazil Real</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">BRL</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Great Britain Pound</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">GBP</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Brunei Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">BND</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Bulgaria Lev</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">BGN</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Burundi Franc</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">BIF</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">CFA Franc BCEAO</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">XOF</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">CFA Franc BEAC</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">XAF</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">CFP Franc</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">XPF</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Cambodia Riel</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">KHR</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Canada Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">CAD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Cape Verde Escudo</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">CVE</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Cayman Islands Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">KYD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Chili Peso</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">CLP</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">China Yuan/Renminbi</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">CNY</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Colombia Peso</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">COP</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Comoros Franc</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">KMF</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Congo Franc</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">CDF</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Costa Rica Colon</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">CRC</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Croatia Kuna</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">HRK</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Cuba Convertible Peso</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">CUC</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Cuba Peso</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">CUP</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Cyprus Pound</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">CYP (EURO)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Czech Koruna</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">CZK</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Denmark Krone</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">DKK</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Djibouti Franc</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">DJF</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Dominican Republich Peso</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">DOP</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">East Caribbean Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">XCD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Egypt Pound</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">EGP</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">El Salvador Colon</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">SVC</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Estonia Kroon</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">EEK (EURO)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Ethiopia Birr</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">ETB</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Euro</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">EUR</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Falkland Islands Pound</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">FKP</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Finland Markka</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">FIM (EURO)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Fiji Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">FJD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Gambia Dalasi</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">GMD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Georgia Lari</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">GEL</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Germany Mark</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">DMK (EURO)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Ghana New Cedi</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">GHS</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Gibraltar Pound</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">GIP</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Greece Drachma</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">GRD (EURO)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Guatemala Quetzal</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">GTQ</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Guinea Franc</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">GNF</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Guyana Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">GYD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Haiti Gourde</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">HTG</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Honduras Lempira</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">HNL</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Hong Kong Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">HKD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Hungary Forint</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">HUF</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Iceland Krona</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">ISK</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">India Rupee</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">INR</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Indonesia Rupiah</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">IDR</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Iran Rial</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">IRR</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Iraq Dinar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">IQD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Ireland Pound</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">IED (EURO)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Israel New Shekel</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">ILS</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Italy Lira</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">ITL (EURO)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Jamaica Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">JMD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Japan Yen</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">JPY</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Jordan Dinar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">JOD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Kazakhstan Tenge</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">KZT</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Kenya Shilling</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">KES</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Kuwait Dinar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">KWD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Kyrgyzstan Som</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">KGS</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Laos Kip</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">LAK</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Latvia Lats</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">LVL (EURO)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Lebanon Pound</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">LBP</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Lesotho Loti</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">LSL</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Liberia Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">LRD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Libya Dinar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">LYD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Lithuania Litas</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">LTL (EURO)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Luxembourg Franc</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">LUF (EURO)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Macau Pataca</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">MOP</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Macedonia Denar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">MKD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Malagasy Ariary</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">MGA</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Malawi Kwacha</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">MWK</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Malaysia Ringgit</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">MYR</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Maldives Rufiyaa</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">MVR</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Malta Lira</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">MTL (EURO)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Mauritania Ouguiya</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">MRO</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Mauritius Rupee</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">MUR</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Mexico Peso</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">MXN</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Moldova Leu</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">MDL</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Mongolia Tugrik</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">MNT</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Morocco Dirham</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">MAD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Mozambique New Metical</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">MZN</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Myanmar Kyat</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">MMK</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">NL Antilles Guilder</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">ANG</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Namibia Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">NAD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Nepal Rupee</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">NPR</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Netherlands Guilder</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">NLG (EURO)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">New Zealand Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">NZD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Nicaragua Cordoba Oro</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">NIO</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Nigeria Naira</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">NGN</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">North Korea Won</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">KPW</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Norway Kroner</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">NOK</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Oman Rial</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">OMR</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Pakistan Rupee</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">PKR</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Panama Balboa</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">PAB</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Papua New Guinea Kina</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">PGK</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Paraguay Guarani</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">PYG</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Peru Nuevo Sol</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">PEN</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Philippines Peso</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">PHP</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Poland Zloty</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">PLN</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Portugal Escudo</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">PTE (EURO)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Qatar Rial</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">QAR</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Romania New Lei</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">RON</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Russia Rouble</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">RUB</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Rwanda Franc</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">RWF</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Samoa Tala</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">WST</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Sao Tome/Principe Dobra</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">STD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Saudi Arabia Riyal</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">SAR</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Serbia Dinar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">RSD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Seychelles Rupee</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">SCR</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Sierra Leone Leone</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">SLL</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Singapore Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">SGD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Slovakia Koruna</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">SKK (EURO)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Slovenia Tolar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">SIT (EURO)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Solomon Islands Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">SBD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Somali Shilling</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">SOS</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">South Africa Rand</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">ZAR</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">South Korea Won</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">KRW</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Spain Peseta</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">ESP (EURO)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Sri Lanka Rupee</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">LKR</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">St Helena Pound</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">SHP</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Sudan Pound</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">SDG</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Suriname Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">SRD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Swaziland Lilangeni</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">SZL</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Sweden Krona</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">SEK</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Switzerland Franc</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">CHF</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Syria Pound</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">SYP</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Taiwan Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">TWD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Tanzania Shilling</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">TZS</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Thailand Baht</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">THB</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Tonga Pa'anga</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">TOP</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Trinidad/Tobago Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">TTD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Tunisia Dinar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">TND</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Turkish New Lira</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">TRY</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Turkmenistan Manat</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">TMM</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">USA Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">USD</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Uganda Shilling</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">UGX</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Ukraine Hryvnia</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">UAH</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Uruguay Peso</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">UYU</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">United Arab Emirates Dirham</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">AED</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Vanuatu Vatu</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">VUV</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Venezuela Bolivar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">VEB</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Vietnam Dong</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">VND</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Yemen Rial</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">YER</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Zambia Kwacha</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">ZMK</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-dark">Zimbabwe Dollar</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-dark">ZWD</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="text-dark">Optional attribute that converts to your desired currency. For example &amp;currency=CAD would convert to Canadian Currency. Please note that stock pricing by default is supplied as the native exchange currency, for example
+                                    NYSE is supplied as USD. If the parameter is set with "two" dash-separated three-letter currency codes, say CAD-JPY, it converts all price-related values that are in the first specified currency to the second specified
+                                    currency. Currency Abbrievation <a href="#currency-abbr" rel="modal:open" class="text-primary">link</a></p>
+                            </div>
                         </div>
                     </td>
                 </tr>
