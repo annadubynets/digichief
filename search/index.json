@@ -61,7 +61,7 @@
     },
     {
         "title": "Sign Up for an Account",
-        "url": "./sign-up.html",
+        "url": "https://cms.digichief.com/sign-up",
         "contentKeywords": "Please provide the information below and we will setup an account for you and provide a Trial API Key for the content you selected.",
         "summary": "Please provide the information below and we will setup an account for you..."
     }
