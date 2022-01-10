@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digichief API Documentation</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/libs/jquery.modal.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="container">
+                <div class="header-flex-container">
+                    <div class="header-logo xs-hidden">
+                        <a href="index.html">
+                            <img src="icons/logo.png" alt="logo" class="logo-img">
+                        </a>
+                    </div>
+
+                    <div class="header-logo xs-visible">
+                        <a href="index.html">
+                            <img src="icons/logo_mobile.svg" alt="logo" class="logo-img">
+                        </a>
+                    </div>
+
+                    <ul class="menu">
+                        <li class="menu-item"><a href="index.html" class="menu-link active">API Documentation</a></li>
+                        <li class="menu-item"><a href="sign-up.html" class="menu-link">Sign Up</a></li>
+                        <li class="menu-item"><a href="contact.html" class="menu-link">Contact</a></li>
+
+                        <li class="footer-item">
+                            <a href="need-help.html" class="footer-link">Need Help?</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="terms.html" class="footer-link">Terms and Conditions</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="restrictions.html" class="footer-link">Restrictions</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                        </li>
+                        <div class="footer-socials">
+                            <a href="https://www.facebook.com/digichief?ref=hl" target="_blank" class="footer-social-item">
+                                <span class="icon-facebook"></span>
+                            </a>
+                            <a href="https://www.linkedin.com/company/digichief-content-feed" target="_blank" class="footer-social-item">
+                                <span class="icon-linkedin2"></span>
+                            </a>
+                            <a href="http://vimeo.com/digichief" target="_blank" class="footer-social-item">
+                                <span class="icon-vimeo"></span>
+                            </a>
+                            <a href="https://twitter.com/DIGI_TWEETS" target="_blank" class="footer-social-item">
+                                <span class="icon-twitter"></span>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="alert">
+        <div class="container">
+            <div class="alert-flex-container">
+                <div class="alert-descr">A field here so that we can put in messages if needed, usually this will not be here, width=800</div>
+                <div class="alert-descr">Area for future sub-menus if needed, program them</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sidebar">
+        <div class="sidebar-wrapper">
+            <div class="search-box">
+                <input class="search-input" type="text" placeholder="Search......">
+                <button class="search-btn">
+                    <span class="icon-search"></span>
+                </button>
+            </div>
+
+            <a href="#" data-toggle=".wrapper" id="sidebar-toggle">
+                <span class="icon-radix-icons_double-arrow-left sidebar-icon-close"></span>
+                <span class="icon-radix-icons_double-arrow-right sidebar-icon-open"></span>
+            </a>
+        </div>
+
+        <a href="index.html" class="level-1"><span>Getting Started</span></a>
+        <a href="news.html" class="level-1"><span>News</span></a>
+        <a href="weather.html" class="level-1"><span>Weather</span></a>
+        <a href="sports.html" class="level-1"><span>Sports</span></a>
+        <a href="odds.html" class="level-1"><span>Odds</span></a>
+        <a href="pollen.html" class="level-1"><span>Pollen</span></a>
+        <a href="pollen-v1.html" class="level-2 pl-90px"><span>Pollen v1</span></a>
+        <a href="pollen-json.html" class="level-4 pl-120px"><span>JSON | XML</span></a>
+        <a href="pollen-json-structure.html" class="level-5 active"><span>Query Structure</span></a>
+        <a href="pollen-json-parameters.html" class="level-5"><span>Parameters</span></a>
+        <a href="pollen-json-data-points.html" class="level-5"><span>Data Points Returned</span></a>
+        <a href="stats.html" class="level-1"><span>Stats</span></a>
+        <a href="lottery.html" class="level-1"><span>Lottery</span></a>
+        <a href="financial.html" class="level-1"><span>Financial</span></a>
+        <a href="flights.html" class="level-1"><span>Flights</span></a>
+        <a href="traffic.html" class="level-1"><span>Traffic</span></a>
+        <a href="api-being-developed.html" class="level-1">Transit</a>
+        <a href="api-being-developed.html" class="level-1">Health</a>
+        <a href="infotainment.html" class="level-1">Infotainment</a>
+        <a href="api-being-developed.html" class="level-1">Images</a>
+        <a href="videos.html" class="level-1"><span>Videos</span></a>
+    </div>
+
+    <div class="main-content">
+        <div class="main-item mb-20 fw-500">Query Structure</div>
+        <div class="col-left mb-20">
+            <div class="main-descr">Update Frequency:</div>
+        </div>
+        <div class="col-right mb-20">
+            <div class="main-descr fw-500">5 minutes</div>
+        </div>
+        <div class="col-left mb-20">
+            <div class="main-format">API:</div>
+        </div>
+        <div class="col-right mb-20">
+            <div class="main-format">https://api.digichief.com/pollen/getpollen/<span>{customer}</span>/<span>{customer_api_key}</span>?<span>{parameter}</span>&<span>{optional_parameters}</span></div>
+        </div>
+
+        <div class="main-item fw-500">Parameters</div>
+        <table class="responsive-table">
+            <colgroup>
+                <col style="width: 30%;">
+                <col style="width: 70%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Query Parameter</th>
+                    <th>Description | Parameter Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">customer</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">Unique customer name provided by Digichief</p>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">customer_api_key</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">Your company's unique API key | Digichief will give this to you</p>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">parameters</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">Mandatory Parameter</p>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">?location=40509</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">Zip Code or City,State</p>
+                        <p class="text-dark">Optional Paramter</p>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">&format=json</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">XML or JSON - Default is JSON</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="main-item fw-500">Data Points Returned</div>
+        <table class="responsive-table">
+            <colgroup>
+                <col style="width: 30%;">
+                <col style="width: 70%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Data Points</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark p-0">content</p>
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">datafeed</p>
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">pubDate</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Published Date, Time in GMT</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">latitude</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Lattitude</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">longitude</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Longitude</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">distribution</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Distribution By</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">source</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Attribution</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark p-0">pollen_forecast</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Forecast Date</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">forecastdate</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Forecast Date</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">city</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Returns Zip Code from Request in API</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">pollen_day0</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Pollen for Today</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120 p-0">value</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Pollen Index Value</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120 p-0">text</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Pollen Risk: Low, Low-Medium, Medium, Medium-High, High</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120 p-0">predom_pollen</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Predominant Pollen type present</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120 p-0">description</p>
+                    </td>
+                    <td>
+                        <div id="various-list" class="modal">
+                            <table class="responsive-table">
+
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">0-2.4 (Low) - Pollen levels between 0 and 2.4 tend to affect very few individuals among the allergy-suffering public.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">2.5-4.8 (Low-Medium) - Pollen levels between 2.5 and 4.8 tend to start affecting individuals extremely sensitive to the predominant pollen.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">4.9-7.2 (Medium) - Pollen levels between 4.9 and 7.2 will likely cause symptoms for many individuals who suffer from allergies to the predominant pollen types of the season.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">7.3-9.6 (Medium-High) - Pollen levels between 7.3 and 9.6 tend to affect a large number of individuals who suffer from the pollen types of the season.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">9.7-12.0 (High) - Pollen levels between 9.7 and 12.0 tend to affect most individuals who suffer from the pollen types of the season. Symptoms may become more severe during days with high pollen levels</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="text-dark p-0">Provides an assesment of the current pollen forecast. Please see the following <a href="#various-list" rel="modal:open" class="text-primary">table</a> for the various desciptions</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">pollen_day1</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Pollen for Tomorrow</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120 p-0">value</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120 p-0">text</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Pollen Risk: Low, Low-Medium, Medium, Medium-High, High</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120 p-0">predom_pollen</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Predominant Pollen type present</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120 p-0">description</p>
+                    </td>
+                    <td>
+                        <div id="various-list" class="modal">
+                            <table class="responsive-table">
+
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">0-2.4 (Low) - Pollen levels between 0 and 2.4 tend to affect very few individuals among the allergy-suffering public.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">2.5-4.8 (Low-Medium) - Pollen levels between 2.5 and 4.8 tend to start affecting individuals extremely sensitive to the predominant pollen.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">4.9-7.2 (Medium) - Pollen levels between 4.9 and 7.2 will likely cause symptoms for many individuals who suffer from allergies to the predominant pollen types of the season.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">7.3-9.6 (Medium-High) - Pollen levels between 7.3 and 9.6 tend to affect a large number of individuals who suffer from the pollen types of the season.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">9.7-12.0 (High) - Pollen levels between 9.7 and 12.0 tend to affect most individuals who suffer from the pollen types of the season. Symptoms may become more severe during days with high pollen levels</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="text-dark p-0">Provides an assesment of the current pollen forecast. Please see the following <a href="#various-list" rel="modal:open" class="text-primary">table</a> for the various desciptions</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60 p-0">pollen_day2</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Pollen for Day after Tomorrow</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120 p-0">value</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120 p-0">text</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Pollen Risk: Low, Low-Medium, Medium, Medium-High, High</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120 p-0">predom_pollen</p>
+                    </td>
+                    <td>
+                        <p class="text-dark p-0">Predominant Pollen type present</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120 p-0">description</p>
+                    </td>
+                    <td>
+                        <div id="various-list" class="modal">
+                            <table class="responsive-table">
+
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">0-2.4 (Low) - Pollen levels between 0 and 2.4 tend to affect very few individuals among the allergy-suffering public.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">2.5-4.8 (Low-Medium) - Pollen levels between 2.5 and 4.8 tend to start affecting individuals extremely sensitive to the predominant pollen.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">4.9-7.2 (Medium) - Pollen levels between 4.9 and 7.2 will likely cause symptoms for many individuals who suffer from allergies to the predominant pollen types of the season.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">7.3-9.6 (Medium-High) - Pollen levels between 7.3 and 9.6 tend to affect a large number of individuals who suffer from the pollen types of the season.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-dark">9.7-12.0 (High) - Pollen levels between 9.7 and 12.0 tend to affect most individuals who suffer from the pollen types of the season. Symptoms may become more severe during days with high pollen levels</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="text-dark p-0">Provides an assesment of the current pollen forecast. Please see the following <a href="#various-list" rel="modal:open" class="text-primary">table</a> for the various desciptions</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-flex-container">
+                <ul class="footer-menu">
+                    <li class="footer-item">
+                        <a href="need-help.html" class="footer-link">Need Help?</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="terms.html" class="footer-link">Terms and Conditions</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="restrictions.html" class="footer-link">Restrictions</a>
+                    </li>
+                </ul>
+
+                <div class="footer-items">
+                    <div class="footer-copyright">
+                        © 2021 Digichief LLC<br> All Rights Reserved
+                    </div>
+                    <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/digichief?ref=hl" target="_blank" class="footer-social-item">
+                        <span class="icon-facebook"></span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/digichief-content-feed" target="_blank" class="footer-social-item">
+                        <span class="icon-linkedin2"></span>
+                    </a>
+                    <a href="http://vimeo.com/digichief" target="_blank" class="footer-social-item">
+                        <span class="icon-vimeo"></span>
+                    </a>
+                    <a href="https://twitter.com/DIGI_TWEETS" target="_blank" class="footer-social-item">
+                        <span class="icon-twitter"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/api-controller.js"></script>
+    <script src="js/search-controller.js"></script>
+</body>
+
+</html>
