@@ -135,6 +135,10 @@ p {
     padding-bottom: 10px;
 }
 
+.bg-muted {
+    background-color: #EFEFEF;
+}
+
 .modal-descr {
     font-weight: normal;
     font-size: 14px;
@@ -1176,4 +1180,11 @@ td:nth-child(2) {
 .modal table tr td {
     border-right: 1px solid #000;
     background: transparent;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
 }
