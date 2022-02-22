@@ -74,6 +74,10 @@
     padding-top: 15px;
 }
 
+.pb-0 {
+    padding-bottom: 0;
+}
+
 .pb-20px {
     padding-bottom: 20px;
 }
@@ -1118,6 +1122,12 @@ td:nth-child(2) {
 
 .text-indent-180 {
     text-indent: 180px;
+}
+
+.data-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
