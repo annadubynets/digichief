@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digichief API Documentation</title>
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/libs/jquery.modal.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -98,9 +99,9 @@
         <a href="index.html" class="level-1"><span>Getting Started</span></a>
         <a href="news.html" class="level-1"><span>News</span></a>
         <a href="weather.html" class="level-1"><span>Weather</span></a>
-        <a href="weather-forecasts-v1.html" class="level-2 active"><span>Forecasts/Current Conditions v1</span></a>
-        <a href="weather-forecasts-json.html" class="level-3"><span>JSON | XML</span></a>
+        <a href="weather-forecasts-v1.html" class="level-2"><span>Forecasts/Current Conditions v1</span></a>
         <a href="weather-maps.html" class="level-2"><span>Weather Maps</span></a>
+        <a href="weather-maps-json.html" class="level-3 active"><span>JSON | XML</span></a>
         <a href="sports.html" class="level-1"><span>Sports</span></a>
         <a href="odds.html" class="level-1"><span>Odds</span></a>
         <a href="pollen.html" class="level-1"><span>Pollen</span></a>
@@ -113,12 +114,126 @@
         <a href="api-being-developed.html" class="level-1">Health</a>
         <a href="infotainment.html" class="level-1">Infotainment</a>
         <a href="api-being-developed.html" class="level-1">Images</a>
-        <a href="videos.html" class="level-1"><span>Video</span></a>
+        <a href="videos.html" class="level-1"><span>Videos</span></a>
     </div>
 
     <div class="main-content">
-        <h1 class="main-title">Weather Forecast API Documentation</h1>
-        <a href="weather-forecasts-json.html" class="news-link">JSON | XML</a>
+        <h2 class="main-subtitle">Weather Maps Images v1</h2>
+        <div class="main-item mb-20 fw-500">Query Structure</div>
+        <div class="col-left mb-20">
+            <div class="main-descr">Update Frequency:</div>
+        </div>
+        <div class="col-right mb-20">
+            <div class="main-descr fw-500">15 Minutes</div>
+        </div>
+        <div class="col-left mb-20">
+            <div class="main-format">API:</div>
+        </div>
+        <div class="col-right mb-20">
+            <div class="main-format">https://api.digichief.com/weathermaps/getweathermap/<span>{customer}</span>/<span>{customer_api_key}</span>?<span>latlon={XX.XXXX,-XX.XXXX]</span>&<span>radius={In Miles}</span>&<span>size={PixelxPixel}</span>&<span>type={numeric value}</span>&<span>city={optional parameters}</span></div>
+        </div>
+
+        <div class="main-item fw-500">Parameters</div>
+        <table class="responsive-table">
+            <colgroup>
+                <col style="width: 30%;">
+                <col style="width: 70%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Query Parameter</th>
+                    <th>Description | Parameter Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">customer</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">Unique customer name provided by Digichief</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">customer_api_key</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">Your company's unique API key</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">latlon</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">Coordinates for the central point of the requested map. XX.XXXX,-XX.XXXX</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">radius</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">Radius, in miles from the Lat/Lon</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">size</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">Resolution width and height of the image, such as 1280x720</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">type</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">Use numeric value. Map types include 0-Radar, 1-Watch/Warn, 2-Satellite, 3-Hi/Low, 4, Highs, 5-Lows, 6-Rain, 7-Wind, 8-Current Conditions, 9- Lightning Strikes, 10-Today’s Forecast, 11-Tomorrow’s Forecast</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">city</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">City,State or Comma-delimited string of pairs</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Query Parameter">
+                        <p class="fw-500 text-dark">Optional Parameter</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">counties</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">Enables a county border layer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">format</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">JPG or GIF, Defaults to JPG</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">metric</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">Switches units to metric where applicable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <footer class="footer">
@@ -162,6 +277,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.modal.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/api-controller.js"></script>
     <script src="js/search-controller.js"></script>
