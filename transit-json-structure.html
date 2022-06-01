@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digichief API Documentation</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/libs/jquery.modal.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="container">
+                <div class="header-flex-container">
+                    <div class="header-logo xs-hidden">
+                        <a href="index.html">
+                            <img src="icons/logo.png" alt="logo" class="logo-img">
+                        </a>
+                    </div>
+
+                    <div class="header-logo xs-visible">
+                        <a href="index.html">
+                            <img src="icons/logo_mobile.svg" alt="logo" class="logo-img">
+                        </a>
+                    </div>
+
+                    <ul class="menu">
+                        <li class="menu-item"><a href="index.html" class="menu-link active">API Documentation</a></li>
+                        <li class="menu-item"><a href="sign-up.html" class="menu-link">Sign Up</a></li>
+                        <li class="menu-item"><a href="contact.html" class="menu-link">Contact</a></li>
+
+                        <li class="footer-item">
+                            <a href="need-help.html" class="footer-link">Need Help?</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="terms.html" class="footer-link">Terms and Conditions</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="restrictions.html" class="footer-link">Restrictions</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                        </li>
+                        <div class="footer-socials">
+                            <a href="https://www.facebook.com/digichief?ref=hl" target="_blank" class="footer-social-item">
+                                <span class="icon-facebook"></span>
+                            </a>
+                            <a href="https://www.linkedin.com/company/digichief-content-feed" target="_blank" class="footer-social-item">
+                                <span class="icon-linkedin2"></span>
+                            </a>
+                            <a href="http://vimeo.com/digichief" target="_blank" class="footer-social-item">
+                                <span class="icon-vimeo"></span>
+                            </a>
+                            <a href="https://twitter.com/DIGI_TWEETS" target="_blank" class="footer-social-item">
+                                <span class="icon-twitter"></span>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="alert">
+        <div class="container">
+            <div class="alert-flex-container">
+                <div class="alert-descr">A field here so that we can put in messages if needed, usually this will not be here, width=800</div>
+                <div class="alert-descr">Area for future sub-menus if needed, program them</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sidebar">
+        <div class="sidebar-wrapper">
+            <div class="search-box">
+                <input class="search-input" type="text" placeholder="Search......">
+                <button class="search-btn">
+                    <span class="icon-search"></span>
+                </button>
+            </div>
+
+            <a href="#" data-toggle=".wrapper" id="sidebar-toggle">
+                <span class="icon-radix-icons_double-arrow-left sidebar-icon-close"></span>
+                <span class="icon-radix-icons_double-arrow-right sidebar-icon-open"></span>
+            </a>
+        </div>
+
+        <a href="index.html" class="level-1"><span>Getting Started</span></a>
+        <a href="news.html" class="level-1"><span>News</span></a>
+        <a href="weather.html" class="level-1"><span>Weather</span></a>
+        <a href="sports.html" class="level-1"><span>Sports</span></a>
+        <a href="odds.html" class="level-1"><span>Odds</span></a>
+        <a href="pollen.html" class="level-1"><span>Pollen</span></a>
+        <a href="stats.html" class="level-1"><span>Stats</span></a>
+        <a href="lottery.html" class="level-1"><span>Lottery</span></a>
+        <a href="financial.html" class="level-1"><span>Financial</span></a>
+        <a href="flights.html" class="level-1"><span>Flights</span></a>
+        <a href="traffic.html" class="level-1"><span>Traffic</span></a>
+        <a href="transit.html" class="level-1"><span>Transit</span></a>
+        <a href="transit-v1.html" class="level-2 pl-90px"><span>Transit v1</span></a>
+        <a href="transit-json.html" class="level-4 pl-120px"><span>JSON | XML</span></a>
+        <a href="transit-json-structure.html" class="level-5 active"><span>Query Structure</span></a>
+        <a href="transit-json-parameters.html" class="level-5"><span>Parameters</span></a>
+        <a href="transit-json-data-points.html" class="level-5"><span>Data Points Returned</span></a>
+        <a href="api-being-developed.html" class="level-1">Health</a>
+        <a href="infotainment.html" class="level-1">Infotainment</a>
+        <a href="api-being-developed.html" class="level-1">Images</a>
+        <a href="videos.html" class="level-1"><span>Videos</span></a>
+    </div>
+
+    <div class="main-content">
+        <div class="main-item mb-20 fw-500">Query Structure</div>
+        <div class="col-left mb-20">
+            <div class="main-descr">Update Frequency:</div>
+        </div>
+        <div class="col-right mb-20">
+            <div class="main-descr fw-500">5 minutes</div>
+        </div>
+        <div class="col-left mb-20">
+            <div class="main-format">API:</div>
+        </div>
+        <div class="col-right mb-20">
+            <div class="main-format">https://api.digichief.com/transit/gettransit/<span>{customer}</span>/<span>{customer_api_key}</span>?<span>{latlon=XX.XXXX,-XX.XXXX}</span>&<span>{radius=meters}</span>&<span>dest3</span></div>
+        </div>
+
+        <div class="main-item fw-500">Parameters</div>
+        <table class="responsive-table">
+            <colgroup>
+                <col style="width: 30%;">
+                <col style="width: 70%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Query Parameter</th>
+                    <th>Description | Parameter Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">customer</p>
+                    </td>
+                    <td>
+                        <p class="text-dark fw-500">Unique customer name provided by Digichief</p>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">customer_api_key</p>
+                    </td>
+                    <td>
+                        <p class="text-dark fw-500">Your company's unique API keyy</p>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">parameters</p>
+                    </td>
+                    <td>
+                        <p class="text-dark fw-500">Mandatory Parameter</p>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">latlon</p>
+                    </td>
+                    <td>
+                        <p class="text-dark fw-500">Coordinates of center point in which to pull available transit. For mat follows: XX.XXXX,-XX,XXXX</p>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">radius</p>
+                    </td>
+                    <td>
+                        <p class="text-dark fw-500">Radius from Latitude and Longitude to pull available transit, in meters</p>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">&dest3</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">Lists the nearby stops with up to 3 arrival times per route.</p>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500 text-dark">Optional Parameter</p>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">&format=</p>
+                    </td>
+                    <td>
+                        <p class="text-dark"><span class="text-danger">JSON</span> or <span class="text-danger">XML</span>. Defaults to <span class="text-danger">JSON</span>.</p>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">&micro</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">A switch parameter that adds docked and dockless vehicles to the output.</p>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">&mindest=</p>
+                    </td>
+                    <td>
+                        <p class="text-dark">How many trip times will be in each destination, &mindest= valules 1 to 5</p>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td data-title="Query Parameter">
+                        <p class="fw-500">&format=</p>
+                    </td>
+                    <td>
+                        <p class="text-dark"><span class="text-danger">JSON</span> or <span class="text-danger">XML</span>. Defaults to <span class="text-danger">JSON</span>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="main-item fw-500">Data Points Returned</div>
+        <table class="responsive-table">
+            <colgroup>
+                <col style="width: 30%;">
+                <col style="width: 20%;">
+                <col style="width: 50%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Data Points</th>
+                    <th>Roadify node</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark p-0">stops</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">A list of transit stops within the radius in meters from the requested latlon</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30">id</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+                        <p class="text-dark p-0">id</p>
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">The identifier of the stop</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30">zone</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+                        <p class="text-dark p-0">zone</p>
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark p-0">Transit system, such as NYC_MTA_Subway, NJ RAIl, MTA Bus, etc.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30">name</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+                        <p class="text-dark p-0">name</p>
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">The display name of the stop like 5th Ave-Marion St</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30">distance</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+                        <p class="text-dark p-0">distanceM</p>
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">The distance of the stop, in meters, from the latlon provided in the request</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30">lat</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+                        <p class="text-dark p-0">lat</p>
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Latitude of request</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30">lon</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+                        <p class="text-dark p-0">lon</p>
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Longitude of request</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-30">routes</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+                        <p class="text-dark p-0">routes</p>
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">List of routes to (direction1) or from (direction0) the stop</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60">zone</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+                        <p class="text-dark p-0">zone</p>
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark p-0">Transit system for this Route</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60">id</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+                        <p class="text-dark p-0">id</p>
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark p-0">The identifier of the route with multiple trips between the stop to and from another location</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60">routeType</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+                        <p class="text-dark p-0">routeType</p>
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark p-0">Numberic identifier of route type - refer to routeType table</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60">name</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+                        <p class="text-dark p-0">name</p>
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Route name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60">color</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+                        <p class="text-dark p-0">color</p>
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Route color</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60">colorText</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+                        <p class="text-dark p-0">colorText</p>
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Color of text to be put on route color background if required</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-60">trips</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+                        <p class="text-dark p-0">trips</p>
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Describes the trips for a given route, including departure locations and times</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-90">direction0</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Array of trips leaving the stop location</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120">id</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">The identifier of each trip - one for each trip for the route</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120">route</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">The id of route - </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120">direction</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">The destination of the route</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120">did</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Direction name - always 0 for direction0</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120">dest</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Destination name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120">depTime</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">The estimated time of departure for the stop in the time zone defined by the tz parameter</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120">depUTC</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">The departure time, in seconds, since Unix epoch coordinated UTC - 1/1/1970 00:00:00</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120">tz</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">The IANA time zone identifier</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-90">direction1</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Array of trips arriving at the stop location</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120">id</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">The identifier of each trip - one for each trip for the route</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120">route</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Given route within the array</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120">direction</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">The destination of the route</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120">did</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Direction name - always 1 for direction1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120">dest</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Destination name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120">depTime</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">The estimated time of departure for the stop in the time zone defined by the tz parameter</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120">depUTC</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">The departure time, in seconds, since Unix epoch coordinated UTC - 1/1/1970 00:00:00</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark text-indent-120">tz</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">The IANA time zone identifier</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border-0">
+                        Using & micro
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark fw-500 p-0">docked</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark fw-500 text-indent-30">id</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Unique ID of docked item</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark fw-500 text-indent-30">src</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Provider name of docked vehicles</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark fw-500 text-indent-30">addr</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Address of docked vehicles</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark fw-500 text-indent-30">lat</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">latitude of dock</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark fw-500 text-indent-30">lon</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">longitud of dock</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark fw-500 text-indent-30">date</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">date/time</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark fw-500 text-indent-30">name</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Street identifiers often the same as addr</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark fw-500 text-indent-30">total</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Number of total dock vehicle capacity </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark fw-500 text-indent-30">docks</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Number of docks open</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark fw-500 text-indent-30">bikes</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Number of bikes available</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark fw-500 p-0">dockless</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark fw-500 text-indent-30">id</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Unique ID of dockless </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark fw-500 text-indent-30">provider_id</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Dockless provider ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark fw-500 text-indent-30">provider_name</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Dockless provider name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark fw-500 text-indent-30">lat</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">latitude of vehicle</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark fw-500 text-indent-30">lon</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">longitude of vehicle</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark fw-500 text-indent-30">vechicle_type_id</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Vehicle type</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="Data Points">
+                        <p class="text-dark fw-500 text-indent-30">distance</p>
+                    </td>
+                    <td class="border-right" data-title="Roadify node">
+
+                    </td>
+                    <td data-title="Description">
+                        <p class="text-dark fw-500 p-0">Distance from lat/lon in the request</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-flex-container">
+                <ul class="footer-menu">
+                    <li class="footer-item">
+                        <a href="need-help.html" class="footer-link">Need Help?</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="terms.html" class="footer-link">Terms and Conditions</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="restrictions.html" class="footer-link">Restrictions</a>
+                    </li>
+                </ul>
+
+                <div class="footer-items">
+                    <div class="footer-copyright">
+                        © 2021 Digichief LLC<br> All Rights Reserved
+                    </div>
+                    <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/digichief?ref=hl" target="_blank" class="footer-social-item">
+                        <span class="icon-facebook"></span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/digichief-content-feed" target="_blank" class="footer-social-item">
+                        <span class="icon-linkedin2"></span>
+                    </a>
+                    <a href="http://vimeo.com/digichief" target="_blank" class="footer-social-item">
+                        <span class="icon-vimeo"></span>
+                    </a>
+                    <a href="https://twitter.com/DIGI_TWEETS" target="_blank" class="footer-social-item">
+                        <span class="icon-twitter"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/api-controller.js"></script>
+    <script src="js/search-controller.js"></script>
+</body>
+
+</html>

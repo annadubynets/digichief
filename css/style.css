@@ -139,6 +139,14 @@ p {
     padding-bottom: 10px;
 }
 
+.border-right {
+    border-right: 1px solid #000!important;
+}
+
+.border-0 {
+    border-right: none!important;
+}
+
 .bg-muted {
     background-color: #EFEFEF;
 }
